@@ -1,0 +1,62 @@
+---
+title: Investigating Windows
+tags:
+- writeups
+---
+
+- Whats the version and year of the windows machine?
+	- `WinKey + R` -> `winver` > Windows Server 2016
+- Which user logged in last?
+	- found dope [powershell script](https://thesysadminchannel.com/get-computer-last-login-information-using-powershell/) that does just that
+	- alternatively look in event logs: `Get-WinEvent -FilterHashTable @{Logname="Security";ID=4672}  | select @{N='User';E={$_.Properties[1].Value}}`
+	- ![[write-ups/images/Pasted image 20220620193431.png]]
+- When did John log onto the system last?
+	- with `cmd.exe`: `net user John`
+	- ![[write-ups/images/Pasted image 20220620193534.png]]
+- What IP does the system connect to when it first starts?
+	- we can check the registry by `winkey + R -> regdit`	
+	- there we can see if there's anything in [`HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run`](https://docs.microsoft.com/en-us/windows/win32/setupapi/run-and-runonce-registry-keys) *(run program whenever a user logs in)* which is commonly used by adversaries
+	- ![[write-ups/images/Pasted image 20220620194450.png]]
+- What two accounts had administrative privileges (other than the Administrator user)?
+	- go to `Computer Management > Local Users & Groups > Groups > administrators`
+	- ![[write-ups/images/Pasted image 20220620194955.png]]
+- Whats the name of the scheduled task that is malicous?
+	- list all scheduled tasks: `Get-ScheduledTask | Get-ScheduledTaskInfo | Select TaskName,TaskPath,LastRunTime`
+	- ![[write-ups/images/Pasted image 20220620195743.png]]
+	- we see some suspicious looking tasks *(i.e updatee windows, clean file system, falshupdate22)*
+- What file was the task trying to run daily? & What port did this file listen locally for?
+	- we can get more info about the task with: `Get-ScheduledTask -TaskName "Clean file system" -Verbose | Select *`
+	- ![[write-ups/images/Pasted image 20220620200702.png]]
+- When did Jenny last logon?
+	- ![[write-ups/images/Pasted image 20220620200809.png]]
+- At what date did the compromise take place?
+	- look for [User create events](https://docs.microsoft.com/en-us/windows/security/threat-protection/auditing/event-4720): `Get-WinEvent -FilterHashTable @{Logname="Security";ID=4720}`
+	- ![[write-ups/images/Pasted image 20220620201241.png]]
+- At what time did Windows first assign special privileges to a new logon?
+	- [Special priviliges assigned to new logon](https://www.ultimatewindowssecurity.com/securitylog/encyclopedia/event.aspx?eventID=4672)
+	- ![[write-ups/images/Pasted image 20220620203233.png]]
+	- not worked
+	- open `Event Viewer > Custom View` with ids of `4624,4672` & sort by Date & Time
+	- got hint of `00/00/0000 0:00:49 PM` so we look for second `49`
+	- ![[write-ups/images/Pasted image 20220620204135.png]]
+- What tool was used to get Windows passwords?
+	- if we look closer @ the previous sscheduled task we find out the attacker used [powercat](https://www.kali.org/tools/powercat/) for a reverse shell
+	- now, if we look @ the other scheduled tasks we find `GameOver`
+	- ![[write-ups/images/Pasted image 20220620204800.png]]
+	- this will run every 5 minutes, retrieves clear text passwords, kerberos tickets, pin codes, etc from the [[write-ups/thm/core-windows-processes#lsass exe|lsass.exe]]
+	- the tool used to do this is [mimikatz](https://github.com/ParrotSec/mimikatz)
+- What was the attackers external control and command servers IP? & Check for DNS poisoning, what site was targeted?
+	- looking @ the [hosts](https://en.wikipedia.org/wiki/Hosts_(file)) file we see that `google.com` was poisoned to redirect to the attackere's C&C servers
+	- ![[write-ups/images/Pasted image 20220620205620.png]]
+- What was the extension name of the shell uploaded via the servers website? & What was the last port the attacker opened?
+	- Windows firewall’s **Inbound Rules** defend the network against the incoming traffic, but it also contains information about the port & address of the local/remote server
+	- ![[write-ups/images/Pasted image 20220620205822.png]]
+	- Microsoft uses IIS (Internet Informaion Services) as a default web server on the Windows & the default path for the webserver files is: `C:\inetpub\wwwroot`
+	- ![[write-ups/images/Pasted image 20220620210155.png]]
+
+---
+
+## See Also
+- [[write-ups/thm/windows-event-logs]]
+- [[write-ups/thm/core-windows-processes]]
+- [[write-ups/THM]]

