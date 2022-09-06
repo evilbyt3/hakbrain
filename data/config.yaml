@@ -15,12 +15,11 @@ GitHubLink: https://github.com/vlagh3/hakbrain/tree/hugo/content
 enableSemanticSearch: false
 operandApiKey: "REPLACE-WITH-YOUR-OPERAND-API-KEY"
 description:
-  Host your second brain and digital garden for free. Quartz features extremely fast full-text search,
-  Wikilink support, backlinks, local graph, tags, and link previews.
+  web of linked notes from the mind of a security enthusiast
 page_title:
   "🕸️ H@kBr4in"
 links:
   - link_name: Twitter
-    link: https://twitter.com/_jzhao
+    link: https://twitter.com/vlaghe1
   - link_name: Github
-    link: https://github.com/jackyzha0
+    link: https://github.com/vlagh3
