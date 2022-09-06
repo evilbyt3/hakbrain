@@ -1,0 +1,1592 @@
+{
+  "index": {
+    "links": {
+      "/": [
+        {
+          "source": "/",
+          "target": "/write-ups/THM",
+          "text": "write-ups/THM"
+        }
+      ],
+      "/private/attacking-kerberos": [
+        {
+          "source": "/private/attacking-kerberos",
+          "target": "/https//github.com/ropnop/kerbrute/releaseshttps//github.com/ropnop/kerbrute/releases",
+          "text": "kerbrute"
+        },
+        {
+          "source": "/private/attacking-kerberos",
+          "target": "/",
+          "text": "impacket"
+        },
+        {
+          "source": "/private/attacking-kerberos",
+          "target": "/",
+          "text": "mimikatz"
+        },
+        {
+          "source": "/private/attacking-kerberos",
+          "target": "/write-ups/THM",
+          "text": "write-ups/THM"
+        }
+      ],
+      "/private/game-zone": [
+        {
+          "source": "/private/game-zone",
+          "target": "/",
+          "text": "403 forbidden access"
+        },
+        {
+          "source": "/private/game-zone",
+          "target": "/sqli",
+          "text": "sqli"
+        },
+        {
+          "source": "/private/game-zone",
+          "target": "/",
+          "text": "sqlmap"
+        },
+        {
+          "source": "/private/game-zone",
+          "target": "/",
+          "text": "SUID files"
+        },
+        {
+          "source": "/private/game-zone",
+          "target": "/SSH-Tunneling",
+          "text": "SSH Tunneling"
+        },
+        {
+          "source": "/private/game-zone",
+          "target": "/write-ups/THM",
+          "text": "write-ups/THM"
+        }
+      ],
+      "/private/history-of-malware": [
+        {
+          "source": "/private/history-of-malware",
+          "target": "/",
+          "text": "ARPANET"
+        },
+        {
+          "source": "/private/history-of-malware",
+          "target": "/trojan",
+          "text": "trojan"
+        },
+        {
+          "source": "/private/history-of-malware",
+          "target": "/write-ups/THM",
+          "text": "write-ups/THM"
+        }
+      ],
+      "/private/investigating-windows": [
+        {
+          "source": "/private/investigating-windows",
+          "target": "/",
+          "text": "mimikatz"
+        },
+        {
+          "source": "/private/investigating-windows",
+          "target": "/private/windows-event-logs",
+          "text": "private/windows-event-logs"
+        },
+        {
+          "source": "/private/investigating-windows",
+          "target": "/write-ups/thm/core-windows-processes",
+          "text": "write-ups/thm/core-windows-processes"
+        },
+        {
+          "source": "/private/investigating-windows",
+          "target": "/write-ups/THM",
+          "text": "write-ups/THM"
+        }
+      ],
+      "/private/malware-intro": [
+        {
+          "source": "/private/malware-intro",
+          "target": "/",
+          "text": "Kaspersky"
+        },
+        {
+          "source": "/private/malware-intro",
+          "target": "/private/history-of-malware",
+          "text": "private/history-of-malware"
+        },
+        {
+          "source": "/private/malware-intro",
+          "target": "/write-ups/THM",
+          "text": "write-ups/THM"
+        }
+      ],
+      "/private/mr-robot": [
+        {
+          "source": "/private/mr-robot",
+          "target": "/",
+          "text": "Mr Robot series"
+        },
+        {
+          "source": "/private/mr-robot",
+          "target": "/Attacking-Wordpress",
+          "text": "Attacking Wordpress"
+        },
+        {
+          "source": "/private/mr-robot",
+          "target": "/write-ups/THM",
+          "text": "write-ups/THM"
+        }
+      ],
+      "/private/post-exploitation-basics": [
+        {
+          "source": "/private/post-exploitation-basics",
+          "target": "/",
+          "text": "SharpHound"
+        },
+        {
+          "source": "/private/post-exploitation-basics",
+          "target": "/write-ups/THM",
+          "text": "write-ups/THM"
+        }
+      ],
+      "/private/skynet": [
+        {
+          "source": "/private/skynet",
+          "target": "/",
+          "text": "403 Frobidden"
+        },
+        {
+          "source": "/private/skynet",
+          "target": "/Wildcard-Injection",
+          "text": "Wildcard Injection"
+        },
+        {
+          "source": "/private/skynet",
+          "target": "/Wildcard-Injection",
+          "text": "Wildcard Injection"
+        },
+        {
+          "source": "/private/skynet",
+          "target": "/write-ups/THM",
+          "text": "write-ups/THM"
+        }
+      ],
+      "/private/sysmon": [
+        {
+          "source": "/private/sysmon",
+          "target": "/",
+          "text": "Event Viewer"
+        },
+        {
+          "source": "/private/sysmon",
+          "target": "/",
+          "text": "Get-WinEvent"
+        },
+        {
+          "source": "/private/sysmon",
+          "target": "/",
+          "text": "Xeexe"
+        },
+        {
+          "source": "/private/sysmon",
+          "target": "/",
+          "text": "Quasar"
+        },
+        {
+          "source": "/private/sysmon",
+          "target": "/",
+          "text": "Ion-Storm"
+        },
+        {
+          "source": "/private/sysmon",
+          "target": "/private/windows-event-logs",
+          "text": "private/windows-event-logs"
+        },
+        {
+          "source": "/private/sysmon",
+          "target": "/write-ups/THM",
+          "text": "write-ups/THM"
+        }
+      ],
+      "/private/windows-event-logs": [
+        {
+          "source": "/private/windows-event-logs",
+          "target": "/",
+          "text": "Event Viewer's"
+        },
+        {
+          "source": "/private/windows-event-logs",
+          "target": "/../../sheets/Mitre",
+          "text": "Mitre"
+        },
+        {
+          "source": "/private/windows-event-logs",
+          "target": "/write-ups/thm/sysinternals",
+          "text": "write-ups/thm/sysinternals"
+        },
+        {
+          "source": "/private/windows-event-logs",
+          "target": "/write-ups/thm/core-windows-processes",
+          "text": "write-ups/thm/core-windows-processes"
+        },
+        {
+          "source": "/private/windows-event-logs",
+          "target": "/write-ups/THM",
+          "text": "write-ups/THM"
+        }
+      ],
+      "/private/zerologon": [
+        {
+          "source": "/private/zerologon",
+          "target": "/",
+          "text": "impacket"
+        },
+        {
+          "source": "/private/zerologon",
+          "target": "/write-ups/thm/core-windows-processes",
+          "text": "write-ups/thm/core-windows-processes"
+        },
+        {
+          "source": "/private/zerologon",
+          "target": "/write-ups/THM",
+          "text": "write-ups/THM"
+        }
+      ],
+      "/sheets/Token-Impersonation": [
+        {
+          "source": "/sheets/Token-Impersonation",
+          "target": "/Alfred",
+          "text": "Alfred THM room"
+        }
+      ],
+      "/write-ups/thm/agent-t": [
+        {
+          "source": "/write-ups/thm/agent-t",
+          "target": "/write-ups/THM",
+          "text": "write-ups/THM"
+        }
+      ],
+      "/write-ups/thm/alfred": [
+        {
+          "source": "/write-ups/thm/alfred",
+          "target": "/write-ups/THM",
+          "text": "write-ups/THM"
+        },
+        {
+          "source": "/write-ups/thm/alfred",
+          "target": "/Access-Tokens",
+          "text": "Access Tokens"
+        },
+        {
+          "source": "/write-ups/thm/alfred",
+          "target": "/sheets/Token-Impersonation",
+          "text": "sheets/Token Impersonation"
+        }
+      ],
+      "/write-ups/thm/autopsy": [
+        {
+          "source": "/write-ups/thm/autopsy",
+          "target": "/write-ups/THM",
+          "text": "write-ups/THM"
+        }
+      ],
+      "/write-ups/thm/breaching-active-directory": [
+        {
+          "source": "/write-ups/thm/breaching-active-directory",
+          "target": "/OSINT",
+          "text": "OSINT"
+        },
+        {
+          "source": "/write-ups/thm/breaching-active-directory",
+          "target": "/write-ups/THM",
+          "text": "write-ups/THM"
+        }
+      ],
+      "/write-ups/thm/committed": [
+        {
+          "source": "/write-ups/thm/committed",
+          "target": "/write-ups/THM",
+          "text": "write-ups/THM"
+        }
+      ],
+      "/write-ups/thm/core-windows-processes": [
+        {
+          "source": "/write-ups/thm/core-windows-processes",
+          "target": "/write-ups/THM",
+          "text": "write-ups/THM"
+        }
+      ],
+      "/write-ups/thm/disk-analysis-autopsy": [
+        {
+          "source": "/write-ups/thm/disk-analysis-autopsy",
+          "target": "/write-ups/thm/autopsy",
+          "text": "write-ups/thm/autopsy"
+        },
+        {
+          "source": "/write-ups/thm/disk-analysis-autopsy",
+          "target": "/write-ups/THM",
+          "text": "write-ups/THM"
+        }
+      ],
+      "/write-ups/thm/isac": [
+        {
+          "source": "/write-ups/thm/isac",
+          "target": "/../../sheets/Mitre",
+          "text": "Mitre"
+        },
+        {
+          "source": "/write-ups/thm/isac",
+          "target": "/write-ups/THM",
+          "text": "write-ups/THM"
+        }
+      ],
+      "/write-ups/thm/jacob-the-boss": [
+        {
+          "source": "/write-ups/thm/jacob-the-boss",
+          "target": "/suid-privesc",
+          "text": "SUID files hoping for a privesc"
+        },
+        {
+          "source": "/write-ups/thm/jacob-the-boss",
+          "target": "/Deserialization-Attacks",
+          "text": "Deserialization Attacks"
+        },
+        {
+          "source": "/write-ups/thm/jacob-the-boss",
+          "target": "/write-ups/THM",
+          "text": "write-ups/THM"
+        }
+      ],
+      "/write-ups/thm/kenobi": [
+        {
+          "source": "/write-ups/thm/kenobi",
+          "target": "/write-ups/THM",
+          "text": "write-ups/THM"
+        }
+      ],
+      "/write-ups/thm/misp": [
+        {
+          "source": "/write-ups/thm/misp",
+          "target": "/write-ups/THM",
+          "text": "write-ups/THM"
+        }
+      ],
+      "/write-ups/thm/openvas": [
+        {
+          "source": "/write-ups/thm/openvas",
+          "target": "/write-ups/THM",
+          "text": "write-ups/THM"
+        }
+      ],
+      "/write-ups/thm/overpass-2-hacked": [
+        {
+          "source": "/write-ups/thm/overpass-2-hacked",
+          "target": "/SUID",
+          "text": "SUID"
+        },
+        {
+          "source": "/write-ups/thm/overpass-2-hacked",
+          "target": "/write-ups/THM",
+          "text": "write-ups/THM"
+        }
+      ],
+      "/write-ups/thm/redline": [
+        {
+          "source": "/write-ups/thm/redline",
+          "target": "/write-ups/THM",
+          "text": "write-ups/THM"
+        }
+      ],
+      "/write-ups/thm/res": [
+        {
+          "source": "/write-ups/thm/res",
+          "target": "/write-ups/THM",
+          "text": "write-ups/THM"
+        }
+      ],
+      "/write-ups/thm/road": [
+        {
+          "source": "/write-ups/thm/road",
+          "target": "/write-ups/THM",
+          "text": "write-ups/THM"
+        }
+      ],
+      "/write-ups/thm/splunk-101": [
+        {
+          "source": "/write-ups/thm/splunk-101",
+          "target": "/write-ups/THM",
+          "text": "write-ups/THM"
+        },
+        {
+          "source": "/write-ups/thm/splunk-101",
+          "target": "/write-ups/thm/splunk-2",
+          "text": "write-ups/thm/splunk-2"
+        }
+      ],
+      "/write-ups/thm/splunk-2": [
+        {
+          "source": "/write-ups/thm/splunk-2",
+          "target": "/write-ups/thm/splunk-101",
+          "text": "write-ups/thm/splunk-101"
+        },
+        {
+          "source": "/write-ups/thm/splunk-2",
+          "target": "/write-ups/THM",
+          "text": "write-ups/THM"
+        }
+      ],
+      "/write-ups/thm/sysinternals": [
+        {
+          "source": "/write-ups/thm/sysinternals",
+          "target": "/../../sheets/procexp",
+          "text": "procexp"
+        },
+        {
+          "source": "/write-ups/thm/sysinternals",
+          "target": "/../../sheets/procmon",
+          "text": "procmon"
+        },
+        {
+          "source": "/write-ups/thm/sysinternals",
+          "target": "/../../sheets/procdump",
+          "text": "procdump"
+        },
+        {
+          "source": "/write-ups/thm/sysinternals",
+          "target": "/../../sheets/Sigcheck",
+          "text": "Sigcheck"
+        },
+        {
+          "source": "/write-ups/thm/sysinternals",
+          "target": "/../../sheets/streams",
+          "text": "streams"
+        },
+        {
+          "source": "/write-ups/thm/sysinternals",
+          "target": "/../../sheets/sdelete",
+          "text": "sdelete"
+        },
+        {
+          "source": "/write-ups/thm/sysinternals",
+          "target": "/../../sheets/autoruns",
+          "text": "autoruns"
+        },
+        {
+          "source": "/write-ups/thm/sysinternals",
+          "target": "/../../sheets/procdump",
+          "text": "procdump"
+        },
+        {
+          "source": "/write-ups/thm/sysinternals",
+          "target": "/../../sheets/procexp",
+          "text": "procexp"
+        },
+        {
+          "source": "/write-ups/thm/sysinternals",
+          "target": "/../../sheets/procmon",
+          "text": "procmon"
+        },
+        {
+          "source": "/write-ups/thm/sysinternals",
+          "target": "/../../sheets/psexec",
+          "text": "psexec"
+        },
+        {
+          "source": "/write-ups/thm/sysinternals",
+          "target": "/private/sysmon",
+          "text": "sysmon"
+        },
+        {
+          "source": "/write-ups/thm/sysinternals",
+          "target": "/write-ups/thm/core-windows-processes",
+          "text": "write-ups/thm/core-windows-processes"
+        },
+        {
+          "source": "/write-ups/thm/sysinternals",
+          "target": "/write-ups/THM",
+          "text": "write-ups/THM"
+        },
+        {
+          "source": "/write-ups/thm/sysinternals",
+          "target": "/private/sysmon",
+          "text": "private/sysmon"
+        }
+      ],
+      "/write-ups/thm/volatility": [
+        {
+          "source": "/write-ups/thm/volatility",
+          "target": "/write-ups/THM",
+          "text": "write-ups/THM"
+        }
+      ],
+      "/write-ups/thm/windows-forensics-1": [
+        {
+          "source": "/write-ups/thm/windows-forensics-1",
+          "target": "/write-ups/THM",
+          "text": "write-ups/THM"
+        },
+        {
+          "source": "/write-ups/thm/windows-forensics-1",
+          "target": "/write-ups/thm/windows-forensics-2",
+          "text": "write-ups/thm/windows-forensics-2"
+        }
+      ],
+      "/write-ups/thm/windows-forensics-2": [
+        {
+          "source": "/write-ups/thm/windows-forensics-2",
+          "target": "/write-ups/THM",
+          "text": "write-ups/THM"
+        },
+        {
+          "source": "/write-ups/thm/windows-forensics-2",
+          "target": "/write-ups/thm/windows-forensics-1",
+          "text": "write-ups/thm/windows-forensics-1"
+        }
+      ],
+      "/write-ups/thm/yara": [
+        {
+          "source": "/write-ups/thm/yara",
+          "target": "/write-ups/thm/isac",
+          "text": "write-ups/thm/isac"
+        },
+        {
+          "source": "/write-ups/thm/yara",
+          "target": "/write-ups/THM",
+          "text": "write-ups/THM"
+        }
+      ]
+    },
+    "backlinks": {
+      "/": [
+        {
+          "source": "/private/attacking-kerberos",
+          "target": "/",
+          "text": "impacket"
+        },
+        {
+          "source": "/private/attacking-kerberos",
+          "target": "/",
+          "text": "mimikatz"
+        },
+        {
+          "source": "/private/game-zone",
+          "target": "/",
+          "text": "403 forbidden access"
+        },
+        {
+          "source": "/private/game-zone",
+          "target": "/",
+          "text": "sqlmap"
+        },
+        {
+          "source": "/private/game-zone",
+          "target": "/",
+          "text": "SUID files"
+        },
+        {
+          "source": "/private/history-of-malware",
+          "target": "/",
+          "text": "ARPANET"
+        },
+        {
+          "source": "/private/investigating-windows",
+          "target": "/",
+          "text": "mimikatz"
+        },
+        {
+          "source": "/private/malware-intro",
+          "target": "/",
+          "text": "Kaspersky"
+        },
+        {
+          "source": "/private/mr-robot",
+          "target": "/",
+          "text": "Mr Robot series"
+        },
+        {
+          "source": "/private/post-exploitation-basics",
+          "target": "/",
+          "text": "SharpHound"
+        },
+        {
+          "source": "/private/skynet",
+          "target": "/",
+          "text": "403 Frobidden"
+        },
+        {
+          "source": "/private/sysmon",
+          "target": "/",
+          "text": "Event Viewer"
+        },
+        {
+          "source": "/private/sysmon",
+          "target": "/",
+          "text": "Get-WinEvent"
+        },
+        {
+          "source": "/private/sysmon",
+          "target": "/",
+          "text": "Xeexe"
+        },
+        {
+          "source": "/private/sysmon",
+          "target": "/",
+          "text": "Quasar"
+        },
+        {
+          "source": "/private/sysmon",
+          "target": "/",
+          "text": "Ion-Storm"
+        },
+        {
+          "source": "/private/windows-event-logs",
+          "target": "/",
+          "text": "Event Viewer's"
+        },
+        {
+          "source": "/private/zerologon",
+          "target": "/",
+          "text": "impacket"
+        }
+      ],
+      "/../../sheets/Mitre": [
+        {
+          "source": "/private/windows-event-logs",
+          "target": "/../../sheets/Mitre",
+          "text": "Mitre"
+        },
+        {
+          "source": "/write-ups/thm/isac",
+          "target": "/../../sheets/Mitre",
+          "text": "Mitre"
+        }
+      ],
+      "/../../sheets/Sigcheck": [
+        {
+          "source": "/write-ups/thm/sysinternals",
+          "target": "/../../sheets/Sigcheck",
+          "text": "Sigcheck"
+        }
+      ],
+      "/../../sheets/autoruns": [
+        {
+          "source": "/write-ups/thm/sysinternals",
+          "target": "/../../sheets/autoruns",
+          "text": "autoruns"
+        }
+      ],
+      "/../../sheets/procdump": [
+        {
+          "source": "/write-ups/thm/sysinternals",
+          "target": "/../../sheets/procdump",
+          "text": "procdump"
+        },
+        {
+          "source": "/write-ups/thm/sysinternals",
+          "target": "/../../sheets/procdump",
+          "text": "procdump"
+        }
+      ],
+      "/../../sheets/procexp": [
+        {
+          "source": "/write-ups/thm/sysinternals",
+          "target": "/../../sheets/procexp",
+          "text": "procexp"
+        },
+        {
+          "source": "/write-ups/thm/sysinternals",
+          "target": "/../../sheets/procexp",
+          "text": "procexp"
+        }
+      ],
+      "/../../sheets/procmon": [
+        {
+          "source": "/write-ups/thm/sysinternals",
+          "target": "/../../sheets/procmon",
+          "text": "procmon"
+        },
+        {
+          "source": "/write-ups/thm/sysinternals",
+          "target": "/../../sheets/procmon",
+          "text": "procmon"
+        }
+      ],
+      "/../../sheets/psexec": [
+        {
+          "source": "/write-ups/thm/sysinternals",
+          "target": "/../../sheets/psexec",
+          "text": "psexec"
+        }
+      ],
+      "/../../sheets/sdelete": [
+        {
+          "source": "/write-ups/thm/sysinternals",
+          "target": "/../../sheets/sdelete",
+          "text": "sdelete"
+        }
+      ],
+      "/../../sheets/streams": [
+        {
+          "source": "/write-ups/thm/sysinternals",
+          "target": "/../../sheets/streams",
+          "text": "streams"
+        }
+      ],
+      "/Access-Tokens": [
+        {
+          "source": "/write-ups/thm/alfred",
+          "target": "/Access-Tokens",
+          "text": "Access Tokens"
+        }
+      ],
+      "/Alfred": [
+        {
+          "source": "/sheets/Token-Impersonation",
+          "target": "/Alfred",
+          "text": "Alfred THM room"
+        }
+      ],
+      "/Attacking-Wordpress": [
+        {
+          "source": "/private/mr-robot",
+          "target": "/Attacking-Wordpress",
+          "text": "Attacking Wordpress"
+        }
+      ],
+      "/Deserialization-Attacks": [
+        {
+          "source": "/write-ups/thm/jacob-the-boss",
+          "target": "/Deserialization-Attacks",
+          "text": "Deserialization Attacks"
+        }
+      ],
+      "/OSINT": [
+        {
+          "source": "/write-ups/thm/breaching-active-directory",
+          "target": "/OSINT",
+          "text": "OSINT"
+        }
+      ],
+      "/SSH-Tunneling": [
+        {
+          "source": "/private/game-zone",
+          "target": "/SSH-Tunneling",
+          "text": "SSH Tunneling"
+        }
+      ],
+      "/SUID": [
+        {
+          "source": "/write-ups/thm/overpass-2-hacked",
+          "target": "/SUID",
+          "text": "SUID"
+        }
+      ],
+      "/Wildcard-Injection": [
+        {
+          "source": "/private/skynet",
+          "target": "/Wildcard-Injection",
+          "text": "Wildcard Injection"
+        },
+        {
+          "source": "/private/skynet",
+          "target": "/Wildcard-Injection",
+          "text": "Wildcard Injection"
+        }
+      ],
+      "/https//github.com/ropnop/kerbrute/releaseshttps//github.com/ropnop/kerbrute/releases": [
+        {
+          "source": "/private/attacking-kerberos",
+          "target": "/https//github.com/ropnop/kerbrute/releaseshttps//github.com/ropnop/kerbrute/releases",
+          "text": "kerbrute"
+        }
+      ],
+      "/private/history-of-malware": [
+        {
+          "source": "/private/malware-intro",
+          "target": "/private/history-of-malware",
+          "text": "private/history-of-malware"
+        }
+      ],
+      "/private/sysmon": [
+        {
+          "source": "/write-ups/thm/sysinternals",
+          "target": "/private/sysmon",
+          "text": "sysmon"
+        },
+        {
+          "source": "/write-ups/thm/sysinternals",
+          "target": "/private/sysmon",
+          "text": "private/sysmon"
+        }
+      ],
+      "/private/windows-event-logs": [
+        {
+          "source": "/private/investigating-windows",
+          "target": "/private/windows-event-logs",
+          "text": "private/windows-event-logs"
+        },
+        {
+          "source": "/private/sysmon",
+          "target": "/private/windows-event-logs",
+          "text": "private/windows-event-logs"
+        }
+      ],
+      "/sheets/Token-Impersonation": [
+        {
+          "source": "/write-ups/thm/alfred",
+          "target": "/sheets/Token-Impersonation",
+          "text": "sheets/Token Impersonation"
+        }
+      ],
+      "/sqli": [
+        {
+          "source": "/private/game-zone",
+          "target": "/sqli",
+          "text": "sqli"
+        }
+      ],
+      "/suid-privesc": [
+        {
+          "source": "/write-ups/thm/jacob-the-boss",
+          "target": "/suid-privesc",
+          "text": "SUID files hoping for a privesc"
+        }
+      ],
+      "/trojan": [
+        {
+          "source": "/private/history-of-malware",
+          "target": "/trojan",
+          "text": "trojan"
+        }
+      ],
+      "/write-ups/THM": [
+        {
+          "source": "/",
+          "target": "/write-ups/THM",
+          "text": "write-ups/THM"
+        },
+        {
+          "source": "/private/attacking-kerberos",
+          "target": "/write-ups/THM",
+          "text": "write-ups/THM"
+        },
+        {
+          "source": "/private/game-zone",
+          "target": "/write-ups/THM",
+          "text": "write-ups/THM"
+        },
+        {
+          "source": "/private/history-of-malware",
+          "target": "/write-ups/THM",
+          "text": "write-ups/THM"
+        },
+        {
+          "source": "/private/investigating-windows",
+          "target": "/write-ups/THM",
+          "text": "write-ups/THM"
+        },
+        {
+          "source": "/private/malware-intro",
+          "target": "/write-ups/THM",
+          "text": "write-ups/THM"
+        },
+        {
+          "source": "/private/mr-robot",
+          "target": "/write-ups/THM",
+          "text": "write-ups/THM"
+        },
+        {
+          "source": "/private/post-exploitation-basics",
+          "target": "/write-ups/THM",
+          "text": "write-ups/THM"
+        },
+        {
+          "source": "/private/skynet",
+          "target": "/write-ups/THM",
+          "text": "write-ups/THM"
+        },
+        {
+          "source": "/private/sysmon",
+          "target": "/write-ups/THM",
+          "text": "write-ups/THM"
+        },
+        {
+          "source": "/private/windows-event-logs",
+          "target": "/write-ups/THM",
+          "text": "write-ups/THM"
+        },
+        {
+          "source": "/private/zerologon",
+          "target": "/write-ups/THM",
+          "text": "write-ups/THM"
+        },
+        {
+          "source": "/write-ups/thm/agent-t",
+          "target": "/write-ups/THM",
+          "text": "write-ups/THM"
+        },
+        {
+          "source": "/write-ups/thm/alfred",
+          "target": "/write-ups/THM",
+          "text": "write-ups/THM"
+        },
+        {
+          "source": "/write-ups/thm/autopsy",
+          "target": "/write-ups/THM",
+          "text": "write-ups/THM"
+        },
+        {
+          "source": "/write-ups/thm/breaching-active-directory",
+          "target": "/write-ups/THM",
+          "text": "write-ups/THM"
+        },
+        {
+          "source": "/write-ups/thm/committed",
+          "target": "/write-ups/THM",
+          "text": "write-ups/THM"
+        },
+        {
+          "source": "/write-ups/thm/core-windows-processes",
+          "target": "/write-ups/THM",
+          "text": "write-ups/THM"
+        },
+        {
+          "source": "/write-ups/thm/disk-analysis-autopsy",
+          "target": "/write-ups/THM",
+          "text": "write-ups/THM"
+        },
+        {
+          "source": "/write-ups/thm/isac",
+          "target": "/write-ups/THM",
+          "text": "write-ups/THM"
+        },
+        {
+          "source": "/write-ups/thm/jacob-the-boss",
+          "target": "/write-ups/THM",
+          "text": "write-ups/THM"
+        },
+        {
+          "source": "/write-ups/thm/kenobi",
+          "target": "/write-ups/THM",
+          "text": "write-ups/THM"
+        },
+        {
+          "source": "/write-ups/thm/misp",
+          "target": "/write-ups/THM",
+          "text": "write-ups/THM"
+        },
+        {
+          "source": "/write-ups/thm/openvas",
+          "target": "/write-ups/THM",
+          "text": "write-ups/THM"
+        },
+        {
+          "source": "/write-ups/thm/overpass-2-hacked",
+          "target": "/write-ups/THM",
+          "text": "write-ups/THM"
+        },
+        {
+          "source": "/write-ups/thm/redline",
+          "target": "/write-ups/THM",
+          "text": "write-ups/THM"
+        },
+        {
+          "source": "/write-ups/thm/res",
+          "target": "/write-ups/THM",
+          "text": "write-ups/THM"
+        },
+        {
+          "source": "/write-ups/thm/road",
+          "target": "/write-ups/THM",
+          "text": "write-ups/THM"
+        },
+        {
+          "source": "/write-ups/thm/splunk-101",
+          "target": "/write-ups/THM",
+          "text": "write-ups/THM"
+        },
+        {
+          "source": "/write-ups/thm/splunk-2",
+          "target": "/write-ups/THM",
+          "text": "write-ups/THM"
+        },
+        {
+          "source": "/write-ups/thm/sysinternals",
+          "target": "/write-ups/THM",
+          "text": "write-ups/THM"
+        },
+        {
+          "source": "/write-ups/thm/volatility",
+          "target": "/write-ups/THM",
+          "text": "write-ups/THM"
+        },
+        {
+          "source": "/write-ups/thm/windows-forensics-1",
+          "target": "/write-ups/THM",
+          "text": "write-ups/THM"
+        },
+        {
+          "source": "/write-ups/thm/windows-forensics-2",
+          "target": "/write-ups/THM",
+          "text": "write-ups/THM"
+        },
+        {
+          "source": "/write-ups/thm/yara",
+          "target": "/write-ups/THM",
+          "text": "write-ups/THM"
+        }
+      ],
+      "/write-ups/thm/autopsy": [
+        {
+          "source": "/write-ups/thm/disk-analysis-autopsy",
+          "target": "/write-ups/thm/autopsy",
+          "text": "write-ups/thm/autopsy"
+        }
+      ],
+      "/write-ups/thm/core-windows-processes": [
+        {
+          "source": "/private/investigating-windows",
+          "target": "/write-ups/thm/core-windows-processes",
+          "text": "write-ups/thm/core-windows-processes"
+        },
+        {
+          "source": "/private/windows-event-logs",
+          "target": "/write-ups/thm/core-windows-processes",
+          "text": "write-ups/thm/core-windows-processes"
+        },
+        {
+          "source": "/private/zerologon",
+          "target": "/write-ups/thm/core-windows-processes",
+          "text": "write-ups/thm/core-windows-processes"
+        },
+        {
+          "source": "/write-ups/thm/sysinternals",
+          "target": "/write-ups/thm/core-windows-processes",
+          "text": "write-ups/thm/core-windows-processes"
+        }
+      ],
+      "/write-ups/thm/isac": [
+        {
+          "source": "/write-ups/thm/yara",
+          "target": "/write-ups/thm/isac",
+          "text": "write-ups/thm/isac"
+        }
+      ],
+      "/write-ups/thm/splunk-101": [
+        {
+          "source": "/write-ups/thm/splunk-2",
+          "target": "/write-ups/thm/splunk-101",
+          "text": "write-ups/thm/splunk-101"
+        }
+      ],
+      "/write-ups/thm/splunk-2": [
+        {
+          "source": "/write-ups/thm/splunk-101",
+          "target": "/write-ups/thm/splunk-2",
+          "text": "write-ups/thm/splunk-2"
+        }
+      ],
+      "/write-ups/thm/sysinternals": [
+        {
+          "source": "/private/windows-event-logs",
+          "target": "/write-ups/thm/sysinternals",
+          "text": "write-ups/thm/sysinternals"
+        }
+      ],
+      "/write-ups/thm/windows-forensics-1": [
+        {
+          "source": "/write-ups/thm/windows-forensics-2",
+          "target": "/write-ups/thm/windows-forensics-1",
+          "text": "write-ups/thm/windows-forensics-1"
+        }
+      ],
+      "/write-ups/thm/windows-forensics-2": [
+        {
+          "source": "/write-ups/thm/windows-forensics-1",
+          "target": "/write-ups/thm/windows-forensics-2",
+          "text": "write-ups/thm/windows-forensics-2"
+        }
+      ]
+    }
+  },
+  "links": [
+    {
+      "source": "/",
+      "target": "/write-ups/THM",
+      "text": "write-ups/THM"
+    },
+    {
+      "source": "/private/attacking-kerberos",
+      "target": "/https//github.com/ropnop/kerbrute/releaseshttps//github.com/ropnop/kerbrute/releases",
+      "text": "kerbrute"
+    },
+    {
+      "source": "/private/attacking-kerberos",
+      "target": "/",
+      "text": "impacket"
+    },
+    {
+      "source": "/private/attacking-kerberos",
+      "target": "/",
+      "text": "mimikatz"
+    },
+    {
+      "source": "/private/attacking-kerberos",
+      "target": "/write-ups/THM",
+      "text": "write-ups/THM"
+    },
+    {
+      "source": "/private/game-zone",
+      "target": "/",
+      "text": "403 forbidden access"
+    },
+    {
+      "source": "/private/game-zone",
+      "target": "/sqli",
+      "text": "sqli"
+    },
+    {
+      "source": "/private/game-zone",
+      "target": "/",
+      "text": "sqlmap"
+    },
+    {
+      "source": "/private/game-zone",
+      "target": "/",
+      "text": "SUID files"
+    },
+    {
+      "source": "/private/game-zone",
+      "target": "/SSH-Tunneling",
+      "text": "SSH Tunneling"
+    },
+    {
+      "source": "/private/game-zone",
+      "target": "/write-ups/THM",
+      "text": "write-ups/THM"
+    },
+    {
+      "source": "/private/history-of-malware",
+      "target": "/",
+      "text": "ARPANET"
+    },
+    {
+      "source": "/private/history-of-malware",
+      "target": "/trojan",
+      "text": "trojan"
+    },
+    {
+      "source": "/private/history-of-malware",
+      "target": "/write-ups/THM",
+      "text": "write-ups/THM"
+    },
+    {
+      "source": "/private/investigating-windows",
+      "target": "/",
+      "text": "mimikatz"
+    },
+    {
+      "source": "/private/investigating-windows",
+      "target": "/private/windows-event-logs",
+      "text": "private/windows-event-logs"
+    },
+    {
+      "source": "/private/investigating-windows",
+      "target": "/write-ups/thm/core-windows-processes",
+      "text": "write-ups/thm/core-windows-processes"
+    },
+    {
+      "source": "/private/investigating-windows",
+      "target": "/write-ups/THM",
+      "text": "write-ups/THM"
+    },
+    {
+      "source": "/private/malware-intro",
+      "target": "/",
+      "text": "Kaspersky"
+    },
+    {
+      "source": "/private/malware-intro",
+      "target": "/private/history-of-malware",
+      "text": "private/history-of-malware"
+    },
+    {
+      "source": "/private/malware-intro",
+      "target": "/write-ups/THM",
+      "text": "write-ups/THM"
+    },
+    {
+      "source": "/private/mr-robot",
+      "target": "/",
+      "text": "Mr Robot series"
+    },
+    {
+      "source": "/private/mr-robot",
+      "target": "/Attacking-Wordpress",
+      "text": "Attacking Wordpress"
+    },
+    {
+      "source": "/private/mr-robot",
+      "target": "/write-ups/THM",
+      "text": "write-ups/THM"
+    },
+    {
+      "source": "/private/post-exploitation-basics",
+      "target": "/",
+      "text": "SharpHound"
+    },
+    {
+      "source": "/private/post-exploitation-basics",
+      "target": "/write-ups/THM",
+      "text": "write-ups/THM"
+    },
+    {
+      "source": "/private/skynet",
+      "target": "/",
+      "text": "403 Frobidden"
+    },
+    {
+      "source": "/private/skynet",
+      "target": "/Wildcard-Injection",
+      "text": "Wildcard Injection"
+    },
+    {
+      "source": "/private/skynet",
+      "target": "/Wildcard-Injection",
+      "text": "Wildcard Injection"
+    },
+    {
+      "source": "/private/skynet",
+      "target": "/write-ups/THM",
+      "text": "write-ups/THM"
+    },
+    {
+      "source": "/private/sysmon",
+      "target": "/",
+      "text": "Event Viewer"
+    },
+    {
+      "source": "/private/sysmon",
+      "target": "/",
+      "text": "Get-WinEvent"
+    },
+    {
+      "source": "/private/sysmon",
+      "target": "/",
+      "text": "Xeexe"
+    },
+    {
+      "source": "/private/sysmon",
+      "target": "/",
+      "text": "Quasar"
+    },
+    {
+      "source": "/private/sysmon",
+      "target": "/",
+      "text": "Ion-Storm"
+    },
+    {
+      "source": "/private/sysmon",
+      "target": "/private/windows-event-logs",
+      "text": "private/windows-event-logs"
+    },
+    {
+      "source": "/private/sysmon",
+      "target": "/write-ups/THM",
+      "text": "write-ups/THM"
+    },
+    {
+      "source": "/private/windows-event-logs",
+      "target": "/",
+      "text": "Event Viewer's"
+    },
+    {
+      "source": "/private/windows-event-logs",
+      "target": "/../../sheets/Mitre",
+      "text": "Mitre"
+    },
+    {
+      "source": "/private/windows-event-logs",
+      "target": "/write-ups/thm/sysinternals",
+      "text": "write-ups/thm/sysinternals"
+    },
+    {
+      "source": "/private/windows-event-logs",
+      "target": "/write-ups/thm/core-windows-processes",
+      "text": "write-ups/thm/core-windows-processes"
+    },
+    {
+      "source": "/private/windows-event-logs",
+      "target": "/write-ups/THM",
+      "text": "write-ups/THM"
+    },
+    {
+      "source": "/private/zerologon",
+      "target": "/",
+      "text": "impacket"
+    },
+    {
+      "source": "/private/zerologon",
+      "target": "/write-ups/thm/core-windows-processes",
+      "text": "write-ups/thm/core-windows-processes"
+    },
+    {
+      "source": "/private/zerologon",
+      "target": "/write-ups/THM",
+      "text": "write-ups/THM"
+    },
+    {
+      "source": "/sheets/Token-Impersonation",
+      "target": "/Alfred",
+      "text": "Alfred THM room"
+    },
+    {
+      "source": "/write-ups/thm/agent-t",
+      "target": "/write-ups/THM",
+      "text": "write-ups/THM"
+    },
+    {
+      "source": "/write-ups/thm/alfred",
+      "target": "/write-ups/THM",
+      "text": "write-ups/THM"
+    },
+    {
+      "source": "/write-ups/thm/alfred",
+      "target": "/Access-Tokens",
+      "text": "Access Tokens"
+    },
+    {
+      "source": "/write-ups/thm/alfred",
+      "target": "/sheets/Token-Impersonation",
+      "text": "sheets/Token Impersonation"
+    },
+    {
+      "source": "/write-ups/thm/autopsy",
+      "target": "/write-ups/THM",
+      "text": "write-ups/THM"
+    },
+    {
+      "source": "/write-ups/thm/breaching-active-directory",
+      "target": "/OSINT",
+      "text": "OSINT"
+    },
+    {
+      "source": "/write-ups/thm/breaching-active-directory",
+      "target": "/write-ups/THM",
+      "text": "write-ups/THM"
+    },
+    {
+      "source": "/write-ups/thm/committed",
+      "target": "/write-ups/THM",
+      "text": "write-ups/THM"
+    },
+    {
+      "source": "/write-ups/thm/core-windows-processes",
+      "target": "/write-ups/THM",
+      "text": "write-ups/THM"
+    },
+    {
+      "source": "/write-ups/thm/disk-analysis-autopsy",
+      "target": "/write-ups/thm/autopsy",
+      "text": "write-ups/thm/autopsy"
+    },
+    {
+      "source": "/write-ups/thm/disk-analysis-autopsy",
+      "target": "/write-ups/THM",
+      "text": "write-ups/THM"
+    },
+    {
+      "source": "/write-ups/thm/isac",
+      "target": "/../../sheets/Mitre",
+      "text": "Mitre"
+    },
+    {
+      "source": "/write-ups/thm/isac",
+      "target": "/write-ups/THM",
+      "text": "write-ups/THM"
+    },
+    {
+      "source": "/write-ups/thm/jacob-the-boss",
+      "target": "/suid-privesc",
+      "text": "SUID files hoping for a privesc"
+    },
+    {
+      "source": "/write-ups/thm/jacob-the-boss",
+      "target": "/Deserialization-Attacks",
+      "text": "Deserialization Attacks"
+    },
+    {
+      "source": "/write-ups/thm/jacob-the-boss",
+      "target": "/write-ups/THM",
+      "text": "write-ups/THM"
+    },
+    {
+      "source": "/write-ups/thm/kenobi",
+      "target": "/write-ups/THM",
+      "text": "write-ups/THM"
+    },
+    {
+      "source": "/write-ups/thm/misp",
+      "target": "/write-ups/THM",
+      "text": "write-ups/THM"
+    },
+    {
+      "source": "/write-ups/thm/openvas",
+      "target": "/write-ups/THM",
+      "text": "write-ups/THM"
+    },
+    {
+      "source": "/write-ups/thm/overpass-2-hacked",
+      "target": "/SUID",
+      "text": "SUID"
+    },
+    {
+      "source": "/write-ups/thm/overpass-2-hacked",
+      "target": "/write-ups/THM",
+      "text": "write-ups/THM"
+    },
+    {
+      "source": "/write-ups/thm/redline",
+      "target": "/write-ups/THM",
+      "text": "write-ups/THM"
+    },
+    {
+      "source": "/write-ups/thm/res",
+      "target": "/write-ups/THM",
+      "text": "write-ups/THM"
+    },
+    {
+      "source": "/write-ups/thm/road",
+      "target": "/write-ups/THM",
+      "text": "write-ups/THM"
+    },
+    {
+      "source": "/write-ups/thm/splunk-101",
+      "target": "/write-ups/THM",
+      "text": "write-ups/THM"
+    },
+    {
+      "source": "/write-ups/thm/splunk-101",
+      "target": "/write-ups/thm/splunk-2",
+      "text": "write-ups/thm/splunk-2"
+    },
+    {
+      "source": "/write-ups/thm/splunk-2",
+      "target": "/write-ups/thm/splunk-101",
+      "text": "write-ups/thm/splunk-101"
+    },
+    {
+      "source": "/write-ups/thm/splunk-2",
+      "target": "/write-ups/THM",
+      "text": "write-ups/THM"
+    },
+    {
+      "source": "/write-ups/thm/sysinternals",
+      "target": "/../../sheets/procexp",
+      "text": "procexp"
+    },
+    {
+      "source": "/write-ups/thm/sysinternals",
+      "target": "/../../sheets/procmon",
+      "text": "procmon"
+    },
+    {
+      "source": "/write-ups/thm/sysinternals",
+      "target": "/../../sheets/procdump",
+      "text": "procdump"
+    },
+    {
+      "source": "/write-ups/thm/sysinternals",
+      "target": "/../../sheets/Sigcheck",
+      "text": "Sigcheck"
+    },
+    {
+      "source": "/write-ups/thm/sysinternals",
+      "target": "/../../sheets/streams",
+      "text": "streams"
+    },
+    {
+      "source": "/write-ups/thm/sysinternals",
+      "target": "/../../sheets/sdelete",
+      "text": "sdelete"
+    },
+    {
+      "source": "/write-ups/thm/sysinternals",
+      "target": "/../../sheets/autoruns",
+      "text": "autoruns"
+    },
+    {
+      "source": "/write-ups/thm/sysinternals",
+      "target": "/../../sheets/procdump",
+      "text": "procdump"
+    },
+    {
+      "source": "/write-ups/thm/sysinternals",
+      "target": "/../../sheets/procexp",
+      "text": "procexp"
+    },
+    {
+      "source": "/write-ups/thm/sysinternals",
+      "target": "/../../sheets/procmon",
+      "text": "procmon"
+    },
+    {
+      "source": "/write-ups/thm/sysinternals",
+      "target": "/../../sheets/psexec",
+      "text": "psexec"
+    },
+    {
+      "source": "/write-ups/thm/sysinternals",
+      "target": "/private/sysmon",
+      "text": "sysmon"
+    },
+    {
+      "source": "/write-ups/thm/sysinternals",
+      "target": "/write-ups/thm/core-windows-processes",
+      "text": "write-ups/thm/core-windows-processes"
+    },
+    {
+      "source": "/write-ups/thm/sysinternals",
+      "target": "/write-ups/THM",
+      "text": "write-ups/THM"
+    },
+    {
+      "source": "/write-ups/thm/sysinternals",
+      "target": "/private/sysmon",
+      "text": "private/sysmon"
+    },
+    {
+      "source": "/write-ups/thm/volatility",
+      "target": "/write-ups/THM",
+      "text": "write-ups/THM"
+    },
+    {
+      "source": "/write-ups/thm/windows-forensics-1",
+      "target": "/write-ups/THM",
+      "text": "write-ups/THM"
+    },
+    {
+      "source": "/write-ups/thm/windows-forensics-1",
+      "target": "/write-ups/thm/windows-forensics-2",
+      "text": "write-ups/thm/windows-forensics-2"
+    },
+    {
+      "source": "/write-ups/thm/windows-forensics-2",
+      "target": "/write-ups/THM",
+      "text": "write-ups/THM"
+    },
+    {
+      "source": "/write-ups/thm/windows-forensics-2",
+      "target": "/write-ups/thm/windows-forensics-1",
+      "text": "write-ups/thm/windows-forensics-1"
+    },
+    {
+      "source": "/write-ups/thm/yara",
+      "target": "/write-ups/thm/isac",
+      "text": "write-ups/thm/isac"
+    },
+    {
+      "source": "/write-ups/thm/yara",
+      "target": "/write-ups/THM",
+      "text": "write-ups/THM"
+    }
+  ]
+}
