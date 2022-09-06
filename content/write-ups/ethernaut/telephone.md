@@ -76,4 +76,4 @@ contract PhoneChain {
 - [Phising with tx.origin](https://solidity-by-example.org/hacks/phishing-with-tx-origin/)
 
 ## See Also
-- [[Ethernaut Wargame]]
+- [[write-ups/Ethernaut Wargame]]

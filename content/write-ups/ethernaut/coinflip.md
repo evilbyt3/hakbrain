@@ -121,4 +121,4 @@ The only thing left to be done is to spam the `cheat()` function
 - other options include using Bitcoin block headers *(verified through [BTC Relay](http://btcrelay.org/))*, [RANDAO](https://github.com/randao/randao), or [Oraclize](http://www.oraclize.it/)).
 
 ## See Also
-- [[Ethernaut Wargame]]
+- [[write-ups/Ethernaut Wargame]]

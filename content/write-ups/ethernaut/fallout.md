@@ -26,4 +26,4 @@ tags:
 -   [Use security analysis tools](https://consensys.github.io/smart-contract-best-practices/security_tools/), which are usually free and good at finding simple human errors
 
 ## See Also
-- [[Ethernaut Wargame]]
+- [[write-ups/Ethernaut Wargame]]

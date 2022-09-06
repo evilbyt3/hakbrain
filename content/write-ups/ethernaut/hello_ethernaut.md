@@ -1,6 +1,7 @@
 ---
 title: "0. Hello Ethernaut"
-tags: 🥷
+tags:
+- writeups
 ---
 
 - `help()` to see functions
@@ -75,4 +76,4 @@ await contract.authenticate("ethernaut0")
 - Thus, never store sensitive data *(i.e password)* directly inside a smart contract *(not even as `private` vars even)*
 
 ## See Also
-- [[Ethernaut Wargame]]
+- [[write-ups/Ethernaut Wargame]]
