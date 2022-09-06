@@ -1,19 +1,15 @@
-# Quartz
+# 🕸️  HakBrain
 
-Host your second brain and [digital garden](https://jzhao.xyz/posts/networked-thought) for free. Quartz features
+Welcome web traveler to a journey inside the mind of a security enthusiast. Here, you’ll find a web of linked notes on different techniques & methodologies that I’ve developed throughout my journey in understanding and breaking systems. Think of it as an aggregation of stuff I’ve learnt in CTFs, wargames, real life assessments or just by reading what other researchers are doing.
 
-1. Extremely fast natural-language search
-2. Customizable and hackable design based on Hugo
-3. Automatically generated backlinks, link previews, and local graph
-4. Built-in CJK + Latex Support and Admonition-style callouts
-5. Support for both Markdown Links and Wikilinks
+## Purpose
+I decided to make this space public for various reasons:
+- take a more pro-active approach in giving back to the security community which guided & thought me everything I know
+- help new comers *(newbies)* to this industry by providing an entry-point of some sort, demystifying seemingly scary concepts
+- supply me with a centralized place acting as a quick reference of tips, tricks & checklists for future engagements
+- monitor my progress & share what I’m learning along the way
 
-Check out some of the [amazing gardens that community members](https://quartz.jzhao.xyz/notes/showcase/) have published with Quartz!
-
-> “[One] who works with the door open gets all kinds of interruptions, but [they] also occasionally gets clues as to what the world is and what might be important.” — Richard Hamming
-
-🔗 Get Started: https://quartz.jzhao.xyz/
-
-![Quartz Example Screenshot](./screenshot.png)*Quartz Example Screenshot*
-
-[Join the Discord Community](https://discord.gg/cRFFHYye7t)
+## Similar Sites
+- [haktricks](https://book.hacktricks.xyz/welcome/readme)
+- [f1shh.dev](https://f1shh.gitbook.io/pentest-tips/)
+- [Red Teaming Experiments](https://www.ired.team/)
