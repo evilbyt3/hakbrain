@@ -38,7 +38,7 @@ impersonate_token <token_name_from_above>
 # Revert to original token
 rev2self
 ```
-A good example of seeing this in action is in the [Alfred THM room](Alfred.md#Privesc)
+A good example of seeing this in action is in the [[write-ups/thm/alfred]] room
 
 ## Refs
 - [McAfee Accesss Token Theft Manipulation Attacks](https://www.mcafee.com/enterprise/en-us/assets/reports/rp-access-token-theft-manipulation-attacks.pdf)

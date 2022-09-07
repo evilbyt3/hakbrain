@@ -6,10 +6,10 @@ tags:
 
 ## Recon
 
-![[Pasted image 20220602213700.png]]
+![[write-ups/images/Pasted image 20220602213700.png]]
 
 Going to the http server gets us this:
-![[Pasted image 20220813102932.png]]
+![[write-ups/images/Pasted image 20220813102932.png]]
 Thought about brute-forcing the login form, but since the box has this message: `"Shhh. Be very very quiet, no shouting inside the biblioteca."`, they probably don't want us to do that 😇
 
 We see that the back-end of the web-app is running [Werkzeug](https://werkzeug.palletsprojects.com/en/2.2.x/), a comprehensive [WSGI](https://wsgi.readthedocs.io/en/latest/) web application library. At this poing I started to search the internet for any known vulnerabilities, but I just found an [RCE through the debug console](https://www.rapid7.com/db/modules/exploit/multi/http/werkzeug_debug_rce/) & a bypass for the `/console` endpoint if protected by a pin. But we have no debugging enabled so, no luck I guess.
