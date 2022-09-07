@@ -54,7 +54,7 @@ This is caused by the [CreateProcess](https://docs.microsoft.com/en-us/windows/w
 ## Exploitation
 Considering that we have a low privilege shell already on the target system & all of the requirments above are met. Then we can just drop our malicious executable `B.exe` in `C:\Program Files\A Sub\`. When the system boots, Windows auto starts some of its services. Services on Windows communicate with the [_Service Control Manager_](https://en.wikipedia.org/wiki/Service_Control_Manager) which is responsible to start, stop and interact with these service processes. It starts this service with whatever privileges it has to run, thus letting us run whatever we want as `SYSTEM`*(read more [here](https://stackoverflow.com/questions/510170/the-difference-between-the-local-system-account-and-the-network-service-acco) about differences between accounts & privileges)*
 
-> For a more concrete example check out [Privesc w Unquoted Service Path](Steel%20Mountain%20--%20THM.md#Privesc%20w%20Unquoted%20Service%20Path)
+> For a more concrete example check out [[write-ups/thm/Steel Mountain#Privesc w Unquoted Service Path]] 
 
 ### Manual
 ```bash
