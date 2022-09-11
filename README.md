@@ -1,6 +1,10 @@
+<img align="right" alt="HakBrain Logo" src="https://user-images.githubusercontent.com/82247523/189544833-2bccdb30-3130-4ce6-9946-24d8e3d97037.png" />
+
 # 🕸️  HakBrain
 
 Welcome web traveler to a journey inside the mind of a security enthusiast. Here, you’ll find a web of linked notes on different techniques & methodologies that I’ve developed throughout my journey in understanding and breaking systems. Think of it as an aggregation of stuff I’ve learnt in CTFs, wargames, real life assessments or just by reading what other researchers are doing.
+
+*(image generated with [midjourney](https://midjourney.gitbook.io/docs/))*
 
 ## Purpose
 I decided to make this space public for various reasons:
