@@ -1,7 +1,7 @@
 ---
 title: "Red Team Threat Intel"
 date: 2022-09-14
-url: https://tryhackme.com/room/redteamthreatintel
+link: https://tryhackme.com/room/redteamthreatintel
 tags:
 - writeups
 ---

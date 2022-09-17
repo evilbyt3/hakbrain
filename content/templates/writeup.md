@@ -1,7 +1,7 @@
 ---
 title: "<% tp.file.title %>"
 date: <% tp.date.now() %>
-url: 
+link: 
 tags:
 - writeups
 ---
