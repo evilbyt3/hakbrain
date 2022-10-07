@@ -18,6 +18,7 @@ They can be developed wholly in-house, owned and operated by a business, or elem
 
 ## Elements of a SOC
 ![[sheets/images/Pasted image 20220928005547.png]]
+
 The major elements of SOC are:
 - [[sheets/People in the SOC]]
 - [[sheets/Processes in the SOC]]
