@@ -14,3 +14,10 @@ Besides that it also provides you
 - the option to develop your own rooms & contribute back to the community
 
 Under this section you will mostly find my notes & write-ups that I took while completing different rooms.
+
+## Paths
+
+| Path          | Description                                                                            | 
+| ------------- | -------------------------------------------------------------------------------------- |
+| [[write-ups/Cyber Defense]] | a broad introduction to the different areas necessary to detect and respond to threats |
+|               |                                                                                        |
