@@ -1,0 +1,162 @@
+{
+  "main": {
+    "id": "743152c504d91492",
+    "type": "split",
+    "children": [
+      {
+        "id": "972d08e7e38fb8ad",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1a975789a8bbd230",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "write-ups/thm/Advent of Cyber 2022.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          }
+        ],
+        "stacked": true
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "cc7c94703083a66a",
+    "type": "split",
+    "children": [
+      {
+        "id": "5a5915c3b76e30ec",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3a618316dc85339c",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "104569f03cbac2ed",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "7173cb8f3a1c58cf",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "930b2eb6c8e08b1f",
+    "type": "split",
+    "children": [
+      {
+        "id": "2d23d80cd80cc78c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c8c9a11835acc729",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "write-ups/thm/Advent of Cyber 2022.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "2df9a9c3e7b370d7",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "write-ups/thm/Advent of Cyber 2022.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "af6d341fa7307eaf",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "f57270b6c6fa0197",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "write-ups/thm/Advent of Cyber 2022.md"
+              }
+            }
+          },
+          {
+            "id": "33fadf1e01a696ed",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "1a975789a8bbd230",
+  "lastOpenFiles": [
+    "_index.md",
+    "write-ups/Ethernaut Wargame.md",
+    "write-ups/ethernaut/00. HelloEthernaut.md",
+    "write-ups/thm/Advent of Cyber 2022.md",
+    "write-ups/thm/08 Smart Contracts - Last Christmas I gave you my ETH.md",
+    "write-ups/thm/07 CyberChef - Maldocs roasting on an open fire.md",
+    "write-ups/ethernaut/04. Telephone.md",
+    "write-ups/ethernaut/03. CoinFlip.md",
+    "write-ups/ethernaut/02. Fallout.md",
+    "write-ups/thm/06 Email Analysis - It's beginning to look a lot like phishing.md"
+  ]
+}

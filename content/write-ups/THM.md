@@ -21,3 +21,9 @@ Under this section you will mostly find my notes & write-ups that I took while c
 | ------------- | -------------------------------------------------------------------------------------- |
 | [[write-ups/Cyber Defense]] | a broad introduction to the different areas necessary to detect and respond to threats |
 |               |                                                                                        |
+
+## Events
+
+|                     |     |
+| ------------------- | --- |
+| [[write-ups/thm/Advent of Cyber 2022]] | it’s an advent calendar but with security challenges instead of chocolate!_    |

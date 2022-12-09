@@ -24,5 +24,6 @@ The best way to navigate a network is by wandering from note to note based on wh
 
 ### Write-Ups
 - [[write-ups/THM|TryHackMe]]
+	- [[write-ups/thm/Advent of Cyber 2022]]
 - [[write-ups/HTB|HackTheBox]]
 - [[write-ups/Ethernaut Wargame|Ethernaut]]
