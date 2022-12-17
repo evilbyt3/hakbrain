@@ -82,28 +82,28 @@ public IActionResult OnPostUpload(FileUpload fileUpload) {
 ## Practical
 Going to the website we're presented with a page where we can upload files. Since it's about recruiting it probably intends that we upload a PDF, so let's do that:
 
-![[Pasted image 20221217060208.png]]
+![[write-ups/images/Pasted image 20221217060208.png]]
 
 The message gives us some more information & let's us know that there will be human interaction with our file. So let's try give it an executable:
 
-![[Pasted image 20221217060317.png]]
+![[write-ups/images/Pasted image 20221217060317.png]]
 
 That seems to work because the freelancer haven't properly validate our input *(i.e our uploaded file)*. I tried to take advantage of this by creating a payload for windows: 
 
-![[Pasted image 20221217060911.png]]
+![[write-ups/images/Pasted image 20221217060911.png]]
 
 Then let's start a listener with metasploit
 
-![[Pasted image 20221217061007.png]]
+![[write-ups/images/Pasted image 20221217061007.png]]
 
 Now we only need to upload the file, wait for an "elf" to open it for review & get our shell 
 
-![[Pasted image 20221217061223.png]]
+![[write-ups/images/Pasted image 20221217061223.png]]
 
 Answers:
-![[Pasted image 20221217061632.png]]
 
-j
+![[write-ups/images/Pasted image 20221217061632.png]]
+
 ## Refs
 - [Official Walkthrough](https://www.youtube.com/watch?v=9Pniza-s1ds)
 - [File Upload](https://book.hacktricks.xyz/pentesting-web/file-upload)

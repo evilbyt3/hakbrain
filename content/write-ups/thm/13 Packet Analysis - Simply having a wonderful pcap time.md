@@ -72,32 +72,33 @@ After receiving the phishing email on Day 6 and investigating malware on Day 12,
 
 ## Practical
 
-![[Pasted image 20221217043643.png]]
+![[write-ups/images/Pasted image 20221217043643.png]]
 
-![[Pasted image 20221217043723.png]]
+![[write-ups/images/Pasted image 20221217043723.png]]
 
 `3389` is usually used for RDP
 
 trying to extract all domain names w `tshark` from the capture is yielding this:
-![[Pasted image 20221217044138.png]]
+
+![[write-ups/images/Pasted image 20221217044138.png]]
 
 we can [defang]() the domains using [CyberChef](https://cyberchef.org/#recipe=Defang_URL(true,true,true,'Valid%20domains%20and%20full%20URLs')&input=Y2RuLmJhbmRpdHlldGkudGhtCmJlc3RmZXN0aXZhbGNvbXBhbnkudGht)
 
 looking @ http traffic we observe that `10.10.29.186` `GET`s 2 files hosted @ `cdn.bandityeti.thm`:
 
-![[Pasted image 20221217044809.png]]
+![[write-ups/images/Pasted image 20221217044809.png]]
 I also noticed that the `user-agent` on `favicon.ico` is set as [nim](https://github.com/nim-lang/Nim) 
 
-![[Pasted image 20221217045146.png]]
+![[write-ups/images/Pasted image 20221217045146.png]]
 
 By going to `File > Export Objects > HTTP` we can extract the malicious executable `mysterygift.exe` & calculate its sha256 hash
 
-![[Pasted image 20221217045345.png]]
-![[Pasted image 20221217045401.png]]
+![[write-ups/images/Pasted image 20221217045345.png]]
+![[write-ups/images/Pasted image 20221217045401.png]]
 
 Searching it on [VirusTotal](https://www.virustotal.com/gui/file/0ce160a54d10f8e81448d0360af5c2948ff6a4dbb493fe4be756fc3e2c3f900f) we can get more information about the executable from the community. Looking at the `Behavior` tab we can learn more such as IP addr used, registry actions, process tree & Mitre ATT&CK Tactics And Techniques
 
-![[Pasted image 20221217045906.png]]
+![[write-ups/images/Pasted image 20221217045906.png]]
 
 ### Adding rules
 

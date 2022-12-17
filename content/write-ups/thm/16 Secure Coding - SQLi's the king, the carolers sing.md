@@ -15,25 +15,25 @@ After a bit of talk, it was decided. The elves returned carrying a pointy hat an
 
 with `id=-1 union all select null,null,username,password,null,null,null from users`
 
-![[Pasted image 20221217073420.png]]
+![[write-ups/images/Pasted image 20221217073420.png]]
 
 ### Patching
 
-![[Pasted image 20221217075731.png]]
+![[write-ups/images/Pasted image 20221217075731.png]]
 
 Thanks robot :D, now I also modified the query on planned delieveries to use `intval` & we get the flag: 
 
-![[Pasted image 20221217075823.png]]
+![[write-ups/images/Pasted image 20221217075823.png]]
 
-![[Pasted image 20221217075851.png]]
+![[write-ups/images/Pasted image 20221217075851.png]]
 
 Going in `login.php` we get this code:
 
-![[Pasted image 20221217075922.png]]
+![[write-ups/images/Pasted image 20221217075922.png]]
 
 Seems like we need to do pretty much the same, but let's have a little more fun with [chatGPT]() & see if it can help us:
 
-![[Pasted image 20221217080220.png]]
+![[write-ups/images/Pasted image 20221217080220.png]]
 
 Wow it even recognized that it's vulnerable without me telling it, recommending a more secure implementation. Quite impressive AI-pal
 

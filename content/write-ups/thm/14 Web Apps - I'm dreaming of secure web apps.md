@@ -16,10 +16,12 @@ Elf McSkidy was sipping her coffee when she saw on her calendar that it was time
 ## Practical
 
 Upon loggin in we get to `http://10.10.47.238:8080/users/101.html`
-![[Pasted image 20221217050543.png]]
+
+![[write-ups/images/Pasted image 20221217050543.png]]
 
 Changing it to `102` we get another user:
-![[Pasted image 20221217050621.png]]
+
+![[write-ups/images/Pasted image 20221217050621.png]]
 
 We can do the same for listing all the profile images @ `http://10.10.47.238:8080/images/100.png`. Writing a simple bash script to list & retrieve all images gives us the flag:
 
@@ -28,7 +30,7 @@ We can do the same for listing all the profile images @ `http://10.10.47.238:808
 
 ```
 
-![[Pasted image 20221217050821.png]]
+![[write-ups/images/Pasted image 20221217050821.png]]
 
 ## Refs
 - [Official Walkthrough]()
