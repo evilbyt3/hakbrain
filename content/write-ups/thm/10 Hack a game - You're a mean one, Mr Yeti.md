@@ -15,7 +15,7 @@ Without their chief, the elves started running in despair. How could they run aÂ
 - Use simple tools to find and alter data in memory.
 - Explore the effects of changing data in memory on a running game.
 
-## Notes
+## Practical
 - Installing [Cetus](https://github.com/Qwokka/Cetus):
 	- Download [latest release](https://github.com/Qwokka/Cetus/releases)
 	- Unpack zip file: `unzip Cetus_v1.03.1.zip`
@@ -56,7 +56,8 @@ Without their chief, the elves started running in despair. How could they run aÂ
 
 
 ## Refs
-- ...
+- [Official Walkthrough](https://www.youtube.com/watch?v=_ej3yMF31zg)
+- [Walking an Application room](https://tryhackme.com/room/walkinganapplication)
 
 ## See Also
 - [[write-ups/thm/Advent of Cyber 2022]]

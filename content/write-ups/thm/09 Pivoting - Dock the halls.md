@@ -20,7 +20,10 @@ Because of the recent incident, Santa has asked his team to set up a new web app
 ---
 
 ## Refs
-- ...
+- [Official Walktrough](https://www.youtube.com/watch?v=mZqNP2fOLlk)
+- [Compromising AD module](https://tryhackme.com/module/hacking-active-directory)
+
 
 ## See Also
+- [[write-ups/thm/Advent of Cyber 2022]]
 - [[write-ups/thm/08 Smart Contracts - Last Christmas I gave you my ETH]] | [[write-ups/thm/10 Hack a game - You're a mean one, Mr Yeti]]

@@ -44,7 +44,9 @@ _You plug the USB into your workstation and begin your investigation._
 
 
 ## Refs
+- [Officail Walkthrough](https://www.youtube.com/watch?v=RsJR2z_agiY)
 - [volatility plugins](https://volatility3.readthedocs.io/en/latest/volatility3.plugins.html)
+- [Digital Forensics & Incident Response module](https://tryhackme.com/module/digital-forensics-and-incident-response)
 
 ## See Also
 - [[write-ups/thm/Advent of Cyber 2022]]
