@@ -45,4 +45,4 @@ Wow it even recognized that it's vulnerable without me telling it, recommending 
 
 ## See Also
 - [[write-ups/thm/Advent of Cyber 2022]]
-- [[write-ups/thm/15 Secure Coding - Santa is looking for a Sidekick]] | [[]]
+- [[write-ups/thm/15 Secure Coding - Santa is looking for a Sidekick]] | [[write-ups/thm/17 - Secure Coding - Filtering for Order Amidst Chaos]]
