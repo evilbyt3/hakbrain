@@ -63,7 +63,7 @@ Using [Logic 2](https://support.saleae.com/logic-software/sw-download) we can ta
 
 ![[write-ups/images/Pasted image 20221221030635.png]]
 
-D0 & D1 refer to the digital channels while A0 & A1 to the analogue data from the probers. If we zoom in on one of the thick lines from D1 you can actually see bits *(on/off)*. 
+D0 & D1 refer to the digital channels while A0 & A1 to the analogue data from the probers. If we zoom in on one of the thick lines from D1 you can actually see bits *(on/off)*
 
 ![[write-ups/images/Pasted image 20221221030859.png]]
 
@@ -99,4 +99,4 @@ Lucily for us we can just update the baud rate to `9600` on Channel 0 analyzer &
 
 ## See Also
 - [[write-ups/thm/Advent of Cyber 2022]]
-- [[write-ups/thm/18 Sigma - Lumberjack Lenny learns new rules]] | [[]]
+- [[write-ups/thm/18 Sigma - Lumberjack Lenny learns new rules]] | [[write-ups/thm/20 Firmware - Binwalkin around the Christmas tree]]

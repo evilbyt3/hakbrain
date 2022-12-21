@@ -23,3 +23,6 @@ Topics that will be covered in the event are: `Red Teaming`, `Secure Coding`, `W
 - [[write-ups/thm/14 Web Apps - I'm dreaming of secure web apps]]
 - [[write-ups/thm/15 Secure Coding - Santa is looking for a Sidekick]]
 - [[write-ups/thm/16 Secure Coding - SQLi's the king, the carolers sing]]
+- [[write-ups/thm/17 - Secure Coding - Filtering for Order Amidst Chaos]]
+- [[write-ups/thm/18 Sigma - Lumberjack Lenny learns new rules]]
+- [[write-ups/thm/19 Hardware Hacking - Wiggles go brrr]]

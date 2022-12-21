@@ -53,4 +53,4 @@ Additionally, here are the [[Mitre ATT&CK]] techniques & IOCs identified
 
 ## See Also
 - [[write-ups/thm/Advent of Cyber 2022]]
-- [[write-ups/thm/17 - Secure Coding - Filtering for Order Amidst Chaos]] | [[]]
+- [[write-ups/thm/17 - Secure Coding - Filtering for Order Amidst Chaos]] | [[write-ups/thm/19 Hardware Hacking - Wiggles go brrr]]
