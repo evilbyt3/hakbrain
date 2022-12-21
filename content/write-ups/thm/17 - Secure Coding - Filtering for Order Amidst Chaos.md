@@ -28,12 +28,12 @@ After handling unrestricted file uploads and SQLi vulnerabilities, McSkidy conti
 
 ## Practical
 - filtering usernames:
-	- ![[Pasted image 20221219155627.png]]
+	- ![[write-ups/images/Pasted image 20221219155627.png]]
 - filtering emails
-	- ![[Pasted image 20221219160036.png]]
-	- ![[Pasted image 20221219160303.png]]
+	- ![[write-ups/images/Pasted image 20221219160036.png]]
+	- ![[write-ups/images/Pasted image 20221219160303.png]]
 - filtering URLs
-	- ![[Pasted image 20221219160803.png]]
+	- ![[write-ups/images/Pasted image 20221219160803.png]]
 
 ## Refs
 - [Official Walkthrough]()
