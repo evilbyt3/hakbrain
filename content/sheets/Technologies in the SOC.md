@@ -2,7 +2,7 @@
 title: "Technologies in the SOC"
 date: 2022-09-28
 tags:
-- sheets
+- sheet
 ---
 
 ## SIEM

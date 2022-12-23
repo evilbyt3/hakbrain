@@ -1,7 +1,7 @@
 ---
 title: "LinkedIn OSINT"
 tags:
-- sheets
+- sheet
 ---
 
 # LinkedIn OSINT

@@ -1,7 +1,7 @@
 ---
 title: "Windows 11 Minimum Requirments Bypass"
 tags:
-- sheets
+- sheet
 ---
 
 I recently stumbled upon this error in VirtualBox when trying to setup Windows 11

@@ -2,7 +2,7 @@
 title: "Security Operations Center SOC"
 date: 2022-09-15
 tags:
-- sheets
+- sheet
 ---
 
 ## What is a SOC ?

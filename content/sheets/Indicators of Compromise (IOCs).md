@@ -1,7 +1,7 @@
 ---
 title: "Indicators of Compromise (IOCs)"
 tags:
-- sheets
+- sheet
 ---
 You can think of Indicators of Compromise as pieces of information that can be used to detect suspicious or malicious cyber activity. 
 

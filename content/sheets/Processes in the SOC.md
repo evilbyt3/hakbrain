@@ -2,7 +2,7 @@
 title: "Processes in the SOC"
 date: 2022-09-28
 tags:
-- sheets
+- sheet
 ---
 
 Cybersecurity Analysts typically monitor security alerts. A ticketing system i frequently used to assign alerts to a queue for an analyst to investigate. Because false-positives might be present amongst the alerts, one job of the Cybersecurity Analysts might be to verify that an alert represents a true security incident.

@@ -2,7 +2,7 @@
 title: "People in the SOC"
 date: 2022-09-28
 tags:
-- sheets
+- sheet
 ---
 
 Traditionally, SOCs assign job roles by tiers, according to the expertise and responsibilities required for each:
