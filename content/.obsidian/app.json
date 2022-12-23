@@ -2,6 +2,6 @@
   "vimMode": true,
   "showInlineTitle": true,
   "alwaysUpdateLinks": true,
-  "attachmentFolderPath": "sta",
+  "attachmentFolderPath": "/",
   "newLinkFormat": "absolute"
 }
