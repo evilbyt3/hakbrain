@@ -36,5 +36,12 @@ They are capable to:
 
 This frees security personnel to address more pressing matters and high-end investigation and threat remediation by automation of [[sheets/Processes in the SOC|SOC workflows]]. Because SIEM systems necessarily produce more alerts than most SecOps teams can realistically investigate in order to conservatively capture as many potential exploits as possible.
 
+## Tools
+- [ElasticSearch](https://www.elastic.co/elasticsearch/): document oriented full text search engine
+- [Logstash](https://www.elastic.co/logstash/): pipeline processing system that connects inputs to outputs with filters between them
+- [Kibana](https://www.elastic.co/kibana/): web-based analytics & search dashboard for Elasticsearch
+- more on [elastic.co](https://www.elastic.co/)
+
 ## See Also
-[[sheets/Security Opertions Center (SOC)]]
+- [[sheets/Security Opertions Center (SOC)]]
+- [[write-ups/thm/splunk-101]]
