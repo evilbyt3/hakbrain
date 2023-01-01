@@ -20,6 +20,11 @@ They're used for multiple purposes to make the work of an [[sheets/People in the
 - Vulnerability tracking
 - Threat intelligence
 
+Include the following essential functions:
+- **Forensic analysis**: search logs and event records from sources throughout the organization
+- **Correlation**: examines logs and events from different systems or applications, speeding detection of and reaction to security threats
+- **Aggregation**: reduces the volume of event data by consolidating duplicate event records
+- **Reporting**: presents the correlated and aggregated event data in real-time monitoring and long-term summaries
 
 ## SOAR
 The security orchestration, automation and response is often paired together with a SIEM to complement each other's capabilities. SOAR platforms are similar to SIEMs in that they aggregate, correlate, and analyze alerts. 
