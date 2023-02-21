@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "45cede070ef58ece",
+        "id": "d245f4be5e86b35b",
         "type": "tabs",
         "children": [
           {
-            "id": "a589d4c966b56d1d",
+            "id": "cfa4cf6e8d90ae76",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "sheets/Windows 11 Minimum Requirments Bypass.md",
-                "mode": "source",
+                "file": "sheets/DFIR.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -102,6 +102,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "sheets/DFIR.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,6 +119,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "sheets/DFIR.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +141,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "sheets/DFIR.md"
+              }
             }
           },
           {
@@ -170,17 +174,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1a975789a8bbd230",
+  "active": "cfa4cf6e8d90ae76",
   "lastOpenFiles": [
-    "sheets/Windows 11 Minimum Requirments Bypass.md",
-    "sheets/Unqoted Service Paths.md",
-    "sheets/Token Impersonation.md",
-    "sheets/Technologies in the SOC.md",
-    "sheets/Security Opertions Center (SOC).md",
-    "sheets/RTSP CCTV Cam Testing.md",
-    "sheets/Processes in the SOC.md",
-    "sheets/People in the SOC.md",
-    "sheets/LinkedIn OSINT.md",
-    "sheets/Indicators of Compromise (IOCs).md"
+    "write-ups/THM.md",
+    "write-ups/thm/SOC Level 1 Path.md",
+    "write-ups/thm/volatility.md",
+    "write-ups/thm/Zeek Exercises.md",
+    "write-ups/thm/Zeek.md",
+    "write-ups/thm/Snort Challenge - The Basics.md",
+    "write-ups/thm/attacking-kerberos.md",
+    "write-ups/thm/Cyber Defense.md",
+    "write-ups/htb/Toxic.md",
+    "write-ups/htb/time.md"
   ]
 }

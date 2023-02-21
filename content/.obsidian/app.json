@@ -3,5 +3,6 @@
   "showInlineTitle": true,
   "alwaysUpdateLinks": true,
   "attachmentFolderPath": "/",
-  "newLinkFormat": "absolute"
+  "newLinkFormat": "absolute",
+  "spellcheck": true
 }
