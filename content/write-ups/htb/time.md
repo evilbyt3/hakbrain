@@ -6,7 +6,7 @@ tags:
 
 ## Overview
 
-This box is a Linux one. For the initial foothold you need to exploit a bug within the Jackson library for deserializing **JSON's** leading to a SSRF which can leverage a RCE. Once on the box a simple classic enumeration reveals a root bash script with read/write access. Consequenlty, just importing your pub **SSH** key into the `authorized_keys` file will grant access to root.
+This box is a Linux one. For the initial foothold you need to exploit a bug within the Jackson library for deserializing **JSON's** leading to a SSRF which can leverage a RCE. Once on the box a simple classic enumeration reveals a root bash script with read/write access. Consequently, just importing your pub **SSH** key into the `authorized_keys` file will grant access to root.
 
 
 ## Enumeration

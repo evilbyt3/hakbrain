@@ -91,7 +91,7 @@ The password for robert being **SecThruObsFTW**. Login with *SSH* and cat `user.
 
 ## Root
 
-Now that we have access to the robert user, we can look at a file we ommited on our journey of getting the user flag. That file is `BetterSSH.py`
+Now that we have access to the robert user, we can look at a file we omitted on our journey of getting the user flag. That file is `BetterSSH.py`
 
 ![](https://i.imgur.com/wsIffJq.png)
 
