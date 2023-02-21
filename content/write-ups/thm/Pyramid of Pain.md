@@ -25,12 +25,12 @@ This concept is being applied in order to improve the effectiveness of CTI *(Cyb
 	- ![[write-ups/images/Pasted image 20230105121551.png]]
 
 ## IP Address *(Easy)*
-- [[todo/IP Addressing & Subnetting|IP addresses]] are used to identify any device connected to a network
-- we rely on them [[todo/IPv4|to send & receive the information]] over the network
+- [[todo/cyberops/IP Addressing & Subnetting|IP addresses]] are used to identify any device connected to a network
+- we rely on them [[todo/cyberops/IPv4|to send & receive the information]] over the network
 - From a defense standpoint, knowledge of the IP addresses an adversary uses can be valuable
 	- we can block, drop or deny inbound req from malicious IP addr
 	- we can find geolocation information or correlate them to gather more intelligence of our adversary
-- However, experienced attackers can bypass this by simply using a new [[todo/LANs & WANs|public IP address]] or use techniques such as [Fast Flux](https://unit42.paloaltonetworks.com/fast-flux-101/) - having multiple IP addresses associated with a domain name, which is constantly changing to make the comms between [[write-ups/thm/malware-intro|malware]] & C&C challenging to be discovered 
+- However, experienced attackers can bypass this by simply using a new [[todo/cyberops/LANs & WANs|public IP address]] or use techniques such as [Fast Flux](https://unit42.paloaltonetworks.com/fast-flux-101/) - having multiple IP addresses associated with a domain name, which is constantly changing to make the comms between [[write-ups/thm/malware-intro|malware]] & C&C challenging to be discovered 
 - [Any Run Malicious IP conns example](https://app.any.run/tasks/a66178de-7596-4a05-945d-704dbf6b3b90/)
 
 ## Domain Names *(Simple)*
@@ -90,4 +90,4 @@ This concept is being applied in order to improve the effectiveness of CTI *(Cyb
 - [Akamai](https://www.akamai.com/blog?)
 
 ## See Also
-- [[write-ups/SOC Level 1 Path]]
+- [[write-ups/thm/SOC Level 1 Path]]
