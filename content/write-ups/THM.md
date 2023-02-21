@@ -17,10 +17,10 @@ Under this section you will mostly find my notes & write-ups that I took while c
 
 ## Paths
 
-| Path          | Description                                                                            | 
-| ------------- | -------------------------------------------------------------------------------------- |
-| [[write-ups/Cyber Defense]] | a broad introduction to the different areas necessary to detect and respond to threats |
-|               |                                                                                        |
+| Path                               | Description                                                                            |
+| ---------------------------------- | -------------------------------------------------------------------------------------- |
+| [[write-ups/thm/Cyber Defense]]    | a broad introduction to the different areas necessary to detect and respond to threats |
+| [[write-ups/thm/SOC Level 1 Path]] | everything needed for a SOC analyst of Tier 1                                                                                       |
 
 ## Events
 
