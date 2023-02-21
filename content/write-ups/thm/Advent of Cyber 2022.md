@@ -26,3 +26,6 @@ Topics that will be covered in the event are: `Red Teaming`, `Secure Coding`, `W
 - [[write-ups/thm/17 - Secure Coding - Filtering for Order Amidst Chaos]]
 - [[write-ups/thm/18 Sigma - Lumberjack Lenny learns new rules]]
 - [[write-ups/thm/19 Hardware Hacking - Wiggles go brrr]]
+- [[write-ups/thm/20 Firmware - Binwalkin around the Christmas tree]]
+- [[write-ups/thm/21 MQTT - Have yourself a merry little webcam]]
+- [[write-ups/thm/22 Attack Surface Reduction - Threats are failing all around me]]

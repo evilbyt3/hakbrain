@@ -112,4 +112,4 @@ Notice when we get the flag is displayed 3 times, every time our `Attack` fallba
 
 ## See Also
 - [[write-ups/thm/Advent of Cyber 2022]]
-- [[write-ups/thm/07 CyberChef - Maldocs roasting on an open fire]] | [[]]
+- [[write-ups/thm/07 CyberChef - Maldocs roasting on an open fire]] | [[write-ups/thm/09 Pivoting - Dock the halls]]

@@ -24,6 +24,8 @@ An attack vector is a tool, technique, or method used to attack a computer syste
 - unpatched vulnerability exploitation
 
 ### Attack Surface
+The attack surface describes different points where an attacker could get into a system, and where they could get data out of the system.
+
 The surface area of the victim of an attack that can be impacted by an attack vector and cause damage. n cybersecurity, the attack surface will generally contain the following:
 - an email server
 - an internet-facing web server

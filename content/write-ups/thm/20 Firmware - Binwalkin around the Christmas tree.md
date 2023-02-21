@@ -66,7 +66,7 @@ McSkidy found an older version of the same firmware. Access it in the `bin-unsig
 
 We see that it's a TP-Link device & can find all the firmware parts in the `fmk/` folder
 
-#### Retrieving encryption keys
+### Retrieving encryption keys
 
 ![[write-ups/images/Pasted image 20221221041619.png]]
 
@@ -78,7 +78,7 @@ Now that we have the keys, we still need the paraphrase used with the private ke
 
 ![[write-ups/images/Pasted image 20221221041947.png]]
 
-#### Decrypting the firmware
+### Decrypting the firmware
 
 Let's import the keys:
 
@@ -110,4 +110,4 @@ Further analysis on the `Camera` folder in the next chall.
 
 ## See Also
 - [[write-ups/thm/Advent of Cyber 2022]]
-- [[write-ups/thm/19 Hardware Hacking - Wiggles go brrr]] | [[]]
+- [[write-ups/thm/19 Hardware Hacking - Wiggles go brrr]] | [[write-ups/thm/21 MQTT - Have yourself a merry little webcam]]
